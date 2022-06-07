@@ -3,15 +3,25 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { hopeTheme } from "vuepress-theme-hope";
 import { navbarEn, navbarEs, sidebarEn, sidebarEs } from './configs';
 
+const base = (process.env.BASE as "/" | `/${string}/`) || "/";
+const hostname = process.env.HOSTNAME || "https://wow-cms.github.io";
+
 export default defineUserConfig({
-  base: "/docs/",
+  base,
 
   head: [
     [
       "link",
       {
+        rel: "icon",
+        href: `${base}favicon.ico`
+      },
+    ],
+    [
+      "link",
+      {
         rel: "stylesheet",
-        href: "/docs/boxicons/boxicons.min.css"
+        href: `${base}boxicons/boxicons.min.css`
       },
     ],
   ],
@@ -20,17 +30,17 @@ export default defineUserConfig({
     "/": {
       lang: "en-US",
       title: "WoW-CMS Docs",
-      description: "",
+      description: "Documentation for WoW-CMS projects",
     },
     "/es/": {
       lang: "es-ES",
       title: "WoW-CMS Docs",
-      description: "",
+      description: "Documentación para proyectos de WoW-CMS",
     },
   },
 
   theme: hopeTheme({
-    title: "WoW-CMS Docs",
+    hostname,
 
     docsDir: "src",
 
