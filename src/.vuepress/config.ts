@@ -11,7 +11,7 @@ export default defineUserConfig({
       "link",
       {
         rel: "stylesheet",
-        href: "/boxicons/boxicons.min.css"
+        href: "/docs/boxicons/boxicons.min.css"
       },
     ],
   ],
