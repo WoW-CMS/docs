@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Reem Kufi';
+  src: url('/fonts/reemkufi-variablefont_wght-webfont.woff2') format('woff2'),
+    url('/fonts/reemkufi-variablefont_wght-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  // Containers
+  --tip-bg-color: #f4fffa;
+  --tip-border-color: #1cd77f;
+  --warning-bg-color: #fff9f4;
+  --warning-border-color: #d77c1c;
+  --danger-bg-color: #fff4f4;
+  --danger-border-color: #d7251c;
+  --info-bg-color: #f4f9ff;
+  --info-border-color: #1cabd7;
+  --note-bg-color: #f9f9f9;
+  --note-border-color: #d7d7d7;
+
+  // Badges
+  --badge-tip-color: #1cd77f;
+  --badge-warning-color: #d77c1c;
+  --badge-danger-color: #d7251c;
+  --badge-info-color: #1cabd7;
+  --badge-note-color: #d7d7d7;
+
+  // Tab markdown
+  --tab-nav-bg-color: var(--border-color);
+  --tab-nav-hover-color: #f9f9f9;
+
+  // Search plugin
+  --search-input-width: 14rem !important;
+  --search-result-width: 28rem !important;
+
+  // Custom
+  --fixed-white: #fff;
+}
+
+html[data-theme="dark"] {
+  // Containers
+  --tip-bg-color: #292d2c;
+  --warning-bg-color: #2d2b29;
+  --danger-bg-color: #2d2929;
+  --info-bg-color: #292c2d;
+  --note-bg-color: #2d2d2d;
+
+  // Tab markdown
+  --tab-nav-bg-color: var(--border-color);
+  --tab-nav-hover-color: #262626;
+}
+
+html[data-theme="dark"] #app {
+  // Change code highlight
+  --code-border-color: #242424;
+  --code-highlight-line-color: #242424;
+}
+
+html[data-theme="dark"] .badge {
+  color: var(--fixed-white);
+}
+
+table {
+  position: relative;
+  z-index: 0;
+}
+
+th,
+td {
+  border-color: var(--border-color);
+}
+
+.navbar .site-name {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.home.project .hero h1 {
+  font-size: 2.5rem;
+}
+
+.home.project .hero .description,
+.home.project .hero .action {
+  margin: 1rem 0;
+}
+
+.home.project .features {
+  border-top: 0;
+  padding: 2rem 0;
+}
+
+.home.project .feature {
+  border: 2px solid var(--border-color);
+}
+
+.home.project .feature:hover {
+  transform: scale(1.025);
+}
+
+.search-box .suggestion .page-title {
+  padding: 0 !important;
+}
+
+.search-box .suggestion .page-header {
+  margin-left: .5rem !important;
+}

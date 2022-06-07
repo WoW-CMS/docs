@@ -1,0 +1,59 @@
+$theme-color: #2196f3;
+
+$text-color: (
+  light: #414141,
+  dark: #b5b5b5,
+);
+
+$bg-color: (
+  light: #fff,
+  dark: #1a1a1a,
+);
+
+$bg-color-light: (
+  light: #fff,
+  dark: #242424,
+);
+
+$bg-color-active: (
+  light: #f8f8f8,
+  dark: #242424,
+);
+
+$bg-color-back: (
+  light: #f8f8f8,
+  dark: #1a1a1a,
+);
+
+$bg-color-float: (
+  light: #fff,
+  dark: #242424,
+);
+
+$bg-color-blur: (
+  light: rgba(255, 255, 255, 0.9),
+  dark: rgba(26, 26, 26, 0.9),
+);
+
+$bg-color-float-blur: (
+  light: rgba(255, 255, 255, 0.9),
+  dark: rgba(36, 36, 36, 0.9),
+);
+
+$border-color: (
+  light: #f2f2f2,
+  dark: #2d2d2d,
+);
+
+// shadow
+$box-shadow: (
+  light: #f0f1f2,
+  dark: #282a32,
+);
+
+$card-shadow: (
+  light: rgba(0, 0, 0, 0.15),
+  dark: rgba(0, 0, 0, 0.3),
+);
+
+$font-family-fancy: '"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif';
