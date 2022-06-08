@@ -29,7 +29,7 @@ Si no se establece una zona horaria, se usará la configuración de CI predeterm
 
 #### Valores Devueltos
 
-Returns a current formatted date.
+Devuelve una fecha actual con formato.
 
 #### Ejemplos
 
@@ -58,12 +58,12 @@ Si no se establece un formato, se utilizará el siguiente: `Y-m-d`
 
 #### Valores Devueltos
 
-Returns the changed format of the date string.
+Devuelve el cambio de formato del string de fecha.
 
 #### Ejemplos
 
 ```php
-// Devuelve 2022-05-17 21:11:44
+// Devuelve '2022-05-17 21:11:44'
 echo format_date('Tue, 17 May 2022 21:11:44 +0000', 'Y-m-d H:i:s');
 ```
 
@@ -133,6 +133,44 @@ Devuelve el número de minutos que quedan entre dos fechas **(puede proporcionar
 echo remaining_minutes('now', '2023-01-01 00:00:00');
 ```
 
+## split_data
+
+`split_data` — _Obtener un determinado tipo de datos de un string_
+
+```php
+split_data($str, $type = 'letter', $key = null): mixed
+```
+
+#### Parámetros
+
+| Parámetro | Tipo | Descripción |
+| ------- | ------- | ------- |
+| **$str** | string |  |
+| **$type** | string | Tipo de datos a obtener |
+| **$key** | int\|null | Clave del array |
+
+**Tipos:**
+
+- `letter`
+- `number`
+
+#### Valores Devueltos
+
+Devuelve un array con el tipo de dato indicado o si se usa el parámetro key, seleccionará un solo elemento del array.
+
+#### Ejemplos
+
+```php
+// Devuelve ['h', 'm', 's']
+echo split_data('4h20m30s');
+
+// Devuelve 'h'
+echo split_data('4h20m30s', 'letter', 0);
+
+// Devuelve '20'
+echo split_data('4h20m30s', 'number', 1);
+```
+
 ## money_pieces
 
 `money_pieces` — _Obtener la cantidad de piezas de cobre/plata/oro de una cantidad total de dinero_
@@ -161,10 +199,10 @@ Devuelve la cantidad de la pieza especificada.
 #### Ejemplos
 
 ```php
-// Devuelve 11 (gold)
+// Devuelve '11' (gold)
 echo money_pieces('110340');
 
-// Devuelve 3 (silver)
+// Devuelve '3' (silver)
 echo money_pieces('110340', 's');
 ```
 
@@ -189,7 +227,7 @@ Devuelve un número con un indicador de sufijo ordinal.
 #### Ejemplos
 
 ```php
-// Devuelve 1st
+// Devuelve '1st'
 echo ordinal(1);
 ```
 
@@ -214,7 +252,7 @@ Devuelve la primera letra del string en mayúsculas.
 #### Ejemplos
 
 ```php
-// Devuelve N
+// Devuelve 'N'
 echo initial_letter('nick');
 ```
 
@@ -239,8 +277,8 @@ Devuelve un string cifrado.
 #### Ejemplos
 
 ```php
-// Encrypt string
-echo encrypt('This is a string');
+// Cifrar string
+echo encrypt('Esto es un string');
 ```
 
 ## decrypt
@@ -264,11 +302,11 @@ Devuelve un string descifrado.
 #### Ejemplos
 
 ```php
-$encrypt = encrypt('This is a string');
+$encrypt = encrypt('Esto es un string');
 
 echo $encrypt;
 
-// Decrypt string
+// Descifrar string
 $decrypt = decrypt($encrypt);
 
 echo $decrypt;
@@ -302,8 +340,10 @@ Devuelve un string con todas las etiquetas HTML no permitidas eliminadas.
 #### Ejemplos
 
 ```php
-// Devuelve 
-echo html_purify('');
+$html = '<p><script>alert("xss");</script>Lorem ipsum dolor sit amet</p>';
+
+// Devuelve '<p>Lorem ipsum dolor sit amet</p>'
+echo html_purify($html, 'comment');
 ```
 
 ## is_json
@@ -331,7 +371,7 @@ $str = '{"name":"example"}';
 
 if (is_json($str))
 {
-    echo 'This string has JSON format';
+    echo 'Este string tiene formato JSON';
 }
 ```
 
@@ -356,7 +396,7 @@ Devuelve el **nombre** de la clase o **desconocido** si no existe.
 #### Ejemplos
 
 ```php
-// Devuelve Death Knight
+// Devuelve 'Caballero de la Muerte'
 echo class_name(6);
 ```
 
@@ -381,7 +421,7 @@ Devuelve el **nombre** de la raza o **desconocido** si no existe.
 #### Ejemplos
 
 ```php
-// Devuelve Undead
+// Devuelve 'No-muerto'
 echo race_name(5);
 ```
 
@@ -406,7 +446,7 @@ Devuelve el **nombre** de la faction o **desconocido** si no existe.
 #### Ejemplos
 
 ```php
-// Devuelve Alliance
+// Devuelve 'Alianza'
 echo faction_name(1);
 ```
 
@@ -431,6 +471,6 @@ Devuelve el **nombre** de la zona o **desconocido** si no existe.
 #### Ejemplos
 
 ```php
-// Devuelve Deadwind Pass
+// Devuelve 'Paso de la Muerte'
 echo zone_name(41);
 ```

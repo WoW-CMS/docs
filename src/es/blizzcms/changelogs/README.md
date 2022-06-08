@@ -8,4 +8,4 @@ dir:
 
 ## Lista de Contenido
 
-- [Versión 2.0.0](../changelogs/version-2.0.0.md)
+- [Versión 2.0.0-beta.0](../changelogs/version-2.0.0-beta.0.md)

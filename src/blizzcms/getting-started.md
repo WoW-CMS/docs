@@ -19,6 +19,8 @@ Before you get started, ensure you have the following:
 
 If you still do not have the prerequisites installed, you can see the following guides to install them:
 
+### Guides for Linux
+
 - [How to Install LAMP Stack](../blizzcms/guides/linux/lamp-stack.md)
 - [How to Install LEMP Stack](../blizzcms/guides/linux/lemp-stack.md)
 - [How to Install Composer](../blizzcms/guides/linux/composer.md)

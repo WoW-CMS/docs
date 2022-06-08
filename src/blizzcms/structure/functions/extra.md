@@ -63,7 +63,7 @@ Returns the changed format of the date string.
 #### Examples
 
 ```php
-// Returns 2022-05-17 21:11:44
+// Returns '2022-05-17 21:11:44'
 echo format_date('Tue, 17 May 2022 21:11:44 +0000', 'Y-m-d H:i:s');
 ```
 
@@ -146,18 +146,29 @@ split_data($str, $type = 'letter', $key = null): mixed
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
 | **$str** | string |  |
-| **$type** | string |  |
-| **$key** | int\|null |  |
+| **$type** | string | Type of data to get |
+| **$key** | int\|null | Array key |
+
+**Types:**
+
+- `letter`
+- `number`
 
 #### Return Values
 
-Returns a date with the interval added.
+Returns an array with the indicated data type or if the key parameter is used, it will select a single element of the array.
 
 #### Examples
 
 ```php
 // Returns ['h', 'm', 's']
 echo split_data('4h20m30s');
+
+// Returns 'h'
+echo split_data('4h20m30s', 'letter', 0);
+
+// Returns '20'
+echo split_data('4h20m30s', 'number', 1);
 ```
 
 ## money_pieces
@@ -188,10 +199,10 @@ Returns the amount of specified piece.
 #### Examples
 
 ```php
-// Returns 11 (gold)
+// Returns '11' (gold)
 echo money_pieces('110340');
 
-// Returns 3 (silver)
+// Returns '3' (silver)
 echo money_pieces('110340', 's');
 ```
 
@@ -216,7 +227,7 @@ Returns a number with an ordinal suffix indicator.
 #### Examples
 
 ```php
-// Returns 1st
+// Returns '1st'
 echo ordinal(1);
 ```
 
@@ -241,7 +252,7 @@ Returns the first letter of the string in uppercase.
 #### Examples
 
 ```php
-// Returns N
+// Returns 'N'
 echo initial_letter('nick');
 ```
 
@@ -329,8 +340,10 @@ Returns a string with all unallowed HTML tags removed.
 #### Examples
 
 ```php
-// Returns 
-echo html_purify('');
+$html = '<p><script>alert("xss");</script>Lorem ipsum dolor sit amet</p>';
+
+// Returns '<p>Lorem ipsum dolor sit amet</p>'
+echo html_purify($html, 'comment');
 ```
 
 ## is_json
@@ -383,7 +396,7 @@ Returns class **name** or **unknown** if not exist.
 #### Examples
 
 ```php
-// Returns Death Knight
+// Returns 'Death Knight'
 echo class_name(6);
 ```
 
@@ -408,7 +421,7 @@ Returns race **name** or **unknown** if not exist.
 #### Examples
 
 ```php
-// Returns Undead
+// Returns 'Undead'
 echo race_name(5);
 ```
 
@@ -433,7 +446,7 @@ Returns faction **name** or **unknown** if not exist.
 #### Examples
 
 ```php
-// Returns Alliance
+// Returns 'Alliance'
 echo faction_name(1);
 ```
 
@@ -458,6 +471,6 @@ Returns zone **name** or **unknown** if not exist.
 #### Examples
 
 ```php
-// Returns Deadwind Pass
+// Returns 'Deadwind Pass'
 echo zone_name(41);
 ```
