@@ -12,3 +12,4 @@ dir:
   - [Cómo instalar LAMP stack](../guides/linux/lamp-stack.md)
   - [Cómo instalar LEMP stack](../guides/linux/lemp-stack.md)
   - [Cómo instalar Composer](../guides/linux/composer.md)
+- [Windows](../guides/windows)

@@ -27,8 +27,7 @@ El CMS con los cambios introducidos en las **versiones más actuales** puedes en
 - Registro
 - Noticias
 - Páginas personalizadas
-- Sistema de plantillas
-- Sistema de módulos
+- Modularidad
 
 **¡Y muchas caracteristicas más!** :tada:
 

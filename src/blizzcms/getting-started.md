@@ -17,6 +17,10 @@ Before you get started, ensure you have the following:
     - Enable extensions: bcmath - curl - gd - gmp - mbstring - mysqli - openssl - soap - zip
 - **Composer 2.3+**
 
+::: info INFORMATION
+The CMS requires that you have a wow server pre-installed with its respective databases.
+:::
+
 If you still do not have the prerequisites installed, you can see the following guides to install them:
 
 ### Guides for Linux

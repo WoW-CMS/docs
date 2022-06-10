@@ -6,19 +6,19 @@ order: 1
 
 :package: Fecha de lanzamiento: **2022-06-00**
 
-## Corrección de errores <Badge type="danger" text="Fixed" vertical="middle" />
+## Corrección de errores <Badge type="danger" text="Correcciones" vertical="middle" />
 
 -
 -
 -
 
-## Características <Badge type="tip" text="New" vertical="middle" />
+## Nuevas características <Badge type="tip" text="Nuevo" vertical="middle" />
 
 -
 -
 -
 
-## Tareas <Badge type="warning" text="Improved" vertical="middle" />
+## Tareas <Badge type="info" text="Mantenimiento" vertical="middle" />
 
 -
 -

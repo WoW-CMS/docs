@@ -6,19 +6,19 @@ order: 1
 
 :package: Release date: **2022-06-00**
 
-## Bug Fixes <Badge type="danger" text="Fixed" vertical="middle" />
+## Bug Fixes <Badge type="danger" text="Fixes" vertical="middle" />
 
 -
 -
 -
 
-## Features <Badge type="tip" text="New" vertical="middle" />
+## New Features <Badge type="tip" text="New" vertical="middle" />
 
 -
 -
 -
 
-## Chores <Badge type="warning" text="Improved" vertical="middle" />
+## Chores <Badge type="info" text="Maintenance" vertical="middle" />
 
 -
 -

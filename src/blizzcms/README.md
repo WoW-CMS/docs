@@ -27,8 +27,7 @@ The CMS with the changes introduced in the most **current versions** you can fin
 - Registration
 - News
 - Custom pages
-- Template system
-- Module system
+- Modularity
 
 **And many more features!** :tada:
 
