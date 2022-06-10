@@ -10,7 +10,7 @@ Documentation repository for _WoW-CMS_ projects
 
 ## Authors & Contributors
 
-* [WoW-CMS Developers and Contributors](https://github.com/WoW-CMS/docs/graphs/contributors)
+[WoW-CMS Developers and Contributors](https://github.com/WoW-CMS/docs/graphs/contributors)
 
 ## License
 
