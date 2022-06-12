@@ -8,8 +8,8 @@ dir:
 
 ## Content List
 
-- [Constants](../structure/environment.md)
-- [Database](../structure/module.md)
+- [Constants](../structure/constants.md)
+- [Database](../structure/database.md)
 - [Functions](../structure/functions)
   - [Common Functions](../structure/functions/common.md)
   - [Extra Functions](../structure/functions/extra.md)
