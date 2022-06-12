@@ -7,15 +7,15 @@ order: 1
 :package: Fecha de lanzamiento programada: **2022-06-00**
 
 ::: danger ADVERTENCIA
-V2.0.0 se reescribió completamente desde cero, por lo que es **incompatible** con temas/módulos antiguos (V1 y Plus)
+V2.0.0 se ha reescrito completamente desde 0, por lo que **no es compatible** con temas/módulos y/o modificaciones realizadas en las versiones **V1** y **Plus**.
 :::
 
 ## :sparkles: Características
 
 - Soporte a PHP8
-- Mejor rendimiento que sus versiones anteriores
-- Más configurable que sus versiones anteriores
-- Contiene la última versión del framework (CI3) y las dependencias.
-- Ahora la base tiene sistema RBAC
+- Mejor rendimiento en comparación con versiones anteriores
+- Más configurable en comparación con versiones anteriores
+- Usa la última versión del framework (CI3) y dependencias
+- Ahora en su base contiene el sistema RBAC
 - Modularidad reelaborada _(subir, instalar/desinstalar y eliminar módulos desde el panel)_
 - Template reelaborado _(subir, activar/desactivar y eliminar temas desde el panel)_
