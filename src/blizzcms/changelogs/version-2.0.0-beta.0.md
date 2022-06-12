@@ -4,7 +4,7 @@ icon: bx bxs-file
 order: 1
 ---
 
-:package: Release date: **2022-06-00**
+:package: Scheduled release date: **2022-06-00**
 
 ::: danger WARNING
 V2.0.0 is completely rewritten from scratch, so it is **incompatible** with old themes/modules (V1 and Plus)

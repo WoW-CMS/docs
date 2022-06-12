@@ -14,4 +14,5 @@ dir:
   - [Common Functions](../structure/functions/common.md)
   - [Extra Functions](../structure/functions/extra.md)
   - [Permission Functions](../structure/functions/permission.md)
-- [Template](../structure/template.md)
+- [Libraries](../structure/libraries)
+  - [Template](../structure/libraries/template.md)

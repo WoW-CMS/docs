@@ -14,4 +14,5 @@ dir:
   - [Funciones Comunes](../structure/functions/common.md)
   - [Funciones Adicionales](../structure/functions/extra.md)
   - [Funciones de Permisos](../structure/functions/permission.md)
-- [Template](../structure/template.md)
+- [Librerías](../structure/libraries)
+  - [Template](../structure/libraries/template.md)

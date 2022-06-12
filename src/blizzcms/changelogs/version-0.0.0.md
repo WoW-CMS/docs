@@ -4,21 +4,33 @@ icon: bx bxs-file
 index: false
 ---
 
-:package: Release date: **2022-00-00**
+:package: Scheduled release date: **0000-00-00**
 
-## Bug Fixes <Badge type="danger" text="Fixes" vertical="middle" />
-
--
--
--
-
-## New Features <Badge type="tip" text="New" vertical="middle" />
+## :rotating_light: Breaking Changes
 
 -
 -
 -
 
-## Chores <Badge type="info" text="Maintenance" vertical="middle" />
+## :bug: Bug Fixes
+
+-
+-
+-
+
+## :sparkles: New Features
+
+-
+-
+-
+
+## :rocket: Enhancements
+
+-
+-
+-
+
+## :gear: Dependency updates
 
 -
 -

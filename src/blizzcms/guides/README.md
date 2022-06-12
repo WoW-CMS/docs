@@ -13,3 +13,4 @@ dir:
   - [How to Install LEMP stack](../guides/linux/lemp-stack.md)
   - [How to Install Composer](../guides/linux/composer.md)
 - [Windows](../guides/windows)
+  - [Troubleshooting](../guides/windows/troubleshooting.md)
