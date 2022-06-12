@@ -4,7 +4,7 @@ icon: bx bx-radio-circle-marked
 order: 2
 ---
 
-Además de las funciones comunes, se agregaron otras funciones llamadas funciones adicionales para crear componentes más complejos en el CMS. En esta página, puede encontrar documentación detallada al respecto.
+Además de las funciones comunes, se han agregado más funciones para crear componentes más complejos. En esta página, puede encontrar información detallada sobre ellos.
 
 ## current_date
 
@@ -22,9 +22,9 @@ current_date($format = null, $timezone = null): string
 | **$timezone** | string\|null | Zona horaria de la fecha |
 
 ::: info INFORMACIÓN
-Si no se establece un formato, se utilizará el siguiente: `Y-m-d H:i:s`
+Si no se establece **$format**, se utilizará el siguiente: `Y-m-d H:i:s`
 
-Si no se establece una zona horaria, se usará la configuración de CI predeterminada.
+Si no se establece **$timezone**, se usará la configuración de CI predeterminada.
 :::
 
 #### Valores Devueltos
@@ -53,7 +53,7 @@ format_date($str, $format = null): string
 | **$format** | string\|null | Formato de la fecha |
 
 ::: info INFORMACIÓN
-Si no se establece un formato, se utilizará el siguiente: `Y-m-d`
+Si no se establece **$format**, se utilizará el siguiente: `Y-m-d`
 :::
 
 #### Valores Devueltos
@@ -84,9 +84,9 @@ add_interval($interval, $format = null, $timezone = null): string
 | **$timezone** | string\|null | Zona horaria de la fecha |
 
 ::: info INFORMACIÓN
-Si no se establece un formato, se utilizará el siguiente: `Y-m-d H:i:s`
+Si no se establece **$format**, se utilizará el siguiente: `Y-m-d H:i:s`
 
-Si no se establece una zona horaria, se usará la configuración de CI predeterminada.
+Si no se establece **$timezone**, se usará la configuración de CI predeterminada.
 :::
 
 #### Valores Devueltos
@@ -118,9 +118,7 @@ remaining_minutes($date, $date_two, $timezone = null, $timezone_two = null): int
 | **$timezone\_two** | string\|null | Zona horaria de la segunda fecha |
 
 ::: info INFORMACIÓN
-Si no se establece un formato, se utilizará el siguiente: `Y-m-d H:i:s`
-
-Si no se establece una zona horaria, se usará la configuración de CI predeterminada.
+Si no se establece **$timezone**/**$timezone_two**, se usará la configuración de CI predeterminada.
 :::
 
 #### Valores Devueltos

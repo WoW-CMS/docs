@@ -1,10 +1,10 @@
 ---
-title: Permission Functions
+title: RBAC Functions
 icon: bx bx-radio-circle-marked
 order: 3
 ---
 
-Permission system integration now allows you to easily restrict sections/pages throughout the CMS. On this page, you will find documentation of the available functions to achieve this.
+The integration of the RBAC system in the base now allows easily restrict sections/pages throughout the CMS. On this page, will find documentation of the available functions to achieve this.
 
 ## has_permission
 

@@ -46,7 +46,7 @@ Luego para eliminar el instalador ejecutaremos el siguiente comando:
 php -r "unlink('composer-setup.php');"
 ```
 
-Finalmente, para verificar que el composer funciona, ejecute el siguiente comando:
+Finalmente, para verificar que composer funciona, ejecute el siguiente comando:
 
 ```bash
 composer

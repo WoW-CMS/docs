@@ -4,7 +4,7 @@ icon: bx bx-radio-circle-marked
 order: 1
 ---
 
-In the creation of the CMS, very important functions were defined for its global operation, which is called common functions. On this page, you can find detailed documentation about it.
+At the base of the CMS are functions that are important to all of its components called common functions. On this page, will find what they are and detailed information about them.
 
 ## is_logged_in
 

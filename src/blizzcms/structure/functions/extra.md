@@ -4,7 +4,7 @@ icon: bx bx-radio-circle-marked
 order: 2
 ---
 
-In addition to the common functions, other functions were added called extra functions to create more complex components in the CMS. On this page, you can find detailed documentation about it.
+In addition to the common functions, more functions have been added to create more complex components. On this page, can find detailed information about them.
 
 ## current_date
 
@@ -22,9 +22,9 @@ current_date($format = null, $timezone = null): string
 | **$timezone** | string\|null | Date timezone |
 
 ::: info INFORMATION
-If a format is not set, the following will be used: `Y-m-d H:i:s`
+If **$format** is not set, the following will be used: `Y-m-d H:i:s`
 
-If a timezone is not set, the default CI settings will be used.
+If **$timezone** is not set, the default CI settings will be used.
 :::
 
 #### Return Values
@@ -53,7 +53,7 @@ format_date($str, $format = null): string
 | **$format** | string\|null | Date format |
 
 ::: info INFORMATION
-If a format is not set, the following will be used: `Y-m-d`
+If **$format** is not set, the following will be used: `Y-m-d`
 :::
 
 #### Return Values
@@ -84,9 +84,9 @@ add_interval($interval, $format = null, $timezone = null): string
 | **$timezone** | string\|null | Date timezone |
 
 ::: info INFORMATION
-If a format is not set, the following will be used: `Y-m-d H:i:s`
+If **$format** is not set, the following will be used: `Y-m-d H:i:s`
 
-If a timezone is not set, the default CI settings will be used.
+If **$timezone** is not set, the default CI settings will be used.
 :::
 
 #### Return Values
@@ -118,9 +118,7 @@ remaining_minutes($date, $date_two, $timezone = null, $timezone_two = null): int
 | **$timezone\_two** | string\|null | Second date timezone |
 
 ::: info INFORMATION
-If a format is not set, the following will be used: `Y-m-d H:i:s`
-
-If a timezone is not set, the default CI settings will be used.
+If **$timezone**/**$timezone_two** is not set, the default CI settings will be used.
 :::
 
 #### Return Values

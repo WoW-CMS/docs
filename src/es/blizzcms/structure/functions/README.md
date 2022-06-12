@@ -8,4 +8,4 @@ index: false
 
 - [Funciones Comunes](../functions/common.md)
 - [Funciones Adicionales](../functions/extra.md)
-- [Funciones de Permisos](../functions/permission.md)
+- [Funciones RBAC](../functions/rbac.md)

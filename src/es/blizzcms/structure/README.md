@@ -13,6 +13,6 @@ dir:
 - [Funciones](../structure/functions)
   - [Funciones Comunes](../structure/functions/common.md)
   - [Funciones Adicionales](../structure/functions/extra.md)
-  - [Funciones de Permisos](../structure/functions/permission.md)
+  - [Funciones RBAC](../structure/functions/rbac.md)
 - [Librerías](../structure/libraries)
   - [Template](../structure/libraries/template.md)

@@ -1,10 +1,10 @@
 ---
-title: Funciones de Permisos
+title: Funciones RBAC
 icon: bx bx-radio-circle-marked
 order: 3
 ---
 
-La integración del sistema de permisos ahora le permite restringir fácilmente secciones/páginas en todo el CMS. En esta página, encontrará documentación de las funciones disponibles para lograrlo.
+La integración del sistema RBAC en la base ahora permite restringir fácilmente secciones/páginas en todo el CMS. En esta página encontrará documentación de las funciones disponibles para lograrlo.
 
 ## has_permission
 

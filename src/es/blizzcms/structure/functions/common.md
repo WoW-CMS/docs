@@ -4,7 +4,7 @@ icon: bx bx-radio-circle-marked
 order: 1
 ---
 
-En la creación del CMS se definieron funciones muy importantes para su funcionamiento global, lo que se denomina funciones comunes. En esta página, puede encontrar documentación detallada al respecto.
+En la base del CMS hay funciones que son importantes para todos sus componentes llamadas funciones comunes. En esta página encontrará cuáles son e información detallada sobre las mismas.
 
 ## is_logged_in
 
