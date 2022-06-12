@@ -4,7 +4,7 @@ icon: bx bx-radio-circle-marked
 order: 1
 ---
 
-In the following guide, we will explain step by step the installation of the **LAMP** stack with the necessary requirements to run BlizzCMS.
+The following guide will explain step by step the installation of the **LAMP** stack with the necessary requirements to run BlizzCMS.
 
 ## Prerequisites
 

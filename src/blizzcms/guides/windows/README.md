@@ -7,3 +7,5 @@ dir:
 ---
 
 ## Content List
+
+- [Troubleshooting](../windows/troubleshooting.md)

@@ -4,7 +4,7 @@ icon: bx bx-radio-circle-marked
 order: 2
 ---
 
-En la siguiente guía explicaremos paso a paso la instalación del stack **LEMP** con los requisitos necesarios para ejecutar BlizzCMS.
+La siguiente guía explicará paso a paso la instalación del stack **LEMP** con los requisitos necesarios para ejecutar BlizzCMS.
 
 ## Requisitos Previos
 

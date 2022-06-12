@@ -4,7 +4,7 @@ icon: bx bx-radio-circle-marked
 order: 1
 ---
 
-En la siguiente guía explicaremos paso a paso la instalación del stack **LAMP** con los requisitos necesarios para ejecutar BlizzCMS.
+La siguiente guía explicará paso a paso la instalación del stack **LAMP** con los requisitos necesarios para ejecutar BlizzCMS.
 
 ## Requisitos Previos
 
