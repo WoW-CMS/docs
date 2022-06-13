@@ -1,6 +1,6 @@
 ---
 title: Funciones
-icon: bx bx-code-block
+icon: bx bx-code
 index: false
 ---
 

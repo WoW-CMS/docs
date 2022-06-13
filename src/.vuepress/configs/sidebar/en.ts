@@ -52,7 +52,7 @@ export const sidebarEn = sidebar({
         "database",
         {
           text: "Functions",
-          icon: "bx bx-code-block",
+          icon: "bx bx-code",
           prefix: "functions/",
           collapsable: true,
           children: "structure",
@@ -61,6 +61,13 @@ export const sidebarEn = sidebar({
           text: "Libraries",
           icon: "bx bx-library",
           prefix: "libraries/",
+          collapsable: true,
+          children: "structure",
+        },
+        {
+          text: "Models",
+          icon: "bx bx-transfer",
+          prefix: "models/",
           collapsable: true,
           children: "structure",
         },

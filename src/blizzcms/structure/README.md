@@ -16,3 +16,6 @@ dir:
   - [RBAC Functions](../structure/functions/rbac.md)
 - [Libraries](../structure/libraries)
   - [Template](../structure/libraries/template.md)
+- [Models](../structure/models)
+  - [Auth Model](../structure/models/auth.md)
+  - [Characters Model](../structure/models/characters.md)

@@ -71,7 +71,7 @@ $user = user(null, 2);
 `user_id` — _Obtener el id del usuario buscando un valor en una columna_
 
 ```php
-user_id($value, $column = 'username'): mixed
+user_id($value, $column = 'username'): int
 ```
 
 #### Parámetros
@@ -89,7 +89,7 @@ user_id($value, $column = 'username'): mixed
 
 #### Valores Devueltos
 
-Devuelve el **id** del usuario o **null** si no se encuentra el valor buscado.
+Devuelve el **id** del usuario o **0** si no se encuentra el valor buscado.
 
 #### Ejemplos
 

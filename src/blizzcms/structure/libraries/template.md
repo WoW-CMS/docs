@@ -1,7 +1,7 @@
 ---
 title: Template
 icon: bx bxs-layout
-order: 4
+order: 1
 ---
 
 Template is one of the integrated libraries that helps to create complex views in the CMS. On this page, you can find documentation of the available functions of this library.
