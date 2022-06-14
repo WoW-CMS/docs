@@ -22,9 +22,9 @@ current_date($format = null, $timezone = null): string
 | **$timezone** | string\|null | Zona horaria de la fecha |
 
 ::: info INFORMACIÓN
-Si no se establece **$format**, se utilizará el siguiente: `Y-m-d H:i:s`
+Si no se establece **$format**, se utilizará lo siguiente: `Y-m-d H:i:s`
 
-Si no se establece **$timezone**, se usará la configuración de CI predeterminada.
+Si no se establece **$timezone**, se utilizará lo siguiente: `UTC`
 :::
 
 #### Valores Devueltos
@@ -53,7 +53,7 @@ format_date($str, $format = null): string
 | **$format** | string\|null | Formato de la fecha |
 
 ::: info INFORMACIÓN
-Si no se establece **$format**, se utilizará el siguiente: `Y-m-d`
+Si no se establece **$format**, se utilizará lo siguiente: `Y-m-d`
 :::
 
 #### Valores Devueltos
@@ -84,9 +84,9 @@ add_interval($interval, $format = null, $timezone = null): string
 | **$timezone** | string\|null | Zona horaria de la fecha |
 
 ::: info INFORMACIÓN
-Si no se establece **$format**, se utilizará el siguiente: `Y-m-d H:i:s`
+Si no se establece **$format**, se utilizará lo siguiente: `Y-m-d H:i:s`
 
-Si no se establece **$timezone**, se usará la configuración de CI predeterminada.
+Si no se establece **$timezone**, se utilizará lo siguiente: `UTC`
 :::
 
 #### Valores Devueltos
@@ -118,7 +118,7 @@ remaining_minutes($date, $date_two, $timezone = null, $timezone_two = null): int
 | **$timezone\_two** | string\|null | Zona horaria de la segunda fecha |
 
 ::: info INFORMACIÓN
-Si no se establece **$timezone**/**$timezone_two**, se usará la configuración de CI predeterminada.
+Si no se establece **$timezone**/**$timezone_two**, se utilizará lo siguiente: `UTC`
 :::
 
 #### Valores Devueltos

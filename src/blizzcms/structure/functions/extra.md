@@ -24,7 +24,7 @@ current_date($format = null, $timezone = null): string
 ::: info INFORMATION
 If **$format** is not set, the following will be used: `Y-m-d H:i:s`
 
-If **$timezone** is not set, the default CI settings will be used.
+If **$timezone** is not set, the following will be used: `UTC`
 :::
 
 #### Return Values
@@ -86,7 +86,7 @@ add_interval($interval, $format = null, $timezone = null): string
 ::: info INFORMATION
 If **$format** is not set, the following will be used: `Y-m-d H:i:s`
 
-If **$timezone** is not set, the default CI settings will be used.
+If **$timezone** is not set, the following will be used: `UTC`
 :::
 
 #### Return Values
@@ -118,7 +118,7 @@ remaining_minutes($date, $date_two, $timezone = null, $timezone_two = null): int
 | **$timezone\_two** | string\|null | Second date timezone |
 
 ::: info INFORMATION
-If **$timezone**/**$timezone_two** is not set, the default CI settings will be used.
+If **$timezone**/**$timezone_two** is not set, the following will be used: `UTC`
 :::
 
 #### Return Values

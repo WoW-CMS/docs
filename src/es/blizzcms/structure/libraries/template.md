@@ -44,7 +44,7 @@ $this->template->head_tags($data): void
 | **$data** | array |  |
 
 ::: info INFORMACIÓN
-Puede agregar cada etiqueta usando el formato `[nombreetiqueta, [nombreatributo => valoratributo]]`
+Puede agregar cada etiqueta usando el formato `[tagname, [attributename => attributevalue]]`
 :::
 
 #### Valores Devueltos
@@ -85,7 +85,7 @@ $this->template->body_tags($data): void
 | **$data** | array |  |
 
 ::: info INFORMACIÓN
-Puede agregar cada etiqueta usando el formato `[nombreetiqueta, [nombreatributo => valoratributo]]`
+Puede agregar cada etiqueta usando el formato `[tagname, [attributename => attributevalue]]`
 :::
 
 #### Valores Devueltos
