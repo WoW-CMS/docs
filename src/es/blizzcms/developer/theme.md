@@ -35,7 +35,7 @@ La estructura proporcionada aquí puede variar según el desarrollador y la cant
 
 ## Cómo crear un tema?
 
-Para comenzar esta guía, crearemos un tema con el nombre **"example"**, el objetivo principal de este tema será anular el diseño predeterminado y la vista principal del módulo del usuario. Para ello crearemos la siguiente estructura:
+Para comenzar esta guía, crearemos un tema con el nombre `example`, el objetivo principal de este tema será anular el diseño predeterminado y la vista principal del módulo del usuario. Para ello crearemos la siguiente estructura:
 
 ```
 example

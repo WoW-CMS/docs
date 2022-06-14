@@ -44,7 +44,7 @@ $this->template->head_tags($data): void
 | **$data** | array |  |
 
 ::: info INFORMATION
-You can add each tag in the format `[tagname, [attributename => attributevalue]]`
+You can add each tag using the format `[tagname, [attributename => attributevalue]]`
 :::
 
 #### Return Values
@@ -85,7 +85,7 @@ $this->template->body_tags($data): void
 | **$data** | array |  |
 
 ::: info INFORMATION
-You can add each tag in the format `[tagname, [attributename => attributevalue]]`
+You can add each tag using the format `[tagname, [attributename => attributevalue]]`
 :::
 
 #### Return Values

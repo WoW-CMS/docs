@@ -8,7 +8,7 @@ De forma predeterminada, el CMS tiene su entorno configurado en **"production"**
 
 ## ¿Cómo cambiar el parámetro de entorno en Apache?
 
-Si instaló el CMS en **Apache**, busque en su carpeta principal el archivo **.htaccess** y edítelo agregando la siguiente línea al final del archivo:
+Si instaló el CMS en **Apache**, busque en su carpeta principal el archivo `.htaccess` y edítelo agregando la siguiente línea al final del archivo:
 
 ```apacheconf
 SetEnv CI_ENV development

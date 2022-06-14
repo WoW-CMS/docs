@@ -375,7 +375,7 @@ if (is_json($str))
 
 ## class_name
 
-`class_name` — _Get the class name of the game_
+`class_name` — _Get a class name_
 
 ```php
 class_name($id): string
@@ -389,7 +389,7 @@ class_name($id): string
 
 #### Return Values
 
-Returns class **name** or **unknown** if not exist.
+Returns the **name** of the class or **unknown** if it does not exist.
 
 #### Examples
 
@@ -400,7 +400,7 @@ echo class_name(6);
 
 ## race_name
 
-`race_name` — _Get the race name of the game_
+`race_name` — _Get a race name_
 
 ```php
 race_name($id): string
@@ -414,7 +414,7 @@ race_name($id): string
 
 #### Return Values
 
-Returns race **name** or **unknown** if not exist.
+Returns the **name** of the race or **unknown** if it does not exist.
 
 #### Examples
 
@@ -425,7 +425,7 @@ echo race_name(5);
 
 ## faction_name
 
-`faction_name` — _Get the faction name of the game through race id_
+`faction_name` — _Get a faction name_
 
 ```php
 faction_name($id): string
@@ -435,11 +435,11 @@ faction_name($id): string
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$id** | int | Race id |
+| **$id** | int | Faction id |
 
 #### Return Values
 
-Returns faction **name** or **unknown** if not exist.
+Returns the **name** of the faction or **unknown** if it does not exist.
 
 #### Examples
 
@@ -450,7 +450,7 @@ echo faction_name(1);
 
 ## zone_name
 
-`zone_name` — _Get the zone name of the game_
+`zone_name` — _Get a zone name_
 
 ```php
 zone_name($id): string
@@ -464,7 +464,7 @@ zone_name($id): string
 
 #### Return Values
 
-Returns zone **name** or **unknown** if not exist.
+Returns the **name** of the zone or **unknown** if it does not exist.
 
 #### Examples
 

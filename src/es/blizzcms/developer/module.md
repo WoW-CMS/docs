@@ -43,7 +43,7 @@ La estructura proporcionada aquí puede variar según el desarrollador y la cant
 
 ## Cómo crear un módulo básico?
 
-Para comenzar esta guía, crearemos un módulo con el nombre **"example"**, el enfoque principal de este módulo será mostrar un mensaje simple. Para ello crearemos la siguiente estructura:
+Para comenzar esta guía, crearemos un módulo con el nombre `example`, el enfoque principal de este módulo será mostrar un mensaje simple. Para ello crearemos la siguiente estructura:
 
 ```
 📂 example

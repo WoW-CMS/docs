@@ -43,7 +43,7 @@ The structure provided here may vary depending on the developer and the number o
 
 ## How to create a basic module?
 
-To start this guide we will create a module with the name **"example"**, the main focus of this module will be to display a simple message. To do this we will create the following structure:
+To start this guide we will create a module with the name `example`, the main focus of this module will be to display a simple message. To do this we will create the following structure:
 
 ```
 📂 example

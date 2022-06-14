@@ -375,7 +375,7 @@ if (is_json($str))
 
 ## class_name
 
-`class_name` — _Obtener el nombre de la clase del juego_
+`class_name` — _Obtener un nombre de clase_
 
 ```php
 class_name($id): string
@@ -400,7 +400,7 @@ echo class_name(6);
 
 ## race_name
 
-`race_name` — _Obtener el nombre de la raza del juego_
+`race_name` — _Obtener un nombre de raza_
 
 ```php
 race_name($id): string
@@ -425,7 +425,7 @@ echo race_name(5);
 
 ## faction_name
 
-`faction_name` — _Obtener el nombre de la facción del juego a través del id de la raza_
+`faction_name` — _Obtener un nombre de facción_
 
 ```php
 faction_name($id): string
@@ -435,11 +435,11 @@ faction_name($id): string
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$id** | int | Id de raza |
+| **$id** | int | Id de facción |
 
 #### Valores Devueltos
 
-Devuelve el **nombre** de la faction o **desconocido** si no existe.
+Devuelve el **nombre** de la facción o **desconocido** si no existe.
 
 #### Ejemplos
 
@@ -450,7 +450,7 @@ echo faction_name(1);
 
 ## zone_name
 
-`zone_name` — _Obtener el nombre de la zona del juego_
+`zone_name` — _Obtener un nombre de zona_
 
 ```php
 zone_name($id): string
