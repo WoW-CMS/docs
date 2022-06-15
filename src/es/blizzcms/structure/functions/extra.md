@@ -133,28 +133,28 @@ echo remaining_minutes('now', '2023-01-01 00:00:00');
 
 ## split_data
 
-`split_data` — _Obtener un determinado tipo de datos de un string_
+`split_data` — _Obtener un determinado tipo de string de los datos_
 
 ```php
-split_data($str, $type = 'letter', $key = null): mixed
+split_data($data, $type = 'not_digits', $key = null): mixed
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$str** | string |  |
-| **$type** | string | Tipo de datos a obtener |
+| **$data** | string |  |
+| **$type** | string | Tipo de string |
 | **$key** | int\|null | Clave del array |
 
 **Tipos:**
 
-- `letter`
-- `number`
+- `digits`
+- `not_digits`
 
 #### Valores Devueltos
 
-Devuelve un array con el tipo de dato indicado o si se usa el parámetro key, seleccionará un solo elemento del array.
+Devuelve un array con el tipo de string indicado o si se usa el parámetro key, seleccionará un solo elemento del array.
 
 #### Ejemplos
 
@@ -163,10 +163,10 @@ Devuelve un array con el tipo de dato indicado o si se usa el parámetro key, se
 echo split_data('4h20m30s');
 
 // Devuelve 'h'
-echo split_data('4h20m30s', 'letter', 0);
+echo split_data('4h20m30s', 'not_digits', 0);
 
 // Devuelve '20'
-echo split_data('4h20m30s', 'number', 1);
+echo split_data('4h20m30s', 'digits', 1);
 ```
 
 ## money_pieces
@@ -186,9 +186,9 @@ money_pieces($money, $type = 'g'): int
 
 **Tipo de pieza:**
 
-- **Oro:** `gold` o `g`
-- **Plata:** `silver` o `s`
-- **Cobre:** `copper` o `c`
+- `gold` o `g`
+- `silver` o `s`
+- `copper` o `c`
 
 #### Valores Devueltos
 
@@ -206,21 +206,21 @@ echo money_pieces('110340', 's');
 
 ## ordinal
 
-`ordinal` — _Establecer el indicador de sufijo ordinal en un número_
+`ordinal` — _Establecer sufijo ordinal_
 
 ```php
-ordinal($number): string
+ordinal($value): string
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$number** | int |  |
+| **$value** | int |  |
 
 #### Valores Devueltos
 
-Devuelve un número con un indicador de sufijo ordinal.
+Devuelve un string compuesto por el valor y el sufijo ordinal.
 
 #### Ejemplos
 
@@ -229,12 +229,12 @@ Devuelve un número con un indicador de sufijo ordinal.
 echo ordinal(1);
 ```
 
-## initial_letter
+## initial_character
 
-`initial_letter` — _Obtener la primera letra del string_
+`initial_character` — _Obtener el primer carácter del string_
 
 ```php
-initial_letter($str): string
+initial_character($str): string
 ```
 
 #### Parámetros
@@ -245,7 +245,7 @@ initial_letter($str): string
 
 #### Valores Devueltos
 
-Devuelve la primera letra del string en mayúsculas.
+Devuelve el primer carácter del string en mayúsculas.
 
 #### Ejemplos
 
@@ -256,46 +256,45 @@ echo initial_letter('nick');
 
 ## encrypt
 
-`encrypt` — _Cifrar un string_
+`encrypt` — _Cifrar datos_
 
 ```php
-encrypt($str): string
+encrypt($data): string
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$str** | string |  |
+| **$data** | string |  |
 
 #### Valores Devueltos
 
-Devuelve un string cifrado.
+Devuelve un string con los datos cifrados.
 
 #### Ejemplos
 
 ```php
-// Cifrar string
 echo encrypt('Esto es un string');
 ```
 
 ## decrypt
 
-`decrypt` — _Descifrar un string_
+`decrypt` — _Descifrar datos_
 
 ```php
-decrypt($str): string
+decrypt($data): string
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$str** | string |  |
+| **$data** | string | Datos encriptados |
 
 #### Valores Devueltos
 
-Devuelve un string descifrado.
+Devuelve un string con los datos descifrados.
 
 #### Ejemplos
 
@@ -304,7 +303,7 @@ $encrypt = encrypt('Esto es un string');
 
 echo $encrypt;
 
-// Descifrar string
+// Descifrar datos
 $decrypt = decrypt($encrypt);
 
 echo $decrypt;
@@ -312,23 +311,23 @@ echo $decrypt;
 
 ## html_purify
 
-`html_purify` — _Purificar un string usando HTMLPurifier_
+`html_purify` — _Purificar un string HTML usando HTMLPurifier_
 
 ```php
-html_purify($str, $type = null): string
+html_purify($html, $type = null): string
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$str** | string |  |
+| **$html** | string |  |
 | **$type** | string\|null | Tipo de contenido a purificar |
 
 **Tipos:**
 
+- `article`
 - `comment`
-- `content`
 - `minimal`
 
 #### Valores Devueltos

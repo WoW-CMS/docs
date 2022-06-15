@@ -133,28 +133,28 @@ echo remaining_minutes('now', '2023-01-01 00:00:00');
 
 ## split_data
 
-`split_data` — _Get a certain data type from a string_
+`split_data` — _Get a certain string type from the data_
 
 ```php
-split_data($str, $type = 'letter', $key = null): mixed
+split_data($data, $type = 'not_digits', $key = null): mixed
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$str** | string |  |
-| **$type** | string | Type of data to get |
+| **$data** | string |  |
+| **$type** | string | String type |
 | **$key** | int\|null | Array key |
 
 **Types:**
 
-- `letter`
-- `number`
+- `digits`
+- `not_digits`
 
 #### Return Values
 
-Returns an array with the indicated data type or if the key parameter is used, it will select a single element of the array.
+Returns an array with the indicated string type or if the key parameter is used, it will select a single element of the array.
 
 #### Examples
 
@@ -163,10 +163,10 @@ Returns an array with the indicated data type or if the key parameter is used, i
 echo split_data('4h20m30s');
 
 // Returns 'h'
-echo split_data('4h20m30s', 'letter', 0);
+echo split_data('4h20m30s', 'not_digits', 0);
 
 // Returns '20'
-echo split_data('4h20m30s', 'number', 1);
+echo split_data('4h20m30s', 'digits', 1);
 ```
 
 ## money_pieces
@@ -186,9 +186,9 @@ money_pieces($money, $type = 'g'): int
 
 **Piece type:**
 
-- **Gold:** `gold` or `g`
-- **Silver:** `silver` or `s`
-- **Copper:** `copper` or `c`
+- `gold` or `g`
+- `silver` or `s`
+- `copper` or `c`
 
 #### Return Values
 
@@ -206,21 +206,21 @@ echo money_pieces('110340', 's');
 
 ## ordinal
 
-`ordinal` — _Set ordinal suffix indicator to a number_
+`ordinal` — _Set ordinal suffix_
 
 ```php
-ordinal($number): string
+ordinal($value): string
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$number** | int |  |
+| **$value** | int |  |
 
 #### Return Values
 
-Returns a number with an ordinal suffix indicator.
+Returns a string composed of the value and ordinal suffix.
 
 #### Examples
 
@@ -229,12 +229,12 @@ Returns a number with an ordinal suffix indicator.
 echo ordinal(1);
 ```
 
-## initial_letter
+## initial_character
 
-`initial_letter` — _Get the first letter of the string_
+`initial_character` — _Get the first character of the string_
 
 ```php
-initial_letter($str): string
+initial_character($str): string
 ```
 
 #### Parameters
@@ -245,7 +245,7 @@ initial_letter($str): string
 
 #### Return Values
 
-Returns the first letter of the string in uppercase.
+Returns the first character of the string in uppercase.
 
 #### Examples
 
@@ -256,46 +256,45 @@ echo initial_letter('nick');
 
 ## encrypt
 
-`encrypt` — _Encrypt a string_
+`encrypt` — _Encrypt data_
 
 ```php
-encrypt($str): string
+encrypt($data): string
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$str** | string |  |
+| **$data** | string |  |
 
 #### Return Values
 
-Returns an encrypted string.
+Returns a string with the encrypted data.
 
 #### Examples
 
 ```php
-// Encrypt string
 echo encrypt('This is a string');
 ```
 
 ## decrypt
 
-`decrypt` — _Decrypt a string_
+`decrypt` — _Decrypt data_
 
 ```php
-decrypt($str): string
+decrypt($data): string
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$str** | string |  |
+| **$data** | string | Encrypted data |
 
 #### Return Values
 
-Returns a decrypted string.
+Returns a string with the decrypted data.
 
 #### Examples
 
@@ -304,7 +303,7 @@ $encrypt = encrypt('This is a string');
 
 echo $encrypt;
 
-// Decrypt string
+// Decrypt data
 $decrypt = decrypt($encrypt);
 
 echo $decrypt;
@@ -312,23 +311,23 @@ echo $decrypt;
 
 ## html_purify
 
-`html_purify` — _Purify a string using the HTMLPurifier_
+`html_purify` — _Purify an HTML string using the HTMLPurifier_
 
 ```php
-html_purify($str, $type = null): string
+html_purify($html, $type = null): string
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$str** | string |  |
+| **$html** | string |  |
 | **$type** | string\|null | Type of content to purify |
 
 **Types:**
 
+- `article`
 - `comment`
-- `content`
 - `minimal`
 
 #### Return Values
