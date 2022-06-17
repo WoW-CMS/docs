@@ -205,13 +205,13 @@ Como último paso, instalaremos PHP. Por lo que ejecutaremos los siguientes coma
 @tab:active Debian
 
 ```bash
-sudo apt install -y php php7.4-{fpm,cli,curl,gd,gmp,intl,json,mbstring,mysqlnd,openssl,soap,xml}
+sudo apt install -y php php7.4-{fpm,bcmath,cli,curl,gd,gmp,intl,json,mbstring,mysqlnd,openssl,soap,xml,zip}
 ```
 
 @tab Rocky
 
 ```bash
-sudo dnf install -y php php-{fpm,cli,curl,gd,gmp,intl,json,mbstring,mysqlnd,openssl,soap,xml}
+sudo dnf install -y php php-{fpm,bcmath,cli,curl,gd,gmp,intl,json,mbstring,mysqlnd,openssl,soap,xml,zip}
 ```
 
 :::
