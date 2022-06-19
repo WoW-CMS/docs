@@ -42,14 +42,14 @@ echo current_date();
 `format_date` — _Cambiar un string de fecha a otro formato específico_
 
 ```php
-format_date($str, $format = null): string
+format_date($date, $format = null): string
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$str** | string | String de fecha |
+| **$date** | string | String de fecha |
 | **$format** | string\|null | Formato de la fecha |
 
 ::: info INFORMACIÓN
@@ -105,7 +105,7 @@ echo add_interval('PT4H');
 `remaining_minutes` — _Obtener la cantidad de minutos que quedan entre dos fechas_
 
 ```php
-remaining_minutes($date, $date_two, $timezone = null, $timezone_two = null): int
+remaining_minutes($date, $dateTwo, $timezone = null, $timezoneTwo = null): int
 ```
 
 #### Parámetros
@@ -113,12 +113,12 @@ remaining_minutes($date, $date_two, $timezone = null, $timezone_two = null): int
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
 | **$date** | string | String de la primera fecha |
-| **$date\_two** | string | String de la segunda fecha |
+| **$dateTwo** | string | String de la segunda fecha |
 | **$timezone** | string\|null | Zona horaria de la primera fecha |
-| **$timezone\_two** | string\|null | Zona horaria de la segunda fecha |
+| **$timezoneTwo** | string\|null | Zona horaria de la segunda fecha |
 
 ::: info INFORMACIÓN
-Si no se establece **$timezone**/**$timezone_two**, se utilizará lo siguiente: `UTC`
+Si no se establece **$timezone**/**$timezoneTwo**, se utilizará lo siguiente: `UTC`
 :::
 
 #### Valores Devueltos
