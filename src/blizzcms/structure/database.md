@@ -233,7 +233,7 @@ order: 2
 | nickname | varchar(255) |  | UNI | NO |  |  |
 | username | varchar(255) |  | UNI | NO |  |  |
 | email | varchar(255) |  | UNI | NO |  |  |
-| role | int(10) | unsigned |  | NO | 2 |  |
+| role | int(10) | unsigned |  | NO | 0 |  |
 | dp | int(10) | unsigned |  | NO | 0 |  |
 | vp | int(10) | unsigned |  | NO | 0 |  |
 | avatar | varchar(255) |  |  | NO | '' |  |

@@ -132,7 +132,7 @@ Continuing with the creation of our theme we will now focus on the main part, th
     <title><?= $template['title'] ?></title>
     <link rel="icon" type="image/x-icon" href="<?= $template['location'].'assets/img/favicon.ico' ?>">
     <link rel="stylesheet" href="<?= $template['assets'].'css/uikit.min.css' ?>">
-    <link rel="stylesheet" href="<?= $template['assets'].'css/tom-select.uikit.css' ?>">
+    <link rel="stylesheet" href="<?= $template['assets'].'css/tom-select.uikit.min.css' ?>">
     <link rel="stylesheet" href="<?= $template['assets'].'css/default.css' ?>">
     <link rel="stylesheet" href="<?= $template['location'].'assets/css/example.css' ?>">
     <script src="<?= $template['assets'].'js/uikit.min.js' ?>"></script>

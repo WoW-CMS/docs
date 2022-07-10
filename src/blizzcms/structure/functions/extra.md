@@ -53,7 +53,7 @@ format_date($date, $format = null): string
 | **$format** | string\|null | Date format |
 
 ::: info INFORMATION
-If **$format** is not set, the following will be used: `Y-m-d`
+If **$format** is not set, the following will be used: `Y-m-d H:i:s`
 :::
 
 #### Return Values
@@ -64,21 +64,22 @@ Returns the changed format of the date string.
 
 ```php
 // Returns '2022-05-17 21:11:44'
-echo format_date('Tue, 17 May 2022 21:11:44 +0000', 'Y-m-d H:i:s');
+echo format_date('Tue, 17 May 2022 21:11:44 +0000');
 ```
 
-## add_interval
+## add_timespan
 
-`add_interval` — _Add an interval time to the current date_
+`add_timespan` — _Add timespan to a date_
 
 ```php
-add_interval($interval, $format = null, $timezone = null): string
+add_timespan($date, $interval, $format = null, $timezone = null): string
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
+| **$date** | string | Date string |
 | **$interval** | string | Interval |
 | **$format** | string\|null | Date format |
 | **$timezone** | string\|null | Date timezone |
@@ -97,7 +98,7 @@ Returns a date with the interval added.
 
 ```php
 // Returns current datetime + 4 hours
-echo add_interval('PT4H');
+echo add_timespan('now', 'PT4H');
 ```
 
 ## remaining_minutes
