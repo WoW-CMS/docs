@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://wow-cms.github.io/docs/sitemap.xml
