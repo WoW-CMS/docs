@@ -137,7 +137,7 @@ Continuing with the creation of our theme we will now focus on the main part, th
     <link rel="stylesheet" href="<?= $template['location'].'assets/css/example.css' ?>">
     <script src="<?= $template['assets'].'js/uikit.min.js' ?>"></script>
     <script src="<?= $template['assets'].'js/uikit-icons.min.js' ?>"></script>
-    <script src="<?= $template['assets'].'js/purecounter.js' ?>"></script>
+    <script src="<?= $template['assets'].'js/purecounter.min.js' ?>"></script>
     <script src="<?= $template['assets'].'js/tom-select.complete.min.js' ?>"></script>
     <script src="<?= $template['assets'].'fontawesome/js/all.min.js' ?>" defer></script>
     <?= $template['head_tags'] ?>

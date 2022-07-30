@@ -13,12 +13,12 @@ order: 2
 | Campo | Tipo | Atributos | Clave | Nulo | Predeterminado | Comentario |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
-| user_id | bigint(20) | unsigned |  | NO |  |  |
-| banned_by | bigint(20) | unsigned |  | NO |  |  |
-| reason | mediumtext |  |  | YES | NULL |  |
-| revoked_by | bigint(20) | unsigned |  | NO | 0 |  |
-| created_at | datetime |  |  | YES | NULL |  |
-| unban_at | datetime |  |  | YES | NULL |  |
+| type | enum('email','ip','user') |  |  | NO |  |  |
+| value | text |  |  | NO |  |  |
+| reason | mediumtext |  |  | NO |  |  |
+| strict | enum('no','yes') |  |  | NO | no |  |
+| start_at | datetime |  |  | NO | 0000-00-00 00:00:00 |  |
+| end_at | datetime |  |  | NO | 0000-00-00 00:00:00 |  |
 
 ## logs
 
@@ -252,7 +252,7 @@ order: 2
 | user_id | bigint(20) | unsigned |  | NO |  |  |
 | chooser | varchar(255) |  |  | NO |  |  |
 | hash | varchar(255) |  |  | NO |  |  |
-| type | enum('confirmation','password','remember') |  |  | NO | confirmation |  |
+| type | enum('confirmation','password','remember') |  |  | NO |  |  |
 | data | mediumtext |  |  | YES | NULL |  |
 | created_at | datetime |  |  | YES | NULL |  |
 | expired_at | datetime |  |  | YES | NULL |  |
