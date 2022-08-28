@@ -1,17 +1,17 @@
 ---
-title: Modelo Auth
+title: Modelo Server Auth
 icon: bx bx-radio-circle-marked
 order: 1
 ---
 
-El modelo auth es un modelo esencial para conectarse a la base de datos auth del servidor. En esta página, puede encontrar documentación de las funciones disponibles de este modelo.
+El modelo server auth es un modelo esencial para conectarse a la base de datos auth del servidor. En esta página, puede encontrar documentación de las funciones disponibles de este modelo.
 
 ## connect
 
-`$this->auth->connect()` — _Conectarse a la base de datos auth_
+`$this->server_auth->connect()` — _Conectarse a la base de datos auth_
 
 ```php
-$this->auth->connect(): object
+$this->server_auth->connect(): object
 ```
 
 #### Parámetros
@@ -25,7 +25,7 @@ Devuelve un **object** para conectarse a la base de datos auth.
 #### Ejemplos
 
 ```php
-$auth = $this->auth->connect();
+$auth = $this->server_auth->connect();
 
 // Devuelve la cantidad de baneos activos
 $count = $auth->from('account_banned')
@@ -35,10 +35,10 @@ $count = $auth->from('account_banned')
 
 ## account
 
-`$this->auth->account()` — _Obtener cuenta_
+`$this->server_auth->account()` — _Obtener cuenta_
 
 ```php
-$this->auth->account($id): mixed
+$this->server_auth->account($id): mixed
 ```
 
 #### Parámetros
@@ -55,15 +55,15 @@ Devuelve un **object** con todos los datos de la cuenta o **null** si no existe.
 
 ```php
 // Devuelve los datos de la cuenta si existe el id '1'
-$account = $this->auth->account(1);
+$account = $this->server_auth->account(1);
 ```
 
 ## account_id
 
-`$this->auth->account_id()` — _Obtener el id de la cuenta buscando un valor en una columna_
+`$this->server_auth->account_id()` — _Obtener el id de la cuenta buscando un valor en una columna_
 
 ```php
-$this->auth->account_id($value, $column = 'username'): int
+$this->server_auth->account_id($value, $column = 'username'): int
 ```
 
 #### Parámetros
@@ -86,18 +86,18 @@ Devuelve **id** de cuenta o **0** si no se encuentra el valor buscado.
 
 ```php
 // Devuelve el id de la cuenta si existe el nombre de usuario 'nick'
-$id = $this->auth->account_id('nick');
+$id = $this->server_auth->account_id('nick');
 
 // Devuelve el id de la cuenta si existe el correo electrónico 'example@domain.tld'
-$id = $this->auth->account_id('example@domain.tld', 'email');
+$id = $this->server_auth->account_id('example@domain.tld', 'email');
 ```
 
 ## account_exists
 
-`$this->auth->account_exists()` — _Comprobar si existe una cuenta con un valor de columna_
+`$this->server_auth->account_exists()` — _Comprobar si existe una cuenta con un valor de columna_
 
 ```php
-$this->auth->account_exists($value, $column = 'username'): bool
+$this->server_auth->account_exists($value, $column = 'username'): bool
 ```
 
 #### Parámetros
@@ -119,7 +119,7 @@ Devuelve **true** si el valor de la columna existe o **false** en caso de error.
 #### Ejemplos
 
 ```php
-if ($this->auth->account_exists('emina'))
+if ($this->server_auth->account_exists('emina'))
 {
     echo 'La cuenta con el nombre de usuario emina existe';
 }
@@ -127,10 +127,10 @@ if ($this->auth->account_exists('emina'))
 
 ## account_gmlevel
 
-`$this->auth->account_gmlevel()` — _Obtener el gmlevel de una cuenta_
+`$this->server_auth->account_gmlevel()` — _Obtener el gmlevel de una cuenta_
 
 ```php
-$this->auth->account_gmlevel($id = null): int
+$this->server_auth->account_gmlevel($id = null): int
 ```
 
 #### Parámetros
@@ -147,18 +147,18 @@ Devuelve el **gmlevel** de una cuenta o **0** si no tiene asignado.
 
 ```php
 // Devuelve el gmlevel de su cuenta si ha iniciado sesión
-$gmlevel = $this->auth->account_gmlevel();
+$gmlevel = $this->server_auth->account_gmlevel();
 
 // Devuelve el gmlevel de la cuenta '1'
-$gmlevel = $this->auth->account_gmlevel(1);
+$gmlevel = $this->server_auth->account_gmlevel(1);
 ```
 
 ## is_banned
 
-`$this->auth->is_banned()` — _Comprobar si una cuenta está baneada_
+`$this->server_auth->is_banned()` — _Comprobar si una cuenta está baneada_
 
 ```php
-$this->auth->is_banned($id = null): bool
+$this->server_auth->is_banned($id = null): bool
 ```
 
 #### Parámetros
@@ -174,12 +174,12 @@ Devuelve **true** si la cuenta está baneada o **false** en caso de error.
 #### Ejemplos
 
 ```php
-if ($this->auth->is_banned())
+if ($this->server_auth->is_banned())
 {
     echo 'Tu cuenta está baneada';
 }
 
-if ($this->auth->is_banned(1))
+if ($this->server_auth->is_banned(1))
 {
     echo 'La cuenta 1 está baneada';
 }

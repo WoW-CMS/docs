@@ -16,7 +16,6 @@ order: 2
 | type | enum('email','ip','user') |  |  | NO |  |  |
 | value | text |  |  | NO |  |  |
 | reason | mediumtext |  |  | NO |  |  |
-| strict | enum('no','yes') |  |  | NO | no |  |
 | start_at | datetime |  |  | NO | 0000-00-00 00:00:00 |  |
 | end_at | datetime |  |  | NO | 0000-00-00 00:00:00 |  |
 
@@ -97,6 +96,7 @@ order: 2
 | meta_robots | varchar(255) |  |  | YES |  |  |
 | discuss | tinyint(1) | unsigned |  | NO | 0 |  |
 | created_at | datetime |  |  | YES | NULL |  |
+| updated_at | datetime |  |  | YES | NULL |  |
 
 ## news_comments
 
@@ -143,8 +143,6 @@ order: 2
 | key | varchar(255) |  |  | NO |  |  |
 | module | varchar(255) |  |  | NO |  |  |
 | description | text |  |  | YES | NULL |  |
-| created_at | datetime |  |  | YES | NULL |  |
-| updated_at | datetime |  |  | YES | NULL |  |
 
 ## realms
 
@@ -180,8 +178,6 @@ order: 2
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | name | varchar(255) |  | UNI | NO |  |  |
 | description | varchar(255) |  |  | YES | NULL |  |
-| created_at | datetime |  |  | YES | NULL |  |
-| updated_at | datetime |  |  | YES | NULL |  |
 
 ## roles_permissions
 
