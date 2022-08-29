@@ -6,5 +6,5 @@ index: false
 
 ## Lista de Contenido
 
-- [Modelo Auth](../models/auth.md)
-- [Modelo Characters](../models/characters.md)
+- [Modelo Server Auth](../models/server-auth.md)
+- [Modelo Server Characters](../models/server-characters.md)

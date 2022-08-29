@@ -1,7 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
-export const sidebarEn = sidebar({
-  "/": [
+export const es = sidebar({
+  "/es/": [
     "",
     {
       text: "BlizzCMS",
@@ -17,11 +17,11 @@ export const sidebarEn = sidebar({
     },
   ],
 
-  "/blizzcms/": [
+  "/es/blizzcms/": [
     "",
     "getting-started",
     {
-      text: "Guides",
+      text: "Guías",
       icon: "bx bxs-book-reader",
       prefix: "guides/",
       collapsable: true,
@@ -43,7 +43,7 @@ export const sidebarEn = sidebar({
       ],
     },
     {
-      text: "Structure",
+      text: "Estructura",
       icon: "bx bxs-layer",
       prefix: "structure/",
       collapsable: true,
@@ -51,21 +51,21 @@ export const sidebarEn = sidebar({
         "constants",
         "database",
         {
-          text: "Functions",
+          text: "Funciones",
           icon: "bx bx-code",
           prefix: "functions/",
           collapsable: true,
           children: "structure",
         },
         {
-          text: "Libraries",
+          text: "Librerías",
           icon: "bx bx-library",
           prefix: "libraries/",
           collapsable: true,
           children: "structure",
         },
         {
-          text: "Models",
+          text: "Modelos",
           icon: "bx bx-transfer",
           prefix: "models/",
           collapsable: true,
@@ -74,7 +74,7 @@ export const sidebarEn = sidebar({
       ],
     },
     {
-      text: "Developer",
+      text: "Desarrollador",
       icon: "bx bxs-layer-plus",
       prefix: "developer/",
       collapsable: true,

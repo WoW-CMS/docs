@@ -1,7 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { hopeTheme } from "vuepress-theme-hope";
-import { navbarEn, navbarEs, sidebarEn, sidebarEs } from './configs';
+import * as navbar from "./navbar/index.js";
+import * as sidebar from "./sidebar/index.js";
 
 const base = (process.env.BASE as "/" | `/${string}/`) || "/";
 const hostname = process.env.HOSTNAME || "https://wow-cms.github.io";
@@ -46,12 +47,12 @@ export default defineUserConfig({
 
     locales: {
       "/": {
-        navbar: navbarEn,
-        sidebar: sidebarEn,
+        navbar: navbar.en,
+        sidebar: sidebar.en,
       },
       "/es/": {
-        navbar: navbarEs,
-        sidebar: sidebarEs,
+        navbar: navbar.es,
+        sidebar: sidebar.es,
       },
     },
 

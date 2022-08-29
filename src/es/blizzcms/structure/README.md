@@ -17,5 +17,5 @@ dir:
 - [Librerías](../structure/libraries)
   - [Template](../structure/libraries/template.md)
 - [Modelos](../structure/models)
-  - [Modelo Auth](../structure/models/auth.md)
-  - [Modelo Characters](../structure/models/characters.md)
+  - [Modelo Server Auth](../structure/models/server-auth.md)
+  - [Modelo Server Characters](../structure/models/server-characters.md)

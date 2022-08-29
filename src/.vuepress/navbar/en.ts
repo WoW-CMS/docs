@@ -1,6 +1,6 @@
 import { navbar } from "vuepress-theme-hope";
 
-export const navbarEn = navbar([
+export const en = navbar([
   {
     text: "Home",
     icon: "bx bxs-home",
