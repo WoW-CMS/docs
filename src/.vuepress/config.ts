@@ -1,8 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { hopeTheme } from "vuepress-theme-hope";
-import * as navbar from "./navbar/index.js";
-import * as sidebar from "./sidebar/index.js";
+import * as navbar from "./navbar/index";
+import * as sidebar from "./sidebar/index";
 
 const base = <"/" | `/${string}/`>process.env.BASE || "/";
 const hostname = process.env.HOSTNAME || "https://wow-cms.github.io";
