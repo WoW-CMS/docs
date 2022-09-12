@@ -29,10 +29,10 @@ order: 2
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | user_id | bigint(20) | unsigned |  | NO |  |  |
-| ip | varchar(255) |  |  | YES | NULL |  |
+| ip | varchar(255) |  |  | NO |  |  |
 | module | varchar(255) |  |  | YES | NULL |  |
 | action | varchar(255) |  |  | NO |  |  |
-| message | mediumtext |  |  | YES | NULL |  |
+| message | mediumtext |  |  | NO |  |  |
 | data | mediumtext |  |  | YES | NULL |  |
 | created_at | datetime |  |  | YES | NULL |  |
 
@@ -59,9 +59,9 @@ order: 2
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | menu_id | bigint(20) | unsigned |  | NO |  |  |
 | name | varchar(255) |  |  | NO |  |  |
-| url | varchar(255) |  |  | YES | NULL |  |
+| url | varchar(255) |  |  | NO |  |  |
 | target | enum('\_self','\_blank') |  |  | NO | \_self |  |
-| icon | varchar(255) |  |  | YES | NULL |  |
+| icon | varchar(255) |  |  | NO |  |  |
 | type | enum('link','dropdown') |  |  | NO | link |  |
 | parent | bigint(20) | unsigned |  | NO | 0 |  |
 | sort | bigint(20) | unsigned |  | NO | 0 |  |
@@ -86,10 +86,11 @@ order: 2
 | Campo | Tipo | Atributos | Clave | Nulo | Predeterminado | Comentario |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
-| title | varchar(255) |  |  | YES | NULL |  |
-| content | mediumtext |  |  | YES | NULL |  |
+| title | varchar(255) |  |  | NO |  |  |
+| summary | text |  |  | NO |  |  |
+| content | mediumtext |  |  | NO |  |  |
 | slug | varchar(255) |  |  | NO |  |  |
-| image | varchar(255) |  |  | YES | NULL |  |
+| image | varchar(255) |  |  | NO |  |  |
 | comments | bigint(20) | unsigned |  | NO | 0 |  |
 | views | bigint(20) | unsigned |  | NO | 0 |  |
 | meta_description | varchar(255) |  |  | YES |  |  |
@@ -122,8 +123,8 @@ order: 2
 | Campo | Tipo | Atributos | Clave | Nulo | Predeterminado | Comentario |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
-| title | varchar(255) |  |  | YES | NULL |  |
-| content | mediumtext |  |  | YES | NULL |  |
+| title | varchar(255) |  |  | NO |  |  |
+| content | mediumtext |  |  | NO |  |  |
 | slug | varchar(255) |  | UNI | NO |  |  |
 | views | bigint(20) | unsigned |  | NO | 0 |  |
 | meta_description | varchar(255) |  |  | YES | NULL |  |
@@ -156,8 +157,8 @@ order: 2
 | name | varchar(255) |  |  | NO |  |  |
 | max_cap | int(10) | unsigned |  | NO | 100 |  |
 | char_hostname | varchar(255) |  |  | NO | 127.0.0.1 |  |
-| char_username | varchar(255) |  |  | YES | NULL |  |
-| char_password | text |  |  | YES | NULL |  |
+| char_username | varchar(255) |  |  | NO |  |  |
+| char_password | text |  |  | NO |  |  |
 | char_database | varchar(255) |  |  | NO | characters |  |
 | char_port | smallint(6) | unsigned |  | NO | 3306 |  |
 | console_hostname | varchar(255) |  |  | NO |  |  |
@@ -200,7 +201,7 @@ order: 2
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | title | varchar(255) |  |  | NO |  |  |
-| description | text |  |  | YES | NULL |  |
+| description | text |  |  | NO |  |  |
 | type | enum('image','video','iframe') |  |  | NO | image |  |
 | path | text |  |  | NO |  |  |
 | sort | bigint(20) | unsigned |  | NO | 0 |  |
@@ -215,7 +216,8 @@ order: 2
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | ip | varchar(255) |  | PRI | NO |  |  |
 | attempts | tinyint(4) | unsigned |  | NO | 0 |  |
-| expires_at | datetime |  |  | YES | NULL |  |
+| reset_at | datetime |  |  | YES | NULL |  |
+| unlock_at | datetime |  |  | YES | NULL |  |
 
 ## users
 
@@ -234,7 +236,7 @@ order: 2
 | vp | int(10) | unsigned |  | NO | 0 |  |
 | avatar | varchar(255) |  |  | NO | '' |  |
 | language | varchar(255) |  |  | NO | english |  |
-| joined_at | datetime |  |  | YES | NULL |  |
+| created_at | datetime |  |  | YES | NULL |  |
 
 ## users_tokens
 
