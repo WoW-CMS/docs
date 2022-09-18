@@ -3,7 +3,6 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import theme from "./theme.js";
 
 const base = process.env.BASE || "/";
-const hostname = process.env.HOSTNAME || "https://wow-cms.github.io/";
 
 export default defineUserConfig({
   base,
