@@ -1,11 +1,9 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
-import { hopeTheme } from "vuepress-theme-hope";
-import * as navbar from "./navbar/index.js";
-import * as sidebar from "./sidebar/index.js";
+import theme from "./theme.js";
 
-const base = <"/" | `/${string}/`>process.env.BASE || "/";
-const hostname = process.env.HOSTNAME || "https://wow-cms.github.io";
+const base = process.env.BASE || "/";
+const hostname = process.env.HOSTNAME || "https://wow-cms.github.io/";
 
 export default defineUserConfig({
   base,
@@ -40,30 +38,7 @@ export default defineUserConfig({
     },
   },
 
-  theme: hopeTheme({
-    hostname,
-
-    docsDir: "src",
-
-    locales: {
-      "/": {
-        navbar: navbar.en,
-        sidebar: sidebar.en,
-      },
-      "/es/": {
-        navbar: navbar.es,
-        sidebar: sidebar.es,
-      },
-    },
-
-    fullscreen: true,
-
-    plugins: {
-      mdEnhance: {
-        tabs: true,
-      },
-    },
-  }),
+  theme,
 
   plugins: [
     searchPlugin({
