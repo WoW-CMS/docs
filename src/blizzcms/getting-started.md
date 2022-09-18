@@ -15,7 +15,7 @@ Before you get started, ensure you have the following:
 - **MySQL 5.7+** or **MariaDB 10.6+**
 - **PHP 7.4** or newer recommended
     - Enable extensions: bcmath - curl - gd - gmp - intl - mbstring - mysqli - openssl - soap - zip
-- **Composer 2.3+**
+- **Composer 2.4+**
 
 ::: info INFORMATION
 The CMS requires that you have a wow server pre-installed with its respective databases.
