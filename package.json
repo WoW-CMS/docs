@@ -1,0 +1,18 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Documentation for WoW-CMS projects",
+  "scripts": {
+    "src:build": "vuepress build src",
+    "src:dev": "vuepress dev src"
+  },
+  "author": "WoW-CMS",
+  "license": "MIT",
+  "dependencies": {
+    "@vuepress/client": "2.0.0-beta.49",
+    "@vuepress/plugin-search": "2.0.0-beta.49",
+    "vue": "3.2.37",
+    "vuepress": "2.0.0-beta.49",
+    "vuepress-theme-hope": "2.0.0-beta.91"
+  }
+}

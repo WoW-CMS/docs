@@ -1,0 +1,53 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  deploy-gh-pages:
+    name: Deploy docs to gh pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.10.0
+        with:
+          access_token: ${{ github.token }}
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+          run_install: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+
+      - name: Install Deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Docs
+        env:
+          BASE: /docs/
+          HOSTNAME: https://wow-cms.github.io
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: pnpm run src:build
+
+      - name: Deploy
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: src/.vuepress/dist
+          single-commit: true
