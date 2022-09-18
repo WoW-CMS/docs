@@ -8,10 +8,10 @@ The server auth model is an essential model for connecting to the auth database 
 
 ## connect
 
-`$this->server_auth->connect()` — _Connect to auth DB_
+`$this->server_auth_model->connect()` — _Connect to auth DB_
 
 ```php
-$this->server_auth->connect(): object
+$this->server_auth_model->connect(): object
 ```
 
 #### Parameters
@@ -25,7 +25,7 @@ Return an **object** to connect to auth database.
 #### Examples
 
 ```php
-$auth = $this->server_auth->connect();
+$auth = $this->server_auth_model->connect();
 
 // Returns quantity of active bans
 $count = $auth->from('account_banned')
@@ -35,10 +35,10 @@ $count = $auth->from('account_banned')
 
 ## account
 
-`$this->server_auth->account()` — _Get account_
+`$this->server_auth_model->account()` — _Get account_
 
 ```php
-$this->server_auth->account($id): mixed
+$this->server_auth_model->account($id): mixed
 ```
 
 #### Parameters
@@ -55,15 +55,15 @@ Returns an **object** with all the data of the account or **null** if not exist.
 
 ```php
 // Returns account data if the id '1' exists
-$account = $this->server_auth->account(1);
+$account = $this->server_auth_model->account(1);
 ```
 
 ## account_id
 
-`$this->server_auth->account_id()` — _Get the account id by searching a value in a column_
+`$this->server_auth_model->account_id()` — _Get the account id by searching a value in a column_
 
 ```php
-$this->server_auth->account_id($value, $column = 'username'): int
+$this->server_auth_model->account_id($value, $column = 'username'): int
 ```
 
 #### Parameters
@@ -86,18 +86,18 @@ Returns account **id**, or **0** if the searched value is not found.
 
 ```php
 // Returns the account id if the username 'nick' exists
-$id = $this->server_auth->account_id('nick');
+$id = $this->server_auth_model->account_id('nick');
 
 // Returns the account id if the email 'example@domain.tld' exists
-$id = $this->server_auth->account_id('example@domain.tld', 'email');
+$id = $this->server_auth_model->account_id('example@domain.tld', 'email');
 ```
 
 ## account_exists
 
-`$this->server_auth->account_exists()` — _Check if an account with a column value exists_
+`$this->server_auth_model->account_exists()` — _Check if an account with a column value exists_
 
 ```php
-$this->server_auth->account_exists($value, $column = 'username'): bool
+$this->server_auth_model->account_exists($value, $column = 'username'): bool
 ```
 
 #### Parameters
@@ -119,7 +119,7 @@ Returns **true** if the column value exist or **false** on failure.
 #### Examples
 
 ```php
-if ($this->server_auth->account_exists('emina'))
+if ($this->server_auth_model->account_exists('emina'))
 {
     echo 'The account with the username emina exists';
 }
@@ -127,10 +127,10 @@ if ($this->server_auth->account_exists('emina'))
 
 ## account_gmlevel
 
-`$this->server_auth->account_gmlevel()` — _Get the gmlevel of an account_
+`$this->server_auth_model->account_gmlevel()` — _Get the gmlevel of an account_
 
 ```php
-$this->server_auth->account_gmlevel($id = null): int
+$this->server_auth_model->account_gmlevel($id = null): int
 ```
 
 #### Parameters
@@ -147,18 +147,18 @@ Return the **gmlevel** of an account or **0** if it doesn't have assigned.
 
 ```php
 // Returns the gmlevel of your account if you are logged in
-$gmlevel = $this->server_auth->account_gmlevel();
+$gmlevel = $this->server_auth_model->account_gmlevel();
 
 // Returns the gmlevel of account '1'
-$gmlevel = $this->server_auth->account_gmlevel(1);
+$gmlevel = $this->server_auth_model->account_gmlevel(1);
 ```
 
 ## is_banned
 
-`$this->server_auth->is_banned()` — _Check if an account is banned_
+`$this->server_auth_model->is_banned()` — _Check if an account is banned_
 
 ```php
-$this->server_auth->is_banned($id = null): bool
+$this->server_auth_model->is_banned($id = null): bool
 ```
 
 #### Parameters
@@ -174,12 +174,12 @@ Returns **true** if the account is banned or **false** on failure.
 #### Examples
 
 ```php
-if ($this->server_auth->is_banned())
+if ($this->server_auth_model->is_banned())
 {
     echo 'Your account is banned';
 }
 
-if ($this->server_auth->is_banned(1))
+if ($this->server_auth_model->is_banned(1))
 {
     echo 'Account 1 is banned';
 }

@@ -8,10 +8,10 @@ The server characters model is an essential model for connecting to the characte
 
 ## connect
 
-`$this->server_characters->connect()` — _Connect to characters DB_
+`$this->server_characters_model->connect()` — _Connect to characters DB_
 
 ```php
-$this->server_characters->connect($realm): object
+$this->server_characters_model->connect($realm): object
 ```
 
 #### Parameters
@@ -27,7 +27,7 @@ Return an **object** to connect to character database.
 #### Examples
 
 ```php
-$characters = $this->server_characters->connect(1);
+$characters = $this->server_characters_model->connect(1);
 
 // Returns the number of characters whose race is human
 $count = $characters->from('characters')
@@ -37,10 +37,10 @@ $count = $characters->from('characters')
 
 ## character
 
-`$this->server_characters->character()` — _Get character_
+`$this->server_characters_model->character()` — _Get character_
 
 ```php
-$this->server_characters->character($realm, $guid): mixed
+$this->server_characters_model->character($realm, $guid): mixed
 ```
 
 #### Parameters
@@ -57,15 +57,15 @@ Returns an **object** with all the data of the character or **null** if not exis
 #### Examples
 
 ```php
-$character = $this->server_characters->character(1, 1);
+$character = $this->server_characters_model->character(1, 1);
 ```
 
 ## character_guid
 
-`$this->server_characters->character_guid()` — _Get character guid_
+`$this->server_characters_model->character_guid()` — _Get character guid_
 
 ```php
-$this->server_characters->character_guid($realm, $name): mixed
+$this->server_characters_model->character_guid($realm, $name): mixed
 ```
 
 #### Parameters
@@ -82,15 +82,15 @@ Returns the **guid** of the character or **null** if not exist.
 #### Examples
 
 ```php
-$guid = $this->server_characters->character_guid(1, 'Naeri');
+$guid = $this->server_characters_model->character_guid(1, 'Naeri');
 ```
 
 ## character_name
 
-`$this->server_characters->character_name()` — _Get character name_
+`$this->server_characters_model->character_name()` — _Get character name_
 
 ```php
-$this->server_characters->character_name($realm, $guid): mixed
+$this->server_characters_model->character_name($realm, $guid): mixed
 ```
 
 #### Parameters
@@ -107,15 +107,15 @@ Returns the **name** of the character or **null** if not exist.
 #### Examples
 
 ```php
-$name = $this->server_characters->character_name(1, 1);
+$name = $this->server_characters_model->character_name(1, 1);
 ```
 
 ## character_class
 
-`$this->server_characters->character_class()` — _Get character class_
+`$this->server_characters_model->character_class()` — _Get character class_
 
 ```php
-$this->server_characters->character_class($realm, $guid): mixed
+$this->server_characters_model->character_class($realm, $guid): mixed
 ```
 
 #### Parameters
@@ -132,15 +132,15 @@ Returns the **class** of the character or **null** if not exist.
 #### Examples
 
 ```php
-$class = $this->server_characters->character_class(1, 1);
+$class = $this->server_characters_model->character_class(1, 1);
 ```
 
 ## character_race
 
-`$this->server_characters->character_race()` — _Get character race_
+`$this->server_characters_model->character_race()` — _Get character race_
 
 ```php
-$this->server_characters->character_race($realm, $guid): mixed
+$this->server_characters_model->character_race($realm, $guid): mixed
 ```
 
 #### Parameters
@@ -157,15 +157,15 @@ Returns the **race** of the character or **null** if not exist.
 #### Examples
 
 ```php
-$race = $this->server_characters->character_race(1, 1);
+$race = $this->server_characters_model->character_race(1, 1);
 ```
 
 ## character_money
 
-`$this->server_characters->character_money()` — _Get character money_
+`$this->server_characters_model->character_money()` — _Get character money_
 
 ```php
-$this->server_characters->character_money($realm, $guid): mixed
+$this->server_characters_model->character_money($realm, $guid): mixed
 ```
 
 #### Parameters
@@ -182,15 +182,15 @@ Returns the amount of **money** that the character has or **null** if not exist.
 #### Examples
 
 ```php
-$money = $this->server_characters->character_money(1, 1);
+$money = $this->server_characters_model->character_money(1, 1);
 ```
 
 ## character_exists
 
-`$this->server_characters->character_exists()` — _Check if the character exists_
+`$this->server_characters_model->character_exists()` — _Check if the character exists_
 
 ```php
-$this->server_characters->character_exists($realm, $guid): bool
+$this->server_characters_model->character_exists($realm, $guid): bool
 ```
 
 #### Parameters
@@ -207,7 +207,7 @@ Returns **true** if the character exists or **false** on failure.
 #### Examples
 
 ```php
-if ($this->server_characters->character_exists(1, 1))
+if ($this->server_characters_model->character_exists(1, 1))
 {
     echo 'In the realm 1, the character with guid 1 exists';
 }
@@ -215,10 +215,10 @@ if ($this->server_characters->character_exists(1, 1))
 
 ## character_linked
 
-`$this->server_characters->character_linked()` — _Check if the character is linked to the account_
+`$this->server_characters_model->character_linked()` — _Check if the character is linked to the account_
 
 ```php
-$this->server_characters->character_linked($realm, $guid, $account): bool
+$this->server_characters_model->character_linked($realm, $guid, $account): bool
 ```
 
 #### Parameters
@@ -236,7 +236,7 @@ Returns **true** if the character is linked to the account or **false** on failu
 #### Examples
 
 ```php
-if ($this->server_characters->character_linked(1, 1, 1))
+if ($this->server_characters_model->character_linked(1, 1, 1))
 {
     echo 'In the realm 1, the character with guid 1 is linked to account 1';
 }
@@ -244,10 +244,10 @@ if ($this->server_characters->character_linked(1, 1, 1))
 
 ## characters_online
 
-`$this->server_characters->characters_online()` — _Count characters online_
+`$this->server_characters_model->characters_online()` — _Count characters online_
 
 ```php
-$this->server_characters->characters_online($realm, $faction = null): int
+$this->server_characters_model->characters_online($realm, $faction = null): int
 ```
 
 #### Parameters
@@ -270,15 +270,15 @@ Return the **number** of characters online depending on the faction.
 #### Examples
 
 ```php
-$online = $this->server_characters->characters_online(1, 'horde');
+$online = $this->server_characters_model->characters_online(1, 'horde');
 ```
 
 ## all_characters
 
-`$this->server_characters->all_characters()` — _Get all account characters_
+`$this->server_characters_model->all_characters()` — _Get all account characters_
 
 ```php
-$this->server_characters->all_characters($realm, $account): array
+$this->server_characters_model->all_characters($realm, $account): array
 ```
 
 #### Parameters
@@ -295,5 +295,5 @@ Returns an **array** with all the characters of an account in a realm.
 #### Examples
 
 ```php
-$characters = $this->server_characters->all_characters(1, 1);
+$characters = $this->server_characters_model->all_characters(1, 1);
 ```
