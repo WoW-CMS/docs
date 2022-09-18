@@ -4,7 +4,6 @@
   "description": "Documentation for WoW-CMS projects",
   "scripts": {
     "src:build": "vuepress build src",
-    "src:dev-clean": "vuepress dev src --clean-cache",
     "src:dev": "vuepress dev src"
   },
   "author": "WoW-CMS",
