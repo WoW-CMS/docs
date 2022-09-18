@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
-import theme from "./theme.js";
+import theme from "./theme";
 
 const base = process.env.BASE || "/";
 

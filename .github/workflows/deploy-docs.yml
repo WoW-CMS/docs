@@ -39,7 +39,7 @@ jobs:
           BASE: /docs/
           HOSTNAME: https://wow-cms.github.io/
           NODE_OPTIONS: --max_old_space_size=8192
-        run: pnpm run build:src
+        run: pnpm run src:build
 
       - name: Deploy
         if: ${{ github.event_name == 'push' }}
