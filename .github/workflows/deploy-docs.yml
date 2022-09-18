@@ -34,10 +34,13 @@ jobs:
           node-version: 16
           cache: pnpm
 
+      - name: Install Deps
+        run: pnpm install --frozen-lockfile
+
       - name: Build Docs
         env:
           BASE: /docs/
-          HOSTNAME: https://wow-cms.github.io/
+          HOSTNAME: https://wow-cms.github.io
           NODE_OPTIONS: --max_old_space_size=8192
         run: pnpm run src:build
 

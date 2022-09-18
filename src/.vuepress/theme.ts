@@ -2,7 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import * as navbar from "./navbar/index";
 import * as sidebar from "./sidebar/index";
 
-const hostname = process.env.HOSTNAME || "https://wow-cms.github.io/";
+const hostname = process.env.HOSTNAME || "https://wow-cms.github.io";
 
 export default hopeTheme({
     hostname,
