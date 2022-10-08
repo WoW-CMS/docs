@@ -163,7 +163,7 @@ Habiendo terminado de preparar los archivos en la carpeta config procederemos a 
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Example extends MX_Controller
+class Example extends BC_Controller
 {
     public function __construct()
     {

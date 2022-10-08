@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import * as navbar from "./navbar/index";
-import * as sidebar from "./sidebar/index";
+import { navbarEn, navbarEs } from "./navbar/index.js";
+import { sidebarEn, sidebarEs } from "./sidebar/index.js";
 
 const hostname = process.env.HOSTNAME || "https://wow-cms.github.io";
 
@@ -13,12 +13,12 @@ export default hopeTheme({
 
     locales: {
       "/": {
-        navbar: navbar.en,
-        sidebar: sidebar.en,
+        navbar: navbarEn,
+        sidebar: sidebarEn,
       },
       "/es/": {
-        navbar: navbar.es,
-        sidebar: sidebar.es,
+        navbar: navbarEs,
+        sidebar: sidebarEs,
       },
     },
 

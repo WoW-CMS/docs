@@ -1,6 +1,6 @@
-import { sidebar } from "vuepress-theme-hope";
+import type { HopeThemeSidebarConfig } from "vuepress-theme-hope";
 
-export const es = sidebar({
+export const sidebarEs: HopeThemeSidebarConfig = {
   "/es/": [
     "",
     {
@@ -88,4 +88,4 @@ export const es = sidebar({
       children: "structure",
     },
   ],
-});
+}
