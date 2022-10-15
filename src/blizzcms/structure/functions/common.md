@@ -133,33 +133,6 @@ echo user_avatar();
 echo user_avatar(2);
 ```
 
-## activity_log
-
-`activity_log` — _Create a new activity log_
-
-```php
-activity_log($action, $message, $data = [], $module = null): bool
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------- | ------- | ------- |
-| **$action** | string | Action |
-| **$message** | string | Message |
-| **$data** | array | Associative array of data |
-| **$module** | string\|null | Module name |
-
-#### Return Values
-
-Returns **true** if the log is created or **false** on failure.
-
-#### Examples
-
-```php
-activity_log('create', 'Added a comment');
-```
-
 ## require_login
 
 `require_login` — _Require user to be logged in_

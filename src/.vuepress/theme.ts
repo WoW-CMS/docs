@@ -9,6 +9,8 @@ export default hopeTheme({
 
     docsDir: "src",
 
+    darkmode: "enable",
+
     fullscreen: true,
 
     locales: {
@@ -24,6 +26,8 @@ export default hopeTheme({
 
     plugins: {
       mdEnhance: {
+        attrs: true,
+        codetabs: true,
         tabs: true,
       },
     },

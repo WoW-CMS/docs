@@ -30,10 +30,12 @@ order: 2
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | user_id | bigint(20) | unsigned |  | NO |  |  |
 | ip | varchar(255) |  |  | NO |  |  |
-| module | varchar(255) |  |  | YES | NULL |  |
-| action | varchar(255) |  |  | NO |  |  |
-| message | mediumtext |  |  | NO |  |  |
-| data | mediumtext |  |  | YES | NULL |  |
+| status | enum('failed','succeeded') |  |  | NO | succeeded |  |
+| object | varchar(255) |  |  | NO |  |  |
+| event | varchar(255) |  |  | NO |  |  |
+| message | text |  |  | NO |  |  |
+| data | mediumtext |  |  | NO |  |  |
+| uri | varchar(255) |  |  | NO |  |  |
 | created_at | datetime |  |  | YES | NULL |  |
 
 ## menus

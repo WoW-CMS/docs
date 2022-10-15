@@ -133,33 +133,6 @@ echo user_avatar();
 echo user_avatar(2);
 ```
 
-## activity_log
-
-`activity_log` — _Crear un nuevo registro de actividad_
-
-```php
-activity_log($action, $message, $data = [], $module = null): bool
-```
-
-#### Parámetros
-
-| Parámetro | Tipo | Descripción |
-| ------- | ------- | ------- |
-| **$action** | string | Acción |
-| **$message** | string | Mensaje |
-| **$data** | array | Array asociativo de datos |
-| **$module** | string\|null | Nombre del módulo |
-
-#### Valores Devueltos
-
-Devuelve **true** si se crea el registro o **false** en caso de error.
-
-#### Ejemplos
-
-```php
-activity_log('create', 'Added a comment');
-```
-
 ## require_login
 
 `require_login` — _Requerir que el usuario inicie sesión_
