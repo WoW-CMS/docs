@@ -48,7 +48,7 @@ order: 2
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | name | varchar(255) |  | UNI | NO |  |  |
-| description | varchar(255) |  |  | YES | NULL |  |
+| description | varchar(255) |  |  | NO |  |  |
 
 ## menus_items
 
@@ -95,8 +95,8 @@ order: 2
 | image | varchar(255) |  |  | NO |  |  |
 | comments | bigint(20) | unsigned |  | NO | 0 |  |
 | views | bigint(20) | unsigned |  | NO | 0 |  |
-| meta_description | varchar(255) |  |  | YES |  |  |
-| meta_robots | varchar(255) |  |  | YES |  |  |
+| meta_description | varchar(255) |  |  | NO | '' |  |
+| meta_robots | varchar(255) |  |  | NO |  | index, follow |
 | discuss | tinyint(1) | unsigned |  | NO | 0 |  |
 | created_at | datetime |  |  | YES | NULL |  |
 | updated_at | datetime |  |  | YES | NULL |  |
@@ -129,8 +129,8 @@ order: 2
 | content | mediumtext |  |  | NO |  |  |
 | slug | varchar(255) |  | UNI | NO |  |  |
 | views | bigint(20) | unsigned |  | NO | 0 |  |
-| meta_description | varchar(255) |  |  | YES | NULL |  |
-| meta_robots | varchar(255) |  |  | YES | NULL |  |
+| meta_description | varchar(255) |  |  | NO | '' |  |
+| meta_robots | varchar(255) |  |  | NO | index, follow |  |
 | created_at | datetime |  |  | YES | NULL |  |
 | updated_at | datetime |  |  | YES | NULL |  |
 
@@ -145,7 +145,7 @@ order: 2
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | key | varchar(255) |  |  | NO |  |  |
 | module | varchar(255) |  |  | NO |  |  |
-| description | text |  |  | YES | NULL |  |
+| description | text |  |  | NO |  |  |
 
 ## realms
 
@@ -180,7 +180,7 @@ order: 2
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | name | varchar(255) |  | UNI | NO |  |  |
-| description | varchar(255) |  |  | YES | NULL |  |
+| description | varchar(255) |  |  | NO |  |  |
 
 ## roles_permissions
 
@@ -253,6 +253,6 @@ order: 2
 | chooser | varchar(255) |  |  | NO |  |  |
 | hash | varchar(255) |  |  | NO |  |  |
 | type | enum('confirmation','password','remember') |  |  | NO |  |  |
-| data | mediumtext |  |  | YES | NULL |  |
+| data | mediumtext |  |  | NO |  |  |
 | created_at | datetime |  |  | YES | NULL |  |
 | expired_at | datetime |  |  | YES | NULL |  |
