@@ -11,8 +11,6 @@ export default hopeTheme({
 
     darkmode: "enable",
 
-    fullscreen: true,
-
     locales: {
       "/": {
         navbar: navbarEn,
