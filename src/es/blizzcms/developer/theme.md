@@ -132,13 +132,13 @@ Siguiendo con la creación de nuestro tema ahora nos centraremos en la parte pri
     <title><?= $template['title'] ?></title>
     <link rel="icon" type="image/x-icon" href="<?= $template['location'].'assets/img/favicon.ico' ?>">
     <link rel="stylesheet" href="<?= $template['assets'].'css/uikit.min.css' ?>">
-    <link rel="stylesheet" href="<?= $template['assets'].'css/tom-select.uikit.min.css' ?>">
+    <link rel="stylesheet" href="<?= $template['assets'].'css/tail.select.min.css' ?>">
     <link rel="stylesheet" href="<?= $template['assets'].'css/default.css' ?>">
     <link rel="stylesheet" href="<?= $template['location'].'assets/css/example.css' ?>">
     <script src="<?= $template['assets'].'js/uikit.min.js' ?>"></script>
     <script src="<?= $template['assets'].'js/uikit-icons.min.js' ?>"></script>
+    <script src="<?= $template['assets'].'js/tail.select.min.js' ?>"></script>
     <script src="<?= $template['assets'].'js/purecounter.min.js' ?>"></script>
-    <script src="<?= $template['assets'].'js/tom-select.complete.min.js' ?>"></script>
     <script src="<?= $template['assets'].'fontawesome/js/all.min.js' ?>" defer></script>
     <?= $template['head_tags'] ?>
   </head>
@@ -146,7 +146,7 @@ Siguiendo con la creación de nuestro tema ahora nos centraremos en la parte pri
 
     <?= $template['body'] ?>
 
-    <script src="<?= $template['assets'].'js/global.js' ?>"></script>
+    <script src="<?= $template['assets'].'js/main.js' ?>"></script>
     <?= $template['body_tags'] ?>
   </body>
 </html>
@@ -161,7 +161,7 @@ Como puede ver en el archivo, las líneas utilizadas son etiquetas HTML presente
 - **_Línea 11_:** Línea que contiene nuestro CSS del tema "ejemplo" para anular el predeterminado.
 - **_Línea 17_:** Línea utilizada por la librería template para agregar etiquetas al head (meta/scripts/links).
 - **_Línea 21_:** Línea utilizada por la librería template para agregar la vista parcial.
-- **_Línea 23_:** Línea que contiene el script global.js (Este archivo inicializa tom-select y purecounter).
+- **_Línea 23_:** Línea que contiene el script main.js (Este archivo inicializa tail select y purecounter).
 - **_Línea 24_:** Línea utilizada por la librería template para agregar etiquetas al body (scripts).
 
 ::: info INFORMACIÓN

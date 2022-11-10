@@ -132,13 +132,13 @@ Continuing with the creation of our theme we will now focus on the main part, th
     <title><?= $template['title'] ?></title>
     <link rel="icon" type="image/x-icon" href="<?= $template['location'].'assets/img/favicon.ico' ?>">
     <link rel="stylesheet" href="<?= $template['assets'].'css/uikit.min.css' ?>">
-    <link rel="stylesheet" href="<?= $template['assets'].'css/tom-select.uikit.min.css' ?>">
+    <link rel="stylesheet" href="<?= $template['assets'].'css/tail.select.min.css' ?>">
     <link rel="stylesheet" href="<?= $template['assets'].'css/default.css' ?>">
     <link rel="stylesheet" href="<?= $template['location'].'assets/css/example.css' ?>">
     <script src="<?= $template['assets'].'js/uikit.min.js' ?>"></script>
     <script src="<?= $template['assets'].'js/uikit-icons.min.js' ?>"></script>
+    <script src="<?= $template['assets'].'js/tail.select.min.js' ?>"></script>
     <script src="<?= $template['assets'].'js/purecounter.min.js' ?>"></script>
-    <script src="<?= $template['assets'].'js/tom-select.complete.min.js' ?>"></script>
     <script src="<?= $template['assets'].'fontawesome/js/all.min.js' ?>" defer></script>
     <?= $template['head_tags'] ?>
   </head>
@@ -146,7 +146,7 @@ Continuing with the creation of our theme we will now focus on the main part, th
 
     <?= $template['body'] ?>
 
-    <script src="<?= $template['assets'].'js/global.js' ?>"></script>
+    <script src="<?= $template['assets'].'js/main.js' ?>"></script>
     <?= $template['body_tags'] ?>
   </body>
 </html>
@@ -161,7 +161,7 @@ As you can see in the file, the lines used are HTML tags present in all the page
 - **_Line 11_:** Line containing our "example" theme CSS to override the default.
 - **_Line 17_:** Line used by the template library to add tags to the head (meta/scripts/links).
 - **_Line 21_:** Line used by the template library to add the partial view.
-- **_Line 23_:** Line containing the script global.js (This file initializes tom-select and purecounter).
+- **_Line 23_:** Line containing the script main.js (This file initializes tail select and purecounter).
 - **_Line 24_:** Line used by the template library to add tags to the body (scripts).
 
 ::: info INFORMATION

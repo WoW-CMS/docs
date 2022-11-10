@@ -230,31 +230,6 @@ Devuelve un string compuesto por el valor y el sufijo ordinal.
 echo ordinal(1);
 ```
 
-## initial_character
-
-`initial_character` — _Obtener el primer carácter del string_
-
-```php
-initial_character($str): string
-```
-
-#### Parámetros
-
-| Parámetro | Tipo | Descripción |
-| ------- | ------- | ------- |
-| **$str** | string |  |
-
-#### Valores Devueltos
-
-Devuelve el primer carácter del string en mayúsculas.
-
-#### Ejemplos
-
-```php
-// Devuelve 'N'
-echo initial_letter('nick');
-```
-
 ## encrypt
 
 `encrypt` — _Cifrar datos_
