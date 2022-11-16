@@ -25,8 +25,7 @@ Returns **true** if the user has logged in or **false** on failure.
 #### Examples
 
 ```php
-if (is_logged_in())
-{
+if (is_logged_in()) {
     echo 'The user is already logged in';
 }
 ```

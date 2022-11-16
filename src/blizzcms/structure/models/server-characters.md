@@ -207,8 +207,7 @@ Returns **true** if the character exists or **false** on failure.
 #### Examples
 
 ```php
-if ($this->server_characters_model->character_exists(1, 1))
-{
+if ($this->server_characters_model->character_exists(1, 1)) {
     echo 'In the realm 1, the character with guid 1 exists';
 }
 ```
@@ -236,8 +235,7 @@ Returns **true** if the character is linked to the account or **false** on failu
 #### Examples
 
 ```php
-if ($this->server_characters_model->character_linked(1, 1, 1))
-{
+if ($this->server_characters_model->character_linked(1, 1, 1)) {
     echo 'In the realm 1, the character with guid 1 is linked to account 1';
 }
 ```

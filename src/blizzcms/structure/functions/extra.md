@@ -342,8 +342,7 @@ Returns **true** if the string has a valid JSON format or **false** on failure.
 ```php
 $str = '{"name":"example"}';
 
-if (is_json($str))
-{
+if (is_json($str)) {
     echo 'This string has JSON format';
 }
 ```

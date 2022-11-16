@@ -112,7 +112,7 @@ order: 2
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | news_id | bigint(20) | unsigned |  | NO |  |  |
 | user_id | bigint(20) | unsigned |  | NO |  |  |
-| content | mediumtext |  |  | NO |  |  |
+| comment_content | mediumtext |  |  | NO |  |  |
 | created_at | datetime |  |  | YES | NULL |  |
 | created_at | datetime |  |  | YES | NULL |  |
 
@@ -156,8 +156,8 @@ order: 2
 | Field | Type | Attributes | Key | Null | Default | Comment |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
-| name | varchar(255) |  |  | NO |  |  |
-| max_cap | int(10) | unsigned |  | NO | 100 |  |
+| realm_name | varchar(255) |  |  | NO |  |  |
+| realm_capacity | int(10) | unsigned |  | NO | 100 |  |
 | char_hostname | varchar(255) |  |  | NO | 127.0.0.1 |  |
 | char_username | varchar(255) |  |  | NO |  |  |
 | char_password | text |  |  | NO |  |  |

@@ -25,8 +25,7 @@ Devuelve **true** si el usuario ha iniciado sesión o **false** en caso de error
 #### Ejemplos
 
 ```php
-if (is_logged_in())
-{
+if (is_logged_in()) {
     echo 'El usuario ya está logueado';
 }
 ```

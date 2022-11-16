@@ -119,8 +119,7 @@ Returns **true** if the column value exist or **false** on failure.
 #### Examples
 
 ```php
-if ($this->server_auth_model->account_exists('emina'))
-{
+if ($this->server_auth_model->account_exists('emina')) {
     echo 'The account with the username emina exists';
 }
 ```
@@ -174,13 +173,11 @@ Returns **true** if the account is banned or **false** on failure.
 #### Examples
 
 ```php
-if ($this->server_auth_model->is_banned())
-{
+if ($this->server_auth_model->is_banned()) {
     echo 'Your account is banned';
 }
 
-if ($this->server_auth_model->is_banned(1))
-{
+if ($this->server_auth_model->is_banned(1)) {
     echo 'Account 1 is banned';
 }
 ```

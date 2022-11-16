@@ -29,13 +29,11 @@ Devuelve **true** si el usuario tiene el permiso o **false** en caso de error.
 #### Ejemplos
 
 ```php
-if (has_permission('create_tags', 'example'))
-{
+if (has_permission('create_tags', 'example')) {
     echo 'Tienes permiso para crear etiquetas';
 }
 
-if (has_permission('create_tags', 'example', 2))
-{
+if (has_permission('create_tags', 'example', 2)) {
     echo 'El usuario 2 tiene permiso para crear etiquetas';
 }
 ```

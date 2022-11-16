@@ -163,13 +163,13 @@ Habiendo terminado de preparar los archivos en la carpeta config procederemos a 
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Example extends BC_Controller
+class Example extends BS_Controller
 {
     public function __construct()
     {
         parent::__construct();
 
-        mod_located('example', true);
+        is_module_installed('example', true);
     }
 
     public function index()
