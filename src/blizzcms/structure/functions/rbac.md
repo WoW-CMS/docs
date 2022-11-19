@@ -29,12 +29,12 @@ Returns **true** if the user has the permission or **false** on failure.
 #### Examples
 
 ```php
-if (has_permission('create_tags', 'example')) {
-    echo 'You have permission for creating tags';
+if (has_permission('add.tags', 'example')) {
+    echo 'You have permission to add tags';
 }
 
-if (has_permission('create_tags', 'example', 2)) {
-    echo 'User 2 has permission for creating tags';
+if (has_permission('add.tags', 'example', 2)) {
+    echo 'User 2 has permission to add tags';
 }
 ```
 
@@ -61,7 +61,7 @@ Returns an **exception page** if the user does not have the permission.
 #### Examples
 
 ```php
-require_permission('create_news', 'example');
+require_permission('add.news', 'example');
 ```
 
 ## Reserved Permissions

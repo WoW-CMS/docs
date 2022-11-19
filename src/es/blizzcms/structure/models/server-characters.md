@@ -253,7 +253,7 @@ $this->server_characters_model->characters_online($realm, $faction = null): int
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
 | **$realm** | int | Id de reino |
-| **$faction** | int | Tipo de facción |
+| **$faction** | string\|null | Tipo de facción |
 
 **Tipos de facción:**
 

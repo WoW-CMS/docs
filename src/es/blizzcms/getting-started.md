@@ -14,7 +14,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
     - Habilitar módulos: mod_headers - mod_rewrite
 - **MySQL 5.7+** o **MariaDB 10.6+**
 - **PHP 7.4** o más reciente recomendado
-    - Habilitar extensiones: bcmath - curl - gd - gmp - intl - mbstring - mysqli - openssl - soap - zip
+    - Habilitar extensiones: bcmath - curl - gd - gmp - mbstring - mysqli - openssl - soap - zip
 - **Composer 2.4+**
 
 ::: info INFORMACIÓN

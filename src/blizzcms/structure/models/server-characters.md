@@ -253,7 +253,7 @@ $this->server_characters_model->characters_online($realm, $faction = null): int
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
 | **$realm** | int | Realm id |
-| **$faction** | int | Faction type |
+| **$faction** | string\|null | Faction type |
 
 **Faction types:**
 

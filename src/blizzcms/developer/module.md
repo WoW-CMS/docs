@@ -48,16 +48,16 @@ To start this guide we will create a module with the name `example`, the main fo
 ```
 📂 example
 |── 📂 config
-|    └── 🗒️ migration.php  <--- New empty file
-|    └── 🗒️ module.php  <--- New empty file
-|    └── 🗒️ routes.php  <--- New empty file
+|    └── 🗒️ migration.php
+|    └── 🗒️ module.php
+|    └── 🗒️ routes.php
 |── 📂 controllers
-|    └── 🗒️ Example.php  <--- New empty file
+|    └── 🗒️ Example.php
 |── 📂 language
 |── 📂 migrations
 |── 📂 models
 └── 📂 views
-     └── 🗒️ index.php  <--- New empty file
+     └── 🗒️ index.php
 ```
 
 ::: info INFORMATION

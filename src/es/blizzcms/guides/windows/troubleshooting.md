@@ -12,7 +12,7 @@ Si tienes este problema mencionado anteriormente, lo más probable es que tu pro
 
 ### Paso 1: Descargar Certificado CA
 
-Primero, descargue la última versión de `cacert.pem` desde [aquí](https://curl.se/docs/caextract.html) y mueva el archivo a la carpeta de instalación del servidor web que tiene instalado, para este ejemplo se utilizará la siguiente ruta `C:/wamp64/extras/cacert.pem` (ref: WampServer).
+En primer lugar, descargue la última versión de `cacert.pem` desde [aquí](https://curl.se/docs/caextract.html) y mueva el archivo a la carpeta de instalación del servidor web que tiene instalado, para este ejemplo se utilizará la siguiente ruta `C:/wamp64/extras/cacert.pem` (ref: WampServer).
 
 ### Paso 2: Editar Archivo php.ini
 
@@ -30,4 +30,4 @@ curl.cainfo = "C:/wamp64/extras/cacert.pem"
 openssl.cafile = "C:/wamp64/extras/cacert.pem"
 ```
 
-Finalmente, guarda los cambios y reinicia el servidor web para que se apliquen los cambios realizados.
+Por último, guarda los cambios y reinicia el servidor web para que se apliquen los cambios realizados.

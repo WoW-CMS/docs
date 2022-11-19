@@ -41,14 +41,14 @@ To start this guide we will create a theme with the name `example`, the main foc
 example
 |── 📂 assets
 |    └── 📂 css
-|         └── 🗒️ example.css  <--- New empty file
+|         └── 🗒️ example.css
 |── 📂 modules
 |    └── 📂 user
-|         └── 🗒️ index.php  <--- New empty file
+|         └── 🗒️ index.php
 |── 📂 views
 |     └── 📂 layouts
-|          └── 🗒️ layout.php  <--- New empty file
-└── 🗒️ theme.php  <--- New empty file
+|          └── 🗒️ layout.php
+└── 🗒️ theme.php
 ```
 
 ::: info INFORMATION

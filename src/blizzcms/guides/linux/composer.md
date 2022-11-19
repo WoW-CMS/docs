@@ -18,7 +18,7 @@ Now let's start :nerd_face:
 
 ## Install PHP Composer
 
-First, download the latest version of the PHP Composer installation script by running the following command:
+First of all, download the latest version of the PHP Composer installation script by running the following command:
 
 ```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -46,7 +46,7 @@ Then to delete the installer we will execute the following command:
 php -r "unlink('composer-setup.php');"
 ```
 
-Finally, to verify that composer works, run the following command:
+Lastly, to verify that composer works, run the following command:
 
 ```bash
 composer

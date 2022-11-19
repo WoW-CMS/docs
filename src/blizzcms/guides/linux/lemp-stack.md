@@ -10,60 +10,52 @@ The following guide will explain step by step the installation of the **LEMP** s
 
 Before you get started, ensure you have the following:
 
-- An instance with **Linux OS** (Debian/Ubuntu/Rocky)
+- An instance with **Linux OS** (Debian/Rocky)
 - A root user or sudo user configured
 
 Now let's start :nerd_face:
 
 ## Step 1: Install Nginx
 
-We will start with the installation of the package for Nginx which is the outstanding feature of this stack, so depending on your operating system run the following command:
+We will start with the installation of the package for Nginx which is the outstanding feature of this stack, so depending on your operating system follow the instructions below:
 
 ::: tabs#os
 
 @tab:active Debian
+
+First of all, we will install the Nginx package with the command:
 
 ```bash
 sudo apt install nginx
 ```
 
-@tab Rocky
-
-```bash
-sudo dnf install nginx
-```
-
-:::
-
 Once installed, We will enable it to automatically start on reboot with:
-
-::: tabs#os
-
-@tab:active Debian
 
 ```bash
 sudo systemctl enable nginx
 ```
 
-@tab Rocky
-
-```bash
-sudo systemctl enable nginx --now
-```
-
-:::
-
 Lastly, we will verify that the activated service has no errors with:
-
-::: tabs#os
-
-@tab:active Debian
 
 ```bash
 sudo systemctl status nginx
 ```
 
 @tab Rocky
+
+First of all, we will install the Nginx package with the command:
+
+```bash
+sudo dnf install nginx
+```
+
+Once installed, We will enable it to automatically start on reboot with:
+
+```bash
+sudo systemctl enable nginx
+```
+
+Lastly, we will verify that the activated service has no errors with:
 
 ```bash
 sudo systemctl status nginx
@@ -79,53 +71,45 @@ http://your-ip-address
 
 ## Step 2: Install MariaDB
 
-Now we will proceed with the installation of MariaDB by running the following:
+Now we will continue with the installation of MariaDB. To do this, follow the instructions below depending on your operating system.
 
 ::: tabs#os
 
 @tab:active Debian
+
+First of all, we will install the MariaDB package with the command:
 
 ```bash
 sudo apt install mariadb-server
 ```
 
-@tab Rocky
-
-```bash
-sudo dnf install mariadb-server
-```
-
-:::
-
 Once installed, We will enable it to automatically start on reboot with:
 
-::: tabs#os
-
-@tab:active Debian
-
 ```bash
 sudo systemctl enable mariadb
 ```
 
-@tab Rocky
-
-```bash
-sudo systemctl enable mariadb
-```
-
-:::
-
-Then we will verify that the activated service has no errors with:
-
-::: tabs#os
-
-@tab:active Debian
+Next, we will verify that the activated service has no errors with:
 
 ```bash
 sudo systemctl status mariadb
 ```
 
 @tab Rocky
+
+First of all, we will install the MariaDB package with the command:
+
+```bash
+sudo dnf install mariadb-server
+```
+
+Once installed, We will enable it to automatically start on reboot with:
+
+```bash
+sudo systemctl enable mariadb
+```
+
+Next, we will verify that the activated service has no errors with:
 
 ```bash
 sudo systemctl status mariadb
@@ -179,7 +163,7 @@ CREATE USER 'new-user'@'localhost' IDENTIFIED BY 'password';
 Remember to change **new-user** and **password** to whatever you want.
 :::
 
-Then we will grant the permissions to the user on the database with the following SQL statement:
+Next, we will grant the permissions to the user on the database with the following SQL statement:
 
 ```sql
 GRANT ALL ON mycms_db.* TO 'new-user'@'localhost' IDENTIFIED BY 'password';
@@ -198,20 +182,73 @@ exit;
 
 ## Step 3: Install PHP
 
-As the last step, we will install PHP. so we will run the following commands to install all the necessary extensions:
+As the last step, we will install PHP. To do this, follow the instructions below depending on your operating system.
 
 ::: tabs#os
 
 @tab:active Debian
 
+First of all, we will install the required dependencies with the command:
+
 ```bash
-sudo apt install -y php php7.4-{fpm,bcmath,cli,curl,gd,gmp,intl,json,mbstring,mysqlnd,openssl,soap,xml,zip}
+sudo apt install -y lsb-release apt-transport-https ca-certificates
+```
+
+Once installed, we download the necessary GPG key for the repository of PHP packages:
+
+```bash
+wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+```
+
+Next, we will add the repository for PHP packages to the server:
+
+```bash
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list
+```
+
+We make sure that the operating system recognizes the addition of the repository and is up to date:
+
+```bash
+sudo apt update
+```
+
+Lastly, we will install PHP with the necessary extensions:
+
+```bash
+sudo apt install -y php8.0 php8.0-{fpm,bcmath,cli,curl,gd,gmp,json,mbstring,mysqlnd,openssl,soap,xml,zip}
 ```
 
 @tab Rocky
 
+First of all, we will add the EPEL and Remi repositories for PHP 8 packages with the following commands:
+
 ```bash
-sudo dnf install -y php php-{fpm,bcmath,cli,curl,gd,gmp,intl,json,mbstring,mysqlnd,openssl,soap,xml,zip}
+sudo dnf install epel-release -y
+sudo dnf install -y https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+```
+
+We make sure that the operating system recognizes the addition of the repositories and is up to date:
+
+```bash
+sudo apt update
+```
+
+Next, we will reset PHP from its default module to enable PHP packages from the Remi repository:
+
+```bash
+sudo dnf module reset php
+```
+
+We enable PHP from the Remi repository:
+
+```bash
+sudo dnf module enable php:remi-8.0
+```
+
+Lastly, we will install PHP with the necessary extensions:
+
+```bash
+sudo dnf install -y php php-{fpm,bcmath,cli,curl,gd,gmp,json,mbstring,mysqlnd,openssl,soap,xml,zip}
 ```
 
 :::

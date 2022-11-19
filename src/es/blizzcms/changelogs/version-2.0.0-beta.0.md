@@ -4,10 +4,10 @@ icon: bx bxs-file
 order: 1
 ---
 
-:package: Fecha de lanzamiento programada: **2022-06-00**
+:package: Fecha de lanzamiento programada: **2022-11-00**
 
 ::: danger ADVERTENCIA
-V2.0.0 se ha reescrito completamente desde 0, por lo que **no es compatible** con temas/módulos y/o modificaciones realizadas en las versiones **V1** y **Plus**.
+V2.0.0 ha sido completamente reescrito desde 0, por lo que **no es compatible** con temas/módulos y/o modificaciones realizadas en las versiones **V1/Plus**.
 :::
 
 ## :sparkles: Características

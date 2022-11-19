@@ -41,14 +41,14 @@ Para comenzar esta guía, crearemos un tema con el nombre `example`, el objetivo
 example
 |── 📂 assets
 |    └── 📂 css
-|         └── 🗒️ example.css  <--- Nuevo archivo vacío
+|         └── 🗒️ example.css
 |── 📂 modules
 |    └── 📂 user
-|         └── 🗒️ index.php  <--- Nuevo archivo vacío
+|         └── 🗒️ index.php
 |── 📂 views
 |     └── 📂 layouts
-|          └── 🗒️ layout.php  <--- Nuevo archivo vacío
-└── 🗒️ theme.php  <--- Nuevo archivo vacío
+|          └── 🗒️ layout.php
+└── 🗒️ theme.php
 ```
 
 ::: info INFORMATION

@@ -48,16 +48,16 @@ Para comenzar esta guía, crearemos un módulo con el nombre `example`, el enfoq
 ```
 📂 example
 |── 📂 config
-|    └── 🗒️ migration.php  <--- Nuevo archivo vacío
-|    └── 🗒️ module.php  <--- Nuevo archivo vacío
-|    └── 🗒️ routes.php  <--- Nuevo archivo vacío
+|    └── 🗒️ migration.php
+|    └── 🗒️ module.php
+|    └── 🗒️ routes.php
 |── 📂 controllers
-|    └── 🗒️ Example.php  <--- Nuevo archivo vacío
+|    └── 🗒️ Example.php
 |── 📂 language
 |── 📂 migrations
 |── 📂 models
 └── 📂 views
-     └── 🗒️ index.php  <--- Nuevo archivo vacío
+     └── 🗒️ index.php
 ```
 
 ::: info INFORMACIÓN

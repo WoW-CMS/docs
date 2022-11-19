@@ -12,7 +12,7 @@ If you have this problem mentioned above, it is most likely that your problem is
 
 ### Step 1: Download CA Cert
 
-First, download the latest version of `cacert.pem` from [here](https://curl.se/docs/caextract.html) and move the file to the installation folder of the web server you have installed, for this example, the following path will be used `C:/wamp64/extras/cacert.pem` (ref: WampServer).
+First of all, download the latest version of `cacert.pem` from [here](https://curl.se/docs/caextract.html) and move the file to the installation folder of the web server you have installed, for this example, the following path will be used `C:/wamp64/extras/cacert.pem` (ref: WampServer).
 
 ### Step 2: Edit File php.ini
 
@@ -30,4 +30,4 @@ curl.cainfo = "C:/wamp64/extras/cacert.pem"
 openssl.cafile = "C:/wamp64/extras/cacert.pem"
 ```
 
-Finally, save the changes and restart the web server so that the changes made are applied.
+Lastly, save the changes and restart the web server so that the changes made are applied.
