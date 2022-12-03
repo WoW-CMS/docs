@@ -58,10 +58,6 @@ Por último, establezca el permiso `755` para todas las carpetas y el permiso `6
 
 @tab Git
 
-::: warning AVISO
-Esta forma de instalación requiere que ya tengas Git y Composer instalados.
-:::
-
 Primero, clone el repositorio del CMS con el siguiente comando:
 
 ```bash
@@ -79,10 +75,6 @@ Por último, establezca el permiso `755` para todas las carpetas y el permiso `6
 :tada: Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación.
 
 @tab Docker
-
-::: warning AVISO
-Esta forma de instalación requiere que ya tengas Git y Docker instalados.
-:::
 
 Primero, clone el repositorio del CMS con el siguiente comando:
 

@@ -58,10 +58,6 @@ Lastly, set the `755` permission for all folders and the `644` permission for fi
 
 @tab Git
 
-::: warning NOTICES
-This form of installation requires you to have Git and Composer already installed.
-:::
-
 First, clone the CMS repository with the following command:
 
 ```bash
@@ -79,10 +75,6 @@ Lastly, set the `755` permission for all folders and the `644` permission for fi
 :tada: Now you can open the browser with your **IP/Domain** to continue the installation process.
 
 @tab Docker
-
-::: warning NOTICES
-This form of installation requires you to have Git and Docker already installed.
-:::
 
 First, clone the CMS repository with the following command:
 
