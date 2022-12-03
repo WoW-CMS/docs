@@ -34,9 +34,9 @@ export const sidebarEs: HopeThemeSidebarConfig = {
           children: "structure",
         },
         {
-          text: "Windows",
-          icon: "bx bxl-windows",
-          prefix: "windows/",
+          text: "Solución de problemas",
+          icon: "bx bxs-book-bookmark",
+          prefix: "troubleshooting/",
           collapsible: true,
           children: "structure",
         },

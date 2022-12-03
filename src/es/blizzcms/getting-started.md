@@ -22,7 +22,7 @@ El CMS requiere que tengas preinstalado un servidor wow con sus respectivas base
 :::
 
 ::: danger ADVERTENCIA
-Si está utilizando MySQL, elimine los siguientes valores de **sql_mode** en su archivo my.ini o my.cnf:
+Si está utilizando **MySQL**, elimine los siguientes valores de **sql_mode** en su archivo my.ini o my.cnf:
 
 - NO_ZERO_IN_DATE
 - NO_ZERO_DATE
@@ -82,7 +82,7 @@ Primero, clone el repositorio del CMS con el siguiente comando:
 git clone https://github.com/WoW-CMS/BlizzCMS.git
 ```
 
-Luego, dentro del directorio recién creado, edite el archivo `.env.example` con sus datos y renómbrelo a `.env`:
+Luego, dentro del directorio recién creado, edite el archivo `.env.example` con sus datos y renómbrelo a `.env`
 
 ```
 APP_NAME=blizzcms
@@ -98,19 +98,19 @@ MYSQL_DB=<Nombre de la base de datos>
 
 A continuación, crea la imagen de Docker con el comando:
 
-```
+```bash
 docker-compose build
 ```
 
 Después de terminar de construir la imagen, inicie el contenedor con el siguiente comando:
 
-```
+```bash
 docker-compose up -d
 ```
 
 Por último, para instalar las dependencias utilice el siguiente comando:
 
-```
+```bash
 docker exec -d blizzcms-webserver composer install --no-plugins --no-scripts --no-interaction --no-progress
 ```
 

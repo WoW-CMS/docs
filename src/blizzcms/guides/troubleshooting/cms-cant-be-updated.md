@@ -1,20 +1,20 @@
 ---
-title: Troubleshooting
+title: CMS can't be updated
 icon: bx bx-question-mark
 order: 1
 ---
 
-In the following section, you will find a list of the most common problems and their solution in instances with the Windows OS.
+If you have this problem mentioned above, it is most likely that your problem is related to the lack of configuration of certificates on your web server to be able to execute cURL. To solve it, follow these steps depending on your OS:
 
-## Can't update CMS from the dashboard
+::: tabs#os
 
-If you have this problem mentioned above, it is most likely that your problem is related to the lack of configuration of certificates on your web server to be able to execute cURL. To solve it, follow these steps:
+@tab:active Windows
 
-### Step 1: Download CA Cert
+#### Download CA Cert
 
 First of all, download the latest version of `cacert.pem` from [here](https://curl.se/docs/caextract.html) and move the file to the installation folder of the web server you have installed, for this example, the following path will be used `C:/wamp64/extras/cacert.pem` (ref: WampServer).
 
-### Step 2: Edit File php.ini
+#### Edit File php.ini
 
 After having downloaded and moved the file to the path, Look for the file `php.ini` depending on the PHP version installed and inside it find the following lines:
 
@@ -26,8 +26,10 @@ After having downloaded and moved the file to the path, Look for the file `php.i
 Now replace it with the following:
 
 ```
-curl.cainfo = "C:/wamp64/extras/cacert.pem"
-openssl.cafile = "C:/wamp64/extras/cacert.pem"
+curl.cainfo="C:/wamp64/extras/cacert.pem"
+openssl.cafile="C:/wamp64/extras/cacert.pem"
 ```
 
 Lastly, save the changes and restart the web server so that the changes made are applied.
+
+:::
