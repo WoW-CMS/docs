@@ -6,7 +6,7 @@ order: 2
 
 ## bans
 
-`bans` — _Information of the table in the DB_
+`bans` — _Information of the table in the database_
 
 #### Structure
 
@@ -21,7 +21,7 @@ order: 2
 
 ## logs
 
-`logs` — _Information of the table in the DB_
+`logs` — _Information of the table in the database_
 
 #### Structure
 
@@ -40,7 +40,7 @@ order: 2
 
 ## menus
 
-`menus` — _Information of the table in the DB_
+`menus` — _Information of the table in the database_
 
 #### Structure
 
@@ -52,7 +52,7 @@ order: 2
 
 ## menus_items
 
-`menus_items` — _Information of the table in the DB_
+`menus_items` — _Information of the table in the database_
 
 #### Structure
 
@@ -70,7 +70,7 @@ order: 2
 
 ## modules
 
-`modules` — _Information of the table in the DB_
+`modules` — _Information of the table in the database_
 
 #### Structure
 
@@ -81,7 +81,7 @@ order: 2
 
 ## news
 
-`news` — _Information of the table in the DB_
+`news` — _Information of the table in the database_
 
 #### Structure
 
@@ -103,7 +103,7 @@ order: 2
 
 ## news_comments
 
-`news_comments` — _Information of the table in the DB_
+`news_comments` — _Information of the table in the database_
 
 #### Structure
 
@@ -118,7 +118,7 @@ order: 2
 
 ## pages
 
-`pages` — _Information of the table in the DB_
+`pages` — _Information of the table in the database_
 
 #### Structure
 
@@ -134,9 +134,24 @@ order: 2
 | created_at | datetime |  |  | YES | NULL |  |
 | updated_at | datetime |  |  | YES | NULL |  |
 
+## pageviews
+
+`pageviews` — _Information of the table in the database_
+
+#### Structure
+
+| Field | Type | Attributes | Key | Null | Default | Comment |
+| ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| ip | varchar(255) |  |  | NO |  |  |
+| uri | varchar(255) |  |  | NO |  |  |
+| platform | varchar(255) |  |  | NO |  |  |
+| browser | varchar(255) |  |  | NO |  |  |
+| is_mobile | tinyint(1) | unsigned |  | NO | 0 |  |
+| created_at | datetime |  |  | YES | NULL |  |
+
 ## permissions
 
-`permissions` — _Information of the table in the DB_
+`permissions` — _Information of the table in the database_
 
 #### Structure
 
@@ -149,7 +164,7 @@ order: 2
 
 ## realms
 
-`realms` — _Information of the table in the DB_
+`realms` — _Information of the table in the database_
 
 #### Structure
 
@@ -172,7 +187,7 @@ order: 2
 
 ## roles
 
-`roles` — _Information of the table in the DB_
+`roles` — _Information of the table in the database_
 
 #### Structure
 
@@ -184,7 +199,7 @@ order: 2
 
 ## roles_permissions
 
-`roles_permissions` — _Information of the table in the DB_
+`roles_permissions` — _Information of the table in the database_
 
 #### Structure
 
@@ -195,7 +210,7 @@ order: 2
 
 ## slides
 
-`slides` — _Information of the table in the DB_
+`slides` — _Information of the table in the database_
 
 #### Structure
 
@@ -210,7 +225,7 @@ order: 2
 
 ## throttle
 
-`throttle` — _Information of the table in the DB_
+`throttle` — _Information of the table in the database_
 
 #### Structure
 
@@ -223,7 +238,7 @@ order: 2
 
 ## users
 
-`users` — _Information of the table in the DB_
+`users` — _Information of the table in the database_
 
 #### Structure
 
@@ -242,7 +257,7 @@ order: 2
 
 ## users_tokens
 
-`users_tokens` — _Information of the table in the DB_
+`users_tokens` — _Information of the table in the database_
 
 #### Structure
 

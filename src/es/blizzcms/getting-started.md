@@ -21,6 +21,13 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 El CMS requiere que tengas preinstalado un servidor wow con sus respectivas bases de datos.
 :::
 
+::: danger ADVERTENCIA
+Si está utilizando MySQL, elimine los siguientes valores de **sql_mode** en su archivo my.ini o my.cnf:
+
+- NO_ZERO_IN_DATE
+- NO_ZERO_DATE
+:::
+
 Si aún no tienes instalados los requisitos previos, puedes consultar las siguientes guías para instalarlos:
 
 ### Guías para Linux
@@ -29,24 +36,92 @@ Si aún no tienes instalados los requisitos previos, puedes consultar las siguie
 - [Cómo instalar LEMP Stack](../blizzcms/guides/linux/lemp-stack.md)
 - [Cómo instalar Composer](../blizzcms/guides/linux/composer.md)
 
-## Instalación Manual
+## Instalación
 
-Si has elegido la opción manual sigue estos sencillos pasos:
+Elija una de las siguientes formas en las que puede instalar el CMS:
 
-### Paso 1: Descargar CMS
+::: tabs#installations
 
-Descargue la [última versión](https://github.com/WoW-CMS/BlizzCMS/releases), y extráigalo en la carpeta donde estará la raíz de su sitio web.
+@tab:active Manual
 
-### Paso 2: Instalar dependencias
+Primero, descarga la [última versión](https://github.com/WoW-CMS/BlizzCMS/releases) y extráela en la carpeta donde estará la raíz de tu sitio.
 
-Luego, en la carpeta raíz de su sitio web, use el siguiente comando para instalar las dependencias:
+Luego, dentro del directorio raíz de tu sitio, usa el siguiente comando para instalar las dependencias:
 
 ```bash
 composer install --no-plugins --no-scripts
 ```
 
-### Paso 3: Establecer permisos de archivos y carpetas
+Por último, establezca el permiso `755` para todas las carpetas y el permiso `644` para los archivos.
 
-Le recomendamos encarecidamente que establezca el permiso `755` para todas las carpetas y el permiso `644` para los archivos.
+:tada: Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación.
 
-Con este último paso realizado, ahora puede abrir su navegador con su **IP** o **Dominio** para continuar con el proceso de instalación en el CMS.
+@tab Git
+
+::: warning AVISO
+Esta forma de instalación requiere que ya tengas Git y Composer instalados.
+:::
+
+Primero, clone el repositorio del CMS con el siguiente comando:
+
+```bash
+git clone https://github.com/WoW-CMS/BlizzCMS.git
+```
+
+Luego, dentro del directorio recién creado usaremos el siguiente comando para instalar las dependencias:
+
+```bash
+composer install --no-plugins --no-scripts
+```
+
+Por último, establezca el permiso `755` para todas las carpetas y el permiso `644` para los archivos.
+
+:tada: Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación.
+
+@tab Docker
+
+::: warning AVISO
+Esta forma de instalación requiere que ya tengas Git y Docker instalados.
+:::
+
+Primero, clone el repositorio del CMS con el siguiente comando:
+
+```bash
+git clone https://github.com/WoW-CMS/BlizzCMS.git
+```
+
+Luego, dentro del directorio recién creado, edite el archivo `.env.example` con sus datos y renómbrelo a `.env`:
+
+```
+APP_NAME=blizzcms
+APP_PORT=<Puerto del servidor web>
+APP_DB_ADMIN_PORT=<Puerto PHPMyAdmin>
+DB_PORT=<Puerto MariaDB>
+
+MYSQL_ROOT_PASS=<Contraseña de root>
+MYSQL_USER=<Nuevo usuario>
+MYSQL_PASS=<Contraseña de usuario>
+MYSQL_DB=<Nombre de la base de datos>
+```
+
+A continuación, crea la imagen de Docker con el comando:
+
+```
+docker-compose build
+```
+
+Después de terminar de construir la imagen, inicie el contenedor con el siguiente comando:
+
+```
+docker-compose up -d
+```
+
+Por último, para instalar las dependencias utilice el siguiente comando:
+
+```
+docker exec -d blizzcms-webserver composer install --no-plugins --no-scripts --no-interaction --no-progress
+```
+
+:tada: Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación.
+
+:::

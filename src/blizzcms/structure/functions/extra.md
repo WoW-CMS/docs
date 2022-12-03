@@ -285,26 +285,25 @@ $decrypt = decrypt($encrypt);
 echo $decrypt;
 ```
 
-## html_purify
+## purify
 
-`html_purify` — _Purify an HTML string using the HTMLPurifier_
+`purify` — _Purify a content using the HTMLPurifier_
 
 ```php
-html_purify($html, $type = null): string
+purify($content, $type = null): string
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$html** | string |  |
+| **$content** | string |  |
 | **$type** | string\|null | Type of content to purify |
 
 **Types:**
 
 - `article`
 - `comment`
-- `minimal`
 
 #### Return Values
 
@@ -316,7 +315,7 @@ Returns a string with all unallowed HTML tags removed.
 $html = '<p><script>alert("xss");</script>Lorem ipsum dolor sit amet</p>';
 
 // Returns '<p>Lorem ipsum dolor sit amet</p>'
-echo html_purify($html, 'comment');
+echo purify($html, 'comment');
 ```
 
 ## is_json

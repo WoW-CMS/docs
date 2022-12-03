@@ -6,7 +6,7 @@ order: 2
 
 ## bans
 
-`bans` — _Información de la tabla en la DB_
+`bans` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -21,7 +21,7 @@ order: 2
 
 ## logs
 
-`logs` — _Información de la tabla en la DB_
+`logs` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -40,7 +40,7 @@ order: 2
 
 ## menus
 
-`menus` — _Información de la tabla en la DB_
+`menus` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -52,7 +52,7 @@ order: 2
 
 ## menus_items
 
-`menus_items` — _Información de la tabla en la DB_
+`menus_items` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -70,7 +70,7 @@ order: 2
 
 ## modules
 
-`modules` — _Información de la tabla en la DB_
+`modules` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -81,7 +81,7 @@ order: 2
 
 ## news
 
-`news` — _Información de la tabla en la DB_
+`news` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -103,7 +103,7 @@ order: 2
 
 ## news_comments
 
-`news_comments` — _Información de la tabla en la DB_
+`news_comments` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -118,7 +118,7 @@ order: 2
 
 ## pages
 
-`pages` — _Información de la tabla en la DB_
+`pages` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -134,9 +134,24 @@ order: 2
 | created_at | datetime |  |  | YES | NULL |  |
 | updated_at | datetime |  |  | YES | NULL |  |
 
+## pageviews
+
+`permissions` — _Información de la tabla en la base de datos_
+
+#### Estructura
+
+| Campo | Tipo | Atributos | Clave | Nulo | Predeterminado | Comentario |
+| ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| ip | varchar(255) |  |  | NO |  |  |
+| uri | varchar(255) |  |  | NO |  |  |
+| platform | varchar(255) |  |  | NO |  |  |
+| browser | varchar(255) |  |  | NO |  |  |
+| is_mobile | tinyint(1) | unsigned |  | NO | 0 |  |
+| created_at | datetime |  |  | YES | NULL |  |
+
 ## permissions
 
-`permissions` — _Información de la tabla en la DB_
+`permissions` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -149,7 +164,7 @@ order: 2
 
 ## realms
 
-`realms` — _Información de la tabla en la DB_
+`realms` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -172,7 +187,7 @@ order: 2
 
 ## roles
 
-`roles` — _Información de la tabla en la DB_
+`roles` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -184,7 +199,7 @@ order: 2
 
 ## roles_permissions
 
-`roles_permissions` — _Información de la tabla en la DB_
+`roles_permissions` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -195,7 +210,7 @@ order: 2
 
 ## slides
 
-`slides` — _Información de la tabla en la DB_
+`slides` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -210,7 +225,7 @@ order: 2
 
 ## throttle
 
-`throttle` — _Información de la tabla en la DB_
+`throttle` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -223,7 +238,7 @@ order: 2
 
 ## users
 
-`users` — _Información de la tabla en la DB_
+`users` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
@@ -242,7 +257,7 @@ order: 2
 
 ## users_tokens
 
-`users_tokens` — _Información de la tabla en la DB_
+`users_tokens` — _Información de la tabla en la base de datos_
 
 #### Estructura
 
