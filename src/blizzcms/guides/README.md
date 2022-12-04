@@ -8,6 +8,8 @@ dir:
 
 ## Content List
 
+- [Database](../guides/database)
+  - [How to disable strict mode](../guides/database/disable-strict-mode.md)
 - [Linux](../guides/linux)
   - [How to Install LAMP stack](../guides/linux/lamp-stack.md)
   - [How to Install LEMP stack](../guides/linux/lemp-stack.md)

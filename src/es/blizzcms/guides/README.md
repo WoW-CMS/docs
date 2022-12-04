@@ -8,6 +8,8 @@ dir:
 
 ## Lista de Contenido
 
+- [Base de datos](../guides/database)
+  - [Cómo deshabilitar el modo estricto](../guides/database/disable-strict-mode.md)
 - [Linux](../guides/linux)
   - [Cómo instalar LAMP stack](../guides/linux/lamp-stack.md)
   - [Cómo instalar LEMP stack](../guides/linux/lemp-stack.md)

@@ -22,10 +22,7 @@ El CMS requiere que tengas preinstalado un servidor wow con sus respectivas base
 :::
 
 ::: danger ADVERTENCIA
-Si está utilizando **MySQL**, elimine los siguientes valores de **sql_mode** en su archivo my.ini o my.cnf:
-
-- NO_ZERO_IN_DATE
-- NO_ZERO_DATE
+Debe tener el **modo estricto** deshabilitado en MySQL/MariaDB a los valores `NO_ZERO_IN_DATE` y `NO_ZERO_DATE`. Para verificarlo y deshabilitarlo, puede seguir la siguiente guía [Cómo deshabilitar el modo estricto](../blizzcms/guides/troubleshooting/disable-strict-mode.md)
 :::
 
 Si aún no tienes instalados los requisitos previos, puedes consultar las siguientes guías para instalarlos:

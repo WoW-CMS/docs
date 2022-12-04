@@ -27,6 +27,13 @@ export const sidebarEs: HopeThemeSidebarConfig = {
       collapsible: true,
       children: [
         {
+          text: "Base de datos",
+          icon: "bx bxs-data",
+          prefix: "database/",
+          collapsible: true,
+          children: "structure",
+        },
+        {
           text: "Linux",
           icon: "bx bxl-tux",
           prefix: "linux/",

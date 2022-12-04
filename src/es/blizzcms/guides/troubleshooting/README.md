@@ -3,7 +3,7 @@ title: Solución de problemas
 icon: bx bxs-book-bookmark
 index: false
 dir:
-  order: 2
+  order: 3
 ---
 
 ## Lista de Contenido

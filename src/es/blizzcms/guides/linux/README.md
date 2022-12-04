@@ -3,7 +3,7 @@ title: Linux
 icon: bx bxl-tux
 index: false
 dir:
-  order: 1
+  order: 2
 ---
 
 ## Lista de Contenido
