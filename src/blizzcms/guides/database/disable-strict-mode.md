@@ -14,17 +14,17 @@ Before you get started, ensure you have the following:
 
 ## Step 1: Check strict mode
 
-By default MySQL/MariaDB has strict mode enabled, so we need to check if the necessary values `NO_ZERO_IN_DATE` and `NO_ZERO_DATE` are in it. for this we will execute the following SQL statement:
+By default MySQL/MariaDB has strict mode enabled, so we need to check if the values `NO_ZERO_IN_DATE` and `NO_ZERO_DATE` exist. To do this we will execute the following SQL statement:
 
 ```sql
 SHOW VARIABLES LIKE 'sql_mode';
 ```
 
-If the values are **not found**, continue with the CMS installation; otherwise, continue to the next step in this guide.
+If those values **don't exist**, continue with the CMS installation; otherwise, continue to the next step in this guide.
 
 ## Step 2: Change strict mode
 
-To remove the necessary values in the strict mode, find the file my.ini or my.cnf and the following lines inside it:
+To remove the values in the strict mode, find the file my.ini or my.cnf and the following lines inside it:
 
 ```
 [mysqld]
