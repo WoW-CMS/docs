@@ -22,7 +22,7 @@ The CMS requires that you have a wow server pre-installed with its respective da
 :::
 
 ::: danger WARNING
-You must have **strict mode** disabled in MySQL/MariaDB to the values `NO_ZERO_IN_DATE` and `NO_ZERO_DATE`. To check and disable it, you can follow the guide below [How to disable strict mode](../blizzcms/guides/database/disable-strict-mode.md)
+You must have **strict mode** disabled in MySQL/MariaDB to the values `NO_ZERO_IN_DATE`, `NO_ZERO_DATE` and `STRICT_TRANS_TABLES`. To check and disable it, you can follow the guide below [How to disable strict mode](../blizzcms/guides/database/disable-strict-mode.md)
 :::
 
 If you still do not have the prerequisites installed, you can see the following guides to install them:

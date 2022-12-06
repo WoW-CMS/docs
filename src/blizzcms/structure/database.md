@@ -14,7 +14,7 @@ order: 2
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | id | bigint(20) | unsigned | PRI | NO | AUTO_INCREMENT |  |
 | type | enum('email','ip','user') |  |  | NO |  |  |
-| value | text |  |  | NO |  |  |
+| value | varchar(255) |  |  | NO |  |  |
 | reason | mediumtext |  |  | NO |  |  |
 | start_at | datetime |  |  | NO | 0000-00-00 00:00:00 |  |
 | end_at | datetime |  |  | NO | 0000-00-00 00:00:00 |  |

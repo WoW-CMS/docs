@@ -14,7 +14,7 @@ Before you get started, ensure you have the following:
 
 ## Step 1: Check strict mode
 
-By default MySQL/MariaDB has strict mode enabled, so we need to check if the values `NO_ZERO_IN_DATE` and `NO_ZERO_DATE` exist. To do this we will execute the following SQL statement:
+By default MySQL/MariaDB has strict mode enabled, so we need to check if the values `NO_ZERO_IN_DATE`, `NO_ZERO_DATE` and `STRICT_TRANS_TABLES` exist. To do this we will execute the following SQL statement:
 
 ```sql
 SHOW VARIABLES LIKE 'sql_mode';
@@ -24,11 +24,11 @@ If those values **don't exist**, continue with the CMS installation; otherwise, 
 
 ## Step 2: Change strict mode
 
-To remove the values in the strict mode, find the file my.ini or my.cnf and the following lines inside it:
+To remove the values in the strict mode, find the file `my.ini` or `my.cnf` and the following lines inside it:
 
 ```
 [mysqld]
-sql_mode=NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
 ```
 
 ::: tip TIP
@@ -45,11 +45,11 @@ Linux:
 
 :::
 
-Remove the `NO_ZERO_IN_DATE` and `NO_ZERO_DATE` values in the line and save it.
+Remove the `NO_ZERO_IN_DATE`, `NO_ZERO_DATE` and `STRICT_TRANS_TABLES` values in the line and save it.
 
 ```
 [mysqld]
-sql_mode=ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+sql_mode=ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
 ```
 
 Finally restart your MySQL/MariaDB and proceed the installation.

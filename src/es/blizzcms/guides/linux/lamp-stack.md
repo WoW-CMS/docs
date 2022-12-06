@@ -151,7 +151,7 @@ Recuerde cambiar **mycms_db** por el nombre que desee.
 
 ### Crear un usuario y otorgar permisos
 
-Una vez finalizada la creación de la base de datos, necesitamos acceder a ella, por lo que crearemos un usuario que solo tendrá acceso a través de localhost.
+Una vez finalizada la creación de la base de datos, necesitamos acceder a ella, por lo que crearemos un usuario que solo tendrá acceso a través de **localhost**.
 
 Para eso, primero crearemos el usuario con la siguiente sentencia SQL:
 
@@ -166,7 +166,7 @@ Recuerda cambiar **new-user** y **password** a lo que quieras.
 A continuación, otorgaremos los permisos al usuario sobre la base de datos con la siguiente instrucción SQL:
 
 ```sql
-GRANT ALL ON mycms_db.* TO 'new-user'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON mycms_db.* TO 'new-user'@'localhost';
 ```
 
 ::: warning AVISO

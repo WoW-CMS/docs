@@ -151,7 +151,7 @@ Remember to change **mycms_db** to whatever name you want.
 
 ### Create a User and Grant Permissions
 
-Once the creation of the database is finished, we need access to it, so we will create a user who will only have access through localhost.
+Once the creation of the database is finished, we need access to it, so we will create a user who will only have access through **localhost**.
 
 For that, we will first create the user with the following SQL statement:
 
@@ -166,7 +166,7 @@ Remember to change **new-user** and **password** to whatever you want.
 Next, we will grant the permissions to the user on the database with the following SQL statement:
 
 ```sql
-GRANT ALL ON mycms_db.* TO 'new-user'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON mycms_db.* TO 'new-user'@'localhost';
 ```
 
 ::: warning NOTICES
