@@ -19,5 +19,5 @@ features:
     details: .....................................
 
 copyright: false
-footer: © 2022 WoW-CMS - Todos los derechos reservados.
+footer: © 2023 WoW-CMS - Todos los derechos reservados.
 ---
