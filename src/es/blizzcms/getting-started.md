@@ -51,7 +51,7 @@ composer install --no-plugins --no-scripts
 
 Por último, establezca el permiso `755` para todas las carpetas y el permiso `644` para los archivos.
 
-:tada: Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación.
+Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación :tada:
 
 @tab Git
 
@@ -69,7 +69,7 @@ composer install --no-plugins --no-scripts
 
 Por último, establezca el permiso `755` para todas las carpetas y el permiso `644` para los archivos.
 
-:tada: Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación.
+Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación :tada:
 
 @tab Docker
 
@@ -111,6 +111,6 @@ Por último, para instalar las dependencias utilice el siguiente comando:
 docker exec -d blizzcms-webserver composer install --no-plugins --no-scripts --no-interaction --no-progress
 ```
 
-:tada: Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación.
+Ahora puedes abrir el navegador con tu **IP/Dominio** para continuar con el proceso de instalación :tada:
 
 :::

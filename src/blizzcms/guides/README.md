@@ -8,6 +8,8 @@ dir:
 
 ## Content List
 
+- [Contributions](../guides/contributions)
+  - [How to translate into another language](../guides/contributions/translate.md)
 - [Database](../guides/database)
   - [How to disable strict mode](../guides/database/disable-strict-mode.md)
 - [Linux](../guides/linux)

@@ -4,7 +4,7 @@ icon: bx bxs-file
 order: 1
 ---
 
-:package: Fecha de lanzamiento programada: **2022-12-02**
+:package: Fecha de publicación programada: **2022-12-02**
 
 ::: danger ADVERTENCIA
 V2.0.0 ha sido completamente reescrito desde 0, por lo que **no es compatible** con temas/módulos y/o modificaciones realizadas en las versiones **V1/Plus**.

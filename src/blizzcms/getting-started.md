@@ -51,7 +51,7 @@ composer install --no-plugins --no-scripts
 
 Lastly, set the `755` permission for all folders and the `644` permission for files.
 
-:tada: Now you can open the browser with your **IP/Domain** to continue the installation process.
+Now you can open the browser with your **IP/Domain** to continue the installation process :tada:
 
 @tab Git
 
@@ -69,7 +69,7 @@ composer install --no-plugins --no-scripts
 
 Lastly, set the `755` permission for all folders and the `644` permission for files.
 
-:tada: Now you can open the browser with your **IP/Domain** to continue the installation process.
+Now you can open the browser with your **IP/Domain** to continue the installation process :tada:
 
 @tab Docker
 
@@ -111,6 +111,6 @@ Lastly, to install the dependencies use the following command:
 docker exec -d blizzcms-webserver composer install --no-plugins --no-scripts --no-interaction --no-progress
 ```
 
-:tada: Now you can open the browser with your **IP/Domain** to continue the installation process.
+Now you can open the browser with your **IP/Domain** to continue the installation process :tada:
 
 :::

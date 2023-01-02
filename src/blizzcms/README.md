@@ -27,12 +27,12 @@ The **supported** languages in CMS are the following:
 - Spanish (es)
 
 ::: note NOTE
-If you need a different language from the list above, you can contribute to the translation of that language and submit a pull request with the files. For more information, you can see [How to translate the CMS to another language](../blizzcms/guides/contributions/new-language.md)
+If you need a different language from the list above, you can contribute to the translation of that language and submit a pull request with the files. For more information, you can see [How to translate into another language](../blizzcms/guides/contributions/translate.md)
 :::
 
 ### What features can I find in it?
 
-In the **latest** release versions, you can find the following features:
+In the **latest** released versions, you can find the following features:
 
 - Login
 - Registration

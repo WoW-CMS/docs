@@ -8,6 +8,8 @@ dir:
 
 ## Lista de Contenido
 
+- [Contribuciones](../guides/contributions)
+  - [Cómo traducir a otro idioma](../guides/contributions/translate.md)
 - [Base de datos](../guides/database)
   - [Cómo deshabilitar el modo estricto](../guides/database/disable-strict-mode.md)
 - [Linux](../guides/linux)

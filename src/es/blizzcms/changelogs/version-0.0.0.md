@@ -4,7 +4,7 @@ icon: bx bxs-file
 index: false
 ---
 
-:package: Fecha de lanzamiento programada: **0000-00-00**
+:package: Fecha de publicación programada: **0000-00-00**
 
 ## :rotating_light: Breaking Changes
 
