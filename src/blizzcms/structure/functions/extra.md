@@ -129,7 +129,7 @@ Return the number of minutes that remain in between two dates **(can provide neg
 #### Examples
 
 ```php
-echo remaining_minutes('now', '2023-01-01 00:00:00');
+echo remaining_minutes('now', '2024-01-01 00:00:00');
 ```
 
 ## split_data

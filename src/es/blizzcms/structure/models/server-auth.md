@@ -20,7 +20,7 @@ Esta función no tiene parámetros.
 
 #### Valores Devueltos
 
-Devuelve un **object** para conectarse a la base de datos auth.
+Devuelve un **object** que establece la conexión con la base de datos de auth.
 
 #### Ejemplos
 

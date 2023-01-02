@@ -11,7 +11,7 @@ BlizzCMS is a free, easy-to-use, open-source CMS developed for private World of 
 
 ### What emulators does it support?
 
-The emulators that the CMS **supports** are the following:
+The **supported** emulators in the CMS are the following:
 
 - AzerothCore
 - CMaNGOS
@@ -19,9 +19,20 @@ The emulators that the CMS **supports** are the following:
 - TrinityCore
 - TrinityCore (SHA Hash)
 
+### What languages does it support?
+
+The **supported** languages in CMS are the following:
+
+- English (en)
+- Spanish (es)
+
+::: note NOTE
+If you need a different language from the list above, you can contribute to the translation of that language and submit a pull request with the files. For more information, you can see [How to translate the CMS to another language](../blizzcms/guides/contributions/new-language.md)
+:::
+
 ### What features can I find in it?
 
-The CMS with the changes introduced in the most **current versions** you can find the following:
+In the **latest** release versions, you can find the following features:
 
 - Login
 - Registration

@@ -20,7 +20,7 @@ This function has no parameters.
 
 #### Return Values
 
-Return an **object** to connect to auth database.
+Returns an **object** that establishes the connection to the auth database.
 
 #### Examples
 
