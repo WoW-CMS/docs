@@ -87,4 +87,4 @@ You should change the parameters with those of the new language.
 
 ## Step 3: Translate other sections
 
-To translate the other sections of the CMS such as the admin, user, or a custom module. you must go to the path `application/modules/<module>/languages` in which you should do the same as **Step 1**.
+To translate the other sections of the CMS such as the admin, user, or a custom module. you must go to the path `application/modules/<module>/languages` in which you should do the same as [Step 1](../contributions/translate.md#step-1-duplicate-folder).

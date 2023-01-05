@@ -1,10 +1,10 @@
 ---
-title: Version 2.0.0-beta.1
+title: Versión 2.0.0-beta.1
 icon: bx bxs-file
 order: 1
 ---
 
-:package: Scheduled release date: **2023-01-05**
+:package: Fecha de publicación programada: **2023-01-05**
 
 ## :rotating_light: Breaking Changes
 

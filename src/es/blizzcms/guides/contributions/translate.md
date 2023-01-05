@@ -87,4 +87,4 @@ Deberás cambiar los parámetros con los del nuevo idioma.
 
 ## Paso 3: Traducir otras secciones
 
-Para traducir las otras secciones del CMS, como el administrador, el usuario o un módulo custom. debes ir a la ruta `application/modules/<module>/languages` en la cual deberás hacer lo mismo que en el **Paso 1**.
+Para traducir las otras secciones del CMS, como el administrador, el usuario o un módulo custom. debes ir a la ruta `application/modules/<module>/languages` en la cual deberás hacer lo mismo que en el [Paso 1](../contributions/translate.md#paso-1-duplicar-carpeta).
