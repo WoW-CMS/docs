@@ -9,3 +9,4 @@ dir:
 ## Content List
 
 - [Version 2.0.0-beta.0](../changelogs/version-2.0.0-beta.0.md)
+- [Version 2.0.0-beta.1](../changelogs/version-2.0.0-beta.1.md)
