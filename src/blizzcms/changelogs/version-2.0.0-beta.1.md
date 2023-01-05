@@ -4,7 +4,7 @@ icon: bx bxs-file
 order: 1
 ---
 
-:package: Scheduled release date: **2022-12-02**
+:package: Scheduled release date: **2023-01-05**
 
 ::: danger WARNING
 V2.0.0 has been completely rewritten from 0, so it is **not compatible** with themes/modules and/or modifications made in the **V1/Plus** versions.
@@ -12,10 +12,21 @@ V2.0.0 has been completely rewritten from 0, so it is **not compatible** with th
 
 ## :sparkles: Features
 
-- Support to PHP8
-- Better performance compared to previous versions
-- More configurable compared to previous versions
-- Use the latest version of the framework (CI3) and dependencies
-- Now at its base contains RBAC system
-- Reworked modularity _(upload, install/uninstall, and delete modules from the dashboard)_
-- Reworked template _(upload, activate/deactivate, and delete themes from the dashboard)_
+- update tables and assets
+- remove constant MAX_MONEY
+- change date format and icons
+
+
+## :sparkles: Fixes
+
+- delete avatars cache after a new user is created
+- move a lang line text to the general language file
+- show the menu item icon if it is not empty
+- reset password
+
+## :sparkles: Refactor
+
+
+- rename function send_command to execute_command
+- rename resources configs
+
