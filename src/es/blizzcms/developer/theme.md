@@ -51,7 +51,7 @@ example
 └── 🗒️ theme.php
 ```
 
-::: info INFORMATION
+::: note NOTA
 Puedes cambiar el nombre **"example"** del tema por el que quieras, pero ten en cuenta que tendrás que cambiar el nombre en diferentes partes del tema para que coincida.
 :::
 
@@ -115,7 +115,7 @@ Para este tema, solo aplicaremos una anulación simple a los botones del tema pr
 }
 ```
 
-::: info INFORMATION
+::: note NOTA
 Las clases que provienen del tema predeterminado consisten principalmente de UIKit 3, aunque también tiene partes creadas por nosotros, por lo que puede consultar el archivo en `assets/css/default.css` para tener una mejor idea si planea hacer una anulación.
 :::
 
@@ -164,7 +164,7 @@ Como puede ver en el archivo, las líneas utilizadas son etiquetas HTML presente
 - **_Línea 23_:** Línea que contiene el script main.js (Este archivo inicializa tail select y purecounter).
 - **_Línea 24_:** Línea utilizada por la librería template para agregar etiquetas al body (scripts).
 
-::: info INFORMACIÓN
+::: note NOTA
 Para obtener más información sobre la librería template, puede ir [aquí](../structure/libraries/template.md).
 :::
 

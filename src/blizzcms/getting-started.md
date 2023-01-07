@@ -17,11 +17,11 @@ Before you get started, ensure you have the following:
     - Enable extensions: bcmath - curl - gd - gmp - mbstring - mysqli - openssl - soap - zip
 - **Composer 2.4+**
 
-::: info INFORMATION
-The CMS requires that you have a wow server pre-installed with its respective databases.
+::: note NOTE
+The CMS requires that you have a World of Wacraft server pre-installed with its respective databases.
 :::
 
-::: danger WARNING
+::: warning NOTICES
 You must have **strict mode** disabled in MySQL/MariaDB to the values `NO_ZERO_IN_DATE`, `NO_ZERO_DATE` and `STRICT_TRANS_TABLES`. To check and disable it, you can follow the guide below [How to disable strict mode](../blizzcms/guides/database/disable-strict-mode.md)
 :::
 

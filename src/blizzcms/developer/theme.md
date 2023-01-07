@@ -51,7 +51,7 @@ example
 └── 🗒️ theme.php
 ```
 
-::: info INFORMATION
+::: note NOTE
 The name **"example"** of the theme you can change to whatever you want but keep in mind that you will have to change the name in different parts of the theme to match it.
 :::
 
@@ -115,7 +115,7 @@ For this theme, we will only apply a simple override to buttons from the default
 }
 ```
 
-::: info INFORMATION
+::: note NOTE
 The classes coming from the default theme mostly consist of UIKit 3, although it also has parts created by us so you can check the file in `assets/css/default.css` to get a better idea if you plan to do an override.
 :::
 
@@ -164,7 +164,7 @@ As you can see in the file, the lines used are HTML tags present in all the page
 - **_Line 23_:** Line containing the script main.js (This file initializes tail select and purecounter).
 - **_Line 24_:** Line used by the template library to add tags to the body (scripts).
 
-::: info INFORMATION
+::: note NOTE
 To find out more about the template library you can go [here](../structure/libraries/template.md).
 :::
 

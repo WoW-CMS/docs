@@ -8,7 +8,7 @@ Template es una de las librerías integradas que ayuda a crear vistas complejas 
 
 ## title
 
-`$this->template->title()` — _Establecer el título de la página._
+`$this->template->title()` — _Establecer el título de la página_
 
 ```php
 $this->template->title(): void
@@ -25,27 +25,25 @@ Esta función no tiene retornos.
 #### Ejemplos
 
 ```php
-// Mostrará "Blog — BlizzCMS" en la pestaña del navegador
+// El sitio mostrará "Blog — BlizzCMS" como título
 $this->template->title('Blog', 'BlizzCMS');
 ```
 
-## head_tags
+## add_meta
 
-`$this->template->head_tags()` — _Inyectar etiquetas adicionales dentro de la etiqueta head_
+`$this->template->add_meta()` — _Incluir un meta en el header_
 
 ```php
-$this->template->head_tags($data): void
+$this->template->add_meta($name, $content, $type = 'name'): void
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$data** | array |  |
-
-::: info INFORMACIÓN
-Puede agregar cada etiqueta usando el formato `[tagname, [attributename => attributevalue]]`
-:::
+| **$name** | string |  |
+| **$content** | string |  |
+| **$type** | string |  |
 
 #### Valores Devueltos
 
@@ -54,39 +52,22 @@ Esta función no tiene retornos.
 #### Ejemplos
 
 ```php
-// Agregar la etiqueta script dentro de la etiqueta head
-$this->template->head_tags([
-    ['script', ['src' => '']]
-]);
-
-// Agregar la etiqueta link dentro de la etiqueta head
-$this->template->head_tags([
-    ['link', ['rel' => 'stylesheet', 'href' => '']]
-]);
-
-// Agregar la etiqueta meta dentro de la etiqueta head
-$this->template->head_tags([
-    ['meta', ['name' => 'author', 'content' => 'BlizzCMS']]
-]);
+$this->template->add_meta('author', 'BlizzCMS');
 ```
 
-## body_tags
+## add_css
 
-`$this->template->body_tags()` — _Inyectar etiquetas adicionales dentro de la etiqueta body_
+`$this->template->add_css()` — _Incluir un archivo CSS en el header_
 
 ```php
-$this->template->body_tags($data): void
+$this->template->add_css($href): void
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$data** | array |  |
-
-::: info INFORMACIÓN
-Puede agregar cada etiqueta usando el formato `[tagname, [attributename => attributevalue]]`
-:::
+| **$href** | string |  |
 
 #### Valores Devueltos
 
@@ -95,26 +76,23 @@ Esta función no tiene retornos.
 #### Ejemplos
 
 ```php
-// Agregar la etiqueta script dentro de la etiqueta body
-$this->template->body_tags([
-    ['script', ['src' => '']]
-]);
+$this->template->add_css('https://example.com/assets/css/example.css');
 ```
 
-## set_meta_tags
+## add_js
 
-`$this->template->set_meta_tags()` — _Establecer etiquetas meta para SEO_
+`$this->template->add_js()` — _Incluir un archivo JS en el header/body_
 
 ```php
-$this->template->set_meta_tags($names, $default = false): void
+$this->template->add_js($src, $position = 'body'): void
 ```
 
 #### Parámetros
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$data** | array | Array asociativo de nombres de etiquetas meta |
-| **$default** | bool | Usar datos predeterminados |
+| **$src** | string\|array |  |
+| **$position** | string | Posición en la plantilla en la que se agregarán los archivos JS |
 
 #### Valores Devueltos
 
@@ -123,10 +101,49 @@ Esta función no tiene retornos.
 #### Ejemplos
 
 ```php
-// Establecer las metaetiquetas principales dentro de la etiqueta head
-$this->template->set_meta_tags([
-    'description' => 'This is a meta description',
-    'robots'      => 'index, follow'
+// Agregar un archivo JS dentro del <body>
+$this->template->add_js('https://example.com/assets/js/example.js');
+
+// Agregar un archivo JS con el atributo "defer" dentro de <head>
+$this->template->add_js(['src' => 'https://example.com/assets/js/example.js', 'defer' => null], 'head');
+```
+
+## set_seo_metas
+
+`$this->template->set_seo_metas()` — _Establecer Metas SEO de la página_
+
+```php
+$this->template->set_seo_metas($metas): void
+```
+
+#### Parámetros
+
+| Parámetro | Tipo | Descripción |
+| ------- | ------- | ------- |
+| **$metas** | array | Array asociativo de nombre/contenido para etiquetas SEO |
+
+**Nombres disponibles:**
+
+- `title`
+- `description`
+- `robots`
+- `type` (Etiqueta de Open Graph)
+- `url` (Etiqueta de Open Graph)
+- `image` (Etiqueta de Open Graph)
+
+#### Valores Devueltos
+
+Esta función no tiene retornos.
+
+#### Ejemplos
+
+```php
+$this->template->set_seo_metas([
+    'title'       => 'Nueva pagina',
+    'description' => 'Esta es una descripción de la página.',
+    'robots'      => 'index, follow',
+    'type'        => 'article',
+    'url'         => 'https://example.com/'
 ]);
 ```
 
@@ -142,9 +159,9 @@ $this->template->set_partial($name, $view, $data = []): void
 
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
-| **$name** | string | A unique name to call in views |
-| **$view** | string | View name |
-| **$data** | array | Associative array of data |
+| **$name** | string | Nombre único para llamar en las vistas |
+| **$view** | string | Nombre de la vista |
+| **$data** | array | Array asociativo de datos |
 
 #### Valores Devueltos
 
@@ -180,7 +197,7 @@ Esta función no tiene retornos.
 
 ```php
 $data = [
-    'message' => 'Hello!'
+    'message' => 'Hola!'
 ];
 
 $this->template->build('index', $data);

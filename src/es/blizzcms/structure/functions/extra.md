@@ -21,7 +21,7 @@ current_date($format = null, $timezone = null): string
 | **$format** | string\|null | Formato de la fecha |
 | **$timezone** | string\|null | Zona horaria de la fecha |
 
-::: info INFORMACIÓN
+::: note NOTA
 Si no se establece **$format**, se utilizará lo siguiente: `Y-m-d H:i:s`
 
 Si no se establece **$timezone**, se utilizará lo siguiente: `UTC`
@@ -52,7 +52,7 @@ format_date($date, $format = null): string
 | **$date** | string | String de fecha |
 | **$format** | string\|null | Formato de la fecha |
 
-::: info INFORMACIÓN
+::: note NOTA
 Si no se establece **$format**, se utilizará lo siguiente: `Y-m-d H:i:s`
 :::
 
@@ -84,7 +84,7 @@ add_timespan($date, $interval, $format = null, $timezone = null): string
 | **$format** | string\|null | Formato de la fecha |
 | **$timezone** | string\|null | Zona horaria de la fecha |
 
-::: info INFORMACIÓN
+::: note NOTA
 Si no se establece **$format**, se utilizará lo siguiente: `Y-m-d H:i:s`
 
 Si no se establece **$timezone**, se utilizará lo siguiente: `UTC`
@@ -118,7 +118,7 @@ remaining_minutes($date, $dateTwo, $timezone = null, $timezoneTwo = null): int
 | **$timezone** | string\|null | Zona horaria de la primera fecha |
 | **$timezoneTwo** | string\|null | Zona horaria de la segunda fecha |
 
-::: info INFORMACIÓN
+::: note NOTA
 Si no se establece **$timezone**/**$timezoneTwo**, se utilizará lo siguiente: `UTC`
 :::
 

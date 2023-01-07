@@ -60,7 +60,7 @@ Para comenzar esta guía, crearemos un módulo con el nombre `example`, el enfoq
      └── 🗒️ index.php
 ```
 
-::: info INFORMACIÓN
+::: note NOTA
 El nombre **"example"** del módulo lo puedes cambiar por el que quieras pero ten en cuenta que tendrás que cambiar el nombre en diferentes partes del módulo para que coincida **_(recuerda poner en mayúscula la primera letra en el nombre del controlador)_**.
 :::
 

@@ -60,7 +60,7 @@ To start this guide we will create a module with the name `example`, the main fo
      └── 🗒️ index.php
 ```
 
-::: info INFORMATION
+::: note NOTE
 The name **"example"** of the module you can change to whatever you want but keep in mind that you will have to change the name in different parts of the module to match it **_(remember to capitalize the first letter in the controller name)_**.
 :::
 

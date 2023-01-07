@@ -25,27 +25,25 @@ This function has no returns.
 #### Examples
 
 ```php
-// Will show "Blog — BlizzCMS" in the browser tab
+// The site will show "Blog — BlizzCMS" as the title
 $this->template->title('Blog', 'BlizzCMS');
 ```
 
-## head_tags
+## add_meta
 
-`$this->template->head_tags()` — _Inject additional tags inside the head tag_
+`$this->template->add_meta()` — _Include a meta in the header_
 
 ```php
-$this->template->head_tags($data): void
+$this->template->add_meta($name, $content, $type = 'name'): void
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$data** | array |  |
-
-::: info INFORMATION
-You can add each tag using the format `[tagname, [attributename => attributevalue]]`
-:::
+| **$name** | string |  |
+| **$content** | string |  |
+| **$type** | string |  |
 
 #### Return Values
 
@@ -54,39 +52,22 @@ This function has no returns.
 #### Examples
 
 ```php
-// add the script tag inside the head tag
-$this->template->head_tags([
-    ['script', ['src' => '']]
-]);
-
-// add the link tag inside the head tag
-$this->template->head_tags([
-    ['link', ['rel' => 'stylesheet', 'href' => '']]
-]);
-
-// add the meta tag inside the head tag
-$this->template->head_tags([
-    ['meta', ['name' => 'author', 'content' => 'BlizzCMS']]
-]);
+$this->template->add_meta('author', 'BlizzCMS');
 ```
 
-## body_tags
+## add_css
 
-`$this->template->body_tags()` — _Inject additional tags inside the body tag_
+`$this->template->add_css()` — _Include a CSS file in the header_
 
 ```php
-$this->template->body_tags($data): void
+$this->template->add_css($href): void
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$data** | array |  |
-
-::: info INFORMATION
-You can add each tag using the format `[tagname, [attributename => attributevalue]]`
-:::
+| **$href** | string |  |
 
 #### Return Values
 
@@ -95,26 +76,23 @@ This function has no returns.
 #### Examples
 
 ```php
-// Add the script tag inside the body tag
-$this->template->body_tags([
-    ['script', ['src' => '']]
-]);
+$this->template->add_css('https://example.com/assets/css/example.css');
 ```
 
-## set_meta_tags
+## add_js
 
-`$this->template->set_meta_tags()` — _Set meta tags for SEO_
+`$this->template->add_js()` — _Include a JS file in the header/body_
 
 ```php
-$this->template->set_meta_tags($names, $default = false): void
+$this->template->add_js($src, $position = 'body'): void
 ```
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$data** | array | Associative array of meta tag names |
-| **$default** | bool | Use default data |
+| **$src** | string\|array |  |
+| **$position** | string | Position in the template in which the JS files will be added |
 
 #### Return Values
 
@@ -123,10 +101,49 @@ This function has no returns.
 #### Examples
 
 ```php
-// Set the main meta tags to the head
-$this->template->set_meta_tags([
-    'description' => 'This is a meta description',
-    'robots'      => 'index, follow'
+// Add a JS file inside <body>
+$this->template->add_js('https://example.com/assets/js/example.js');
+
+// Add a JS file with the attribute "defer" inside <head>
+$this->template->add_js(['src' => 'https://example.com/assets/js/example.js', 'defer' => null], 'head');
+```
+
+## set_seo_metas
+
+`$this->template->set_seo_metas()` — _Set SEO Metas of the page_
+
+```php
+$this->template->set_seo_metas($metas): void
+```
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------- | ------- | ------- |
+| **$metas** | array | Associative array of name/content for SEO tags |
+
+**Available names:**
+
+- `title`
+- `description`
+- `robots`
+- `type` (Open Graph Tag)
+- `url` (Open Graph Tag)
+- `image` (Open Graph Tag)
+
+#### Return Values
+
+This function has no returns.
+
+#### Examples
+
+```php
+$this->template->set_seo_metas([
+    'title'       => 'New page',
+    'description' => 'This is a page description',
+    'robots'      => 'index, follow',
+    'type'        => 'article',
+    'url'         => 'https://example.com/'
 ]);
 ```
 
@@ -142,7 +159,7 @@ $this->template->set_partial($name, $view, $data = []): void
 
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
-| **$name** | string | A unique name to call in views |
+| **$name** | string | Unique name to call in views |
 | **$view** | string | View name |
 | **$data** | array | Associative array of data |
 
