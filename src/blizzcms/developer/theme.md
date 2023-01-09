@@ -29,7 +29,7 @@ The following guide will explain in detail the structure of a theme and how to m
 - 📂 **views:** Container folder of subfolders and files that override the general views and the layouts.
 - 🗒️ **theme.php:** Configuration file that provides theme information.
 
-::: note NOTE
+::: note
 The structure provided here may vary depending on the developer and the number of elements used.
 :::
 
@@ -51,7 +51,7 @@ example
 └── 🗒️ theme.php
 ```
 
-::: note NOTE
+::: note
 The name **"example"** of the theme you can change to whatever you want but keep in mind that you will have to change the name in different parts of the theme to match it.
 :::
 
@@ -84,7 +84,7 @@ This file contains important information about the theme which is then used in t
 | **author name** | Author name |
 | **author website** | Author website |
 
-::: warning NOTICES
+::: warning
 Remember to change the data provided in the example to your own.
 :::
 
@@ -115,7 +115,7 @@ For this theme, we will only apply a simple override to buttons from the default
 }
 ```
 
-::: note NOTE
+::: note
 The classes coming from the default theme mostly consist of UIKit 3, although it also has parts created by us so you can check the file in `assets/css/default.css` to get a better idea if you plan to do an override.
 :::
 
@@ -164,7 +164,7 @@ As you can see in the file, the lines used are HTML tags present in all the page
 - **_Line 23_:** Line containing the script main.js (This file initializes tail select and purecounter).
 - **_Line 24_:** Line used by the template library to add tags to the body (scripts).
 
-::: note NOTE
+::: note
 To find out more about the template library you can go [here](../structure/libraries/template.md).
 :::
 

@@ -108,7 +108,7 @@ $id = user_id('example@domain.tld', 'email');
 user_avatar($id = null): string
 ```
 
-::: note NOTE
+::: note
 The difference between getting the avatar with `user('avatar')` or `user_avatar()` is that the latter caches the avatar data.
 :::
 

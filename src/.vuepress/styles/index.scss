@@ -9,21 +9,21 @@
 :root {
   // Containers
   --tip-bg-color: #f4fffa;
-  --tip-border-color: #1cd77f;
+  --tip-border-color: #1cd781;
   --warning-bg-color: #fff9f4;
-  --warning-border-color: #d77c1c;
+  --warning-border-color: #d7a61c;
   --danger-bg-color: #fff4f4;
-  --danger-border-color: #d7251c;
+  --danger-border-color: #d71c1c;
   --info-bg-color: #f4f9ff;
-  --info-border-color: #1cabd7;
+  --info-border-color: #1c9bd7;
   --note-bg-color: #f9f9f9;
   --note-border-color: #d7d7d7;
 
   // Badges
-  --badge-tip-color: #1cd77f;
-  --badge-warning-color: #d77c1c;
-  --badge-danger-color: #d7251c;
-  --badge-info-color: #1cabd7;
+  --badge-tip-color: #1cd781;
+  --badge-warning-color: #d7a61c;
+  --badge-danger-color: #d71c1c;
+  --badge-info-color: #1c9bd7;
   --badge-note-color: #d7d7d7;
 
   // Tab markdown
@@ -40,10 +40,10 @@
 
 html[data-theme="dark"] {
   // Containers
-  --tip-bg-color: #292d2c;
-  --warning-bg-color: #2d2b29;
-  --danger-bg-color: #2d2929;
-  --info-bg-color: #292c2d;
+  --tip-bg-color: #282d2a;
+  --warning-bg-color: #2d2c28;
+  --danger-bg-color: #2d2828;
+  --info-bg-color: #282c2d;
   --note-bg-color: #2d2d2d;
 
   // Tab markdown
@@ -75,32 +75,48 @@ td {
   font-family: 'Reem Kufi', sans-serif;
 }
 
-.home.project .hero h1 {
-  font-size: 2.5rem;
+.hero-info-wrapper h1 {
+  font-size: 2.625rem;
 }
 
-.home.project .hero .description,
-.home.project .hero .action {
+.hero-info-wrapper h1,
+.hero-info-wrapper .description,
+.hero-info-wrapper .actions {
   margin: 1rem 0;
 }
 
-.home.project .features {
+.feature-wrapper:first-child {
   border-top: 0;
   padding: 2rem 0;
 }
 
-.home.project .feature {
+.feature-item {
+  flex-basis: calc(33% - 4rem);
   border: 2px solid var(--border-color);
 }
 
-.home.project .feature:hover {
-  transform: scale(1.025);
-}
-
+// Search
 .search-box .suggestion .page-title {
   padding: 0 !important;
 }
 
 .search-box .suggestion .page-header {
   margin-left: .5rem !important;
+}
+
+// Container icons
+.hint-container.tip > .hint-container-title:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231cd781' d='M7.941 18c-.297-1.273-1.637-2.314-2.187-3a8 8 0 1 1 12.49.002c-.55.685-1.888 1.726-2.185 2.998H7.94zM16 20v1a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-1h8zm-3-9.995V6l-4.5 6.005H11v4l4.5-6H13z'/%3E%3C/svg%3E");
+}
+
+.hint-container.warning > .hint-container-title:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath d='M576.286 752.57v-95.425q0-7.031-4.771-11.802t-11.3-4.772h-96.43q-6.528 0-11.3 4.772t-4.77 11.802v95.424q0 7.031 4.77 11.803t11.3 4.77h96.43q6.528 0 11.3-4.77t4.77-11.803zm-1.005-187.836 9.04-230.524q0-6.027-5.022-9.543-6.529-5.524-12.053-5.524H456.754q-5.524 0-12.053 5.524-5.022 3.516-5.022 10.547l8.538 229.52q0 5.023 5.022 8.287t12.053 3.265h92.913q7.032 0 11.803-3.265t5.273-8.287zM568.25 95.65l385.714 707.142q17.578 31.641-1.004 63.282-8.538 14.564-23.354 23.102t-31.892 8.538H126.286q-17.076 0-31.892-8.538T71.04 866.074q-18.582-31.641-1.004-63.282L455.75 95.65q8.538-15.57 23.605-24.61T512 62t32.645 9.04 23.605 24.61z' fill='%23d7a61c'/%3E%3C/svg%3E");
+}
+
+.hint-container.danger > .hint-container-title:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2c5.523 0 10 4.477 10 10v3.764a2 2 0 0 1-1.106 1.789L18 19v1a3 3 0 0 1-2.824 2.995L14.95 23a2.5 2.5 0 0 0 .044-.33L15 22.5V22a2 2 0 0 0-1.85-1.995L13 20h-2a2 2 0 0 0-1.995 1.85L9 22v.5c0 .171.017.339.05.5H9a3 3 0 0 1-3-3v-1l-2.894-1.447A2 2 0 0 1 2 15.763V12C2 6.477 6.477 2 12 2zm-4 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z' fill='%23d71c1c'/%3E%3C/svg%3E");
+}
+
+.hint-container.info > .hint-container-title:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11v6h2v-6h-2zm0-4v2h2V7h-2z' fill='%231c9bd7'/%3E%3C/svg%3E");
 }

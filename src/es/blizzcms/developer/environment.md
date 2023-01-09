@@ -14,7 +14,7 @@ Si instaló el CMS en **Apache**, busque en su carpeta principal el archivo `.ht
 SetEnv CI_ENV development
 ```
 
-::: warning AVISO
+::: warning
 Recuerde eliminar esta línea cuando utilice el CMS en entornos de producción.
 :::
 
@@ -30,6 +30,6 @@ server {
 }
 ```
 
-::: warning AVISO
+::: warning
 Recuerde eliminar esta línea cuando utilice el CMS en entornos de producción.
 :::

@@ -14,7 +14,7 @@ If you installed the CMS in **Apache**, look in your main folder for the `.htacc
 SetEnv CI_ENV development
 ```
 
-::: warning NOTICES
+::: warning
 Remember to remove this line when using the CMS in production environments.
 :::
 
@@ -30,6 +30,6 @@ server {
 }
 ```
 
-::: warning NOTICES
+::: warning
 Remember to remove this line when using the CMS in production environments.
 :::

@@ -29,7 +29,7 @@ La siguiente guía explicará en detalle la estructura de un tema y cómo crear 
 - 📂 **views:** Carpeta contenedora de subcarpetas y archivos que anulan las vistas generales y los layouts.
 - 🗒️ **theme.php:** Archivo de configuración que proporciona información del tema.
 
-::: note NOTA
+::: note
 La estructura proporcionada aquí puede variar según el desarrollador y la cantidad de elementos utilizados.
 :::
 
@@ -51,7 +51,7 @@ example
 └── 🗒️ theme.php
 ```
 
-::: note NOTA
+::: note
 Puedes cambiar el nombre **"example"** del tema por el que quieras, pero ten en cuenta que tendrás que cambiar el nombre en diferentes partes del tema para que coincida.
 :::
 
@@ -84,7 +84,7 @@ Este archivo contiene información importante sobre el tema que luego se utiliza
 | **author name** | Nombre del autor |
 | **author website** | Sitio web del autor |
 
-::: warning AVISO
+::: warning
 Recuerda cambiar los datos proporcionados en el ejemplo por los tuyos.
 :::
 
@@ -115,7 +115,7 @@ Para este tema, solo aplicaremos una anulación simple a los botones del tema pr
 }
 ```
 
-::: note NOTA
+::: note
 Las clases que provienen del tema predeterminado consisten principalmente de UIKit 3, aunque también tiene partes creadas por nosotros, por lo que puede consultar el archivo en `assets/css/default.css` para tener una mejor idea si planea hacer una anulación.
 :::
 
@@ -164,7 +164,7 @@ Como puede ver en el archivo, las líneas utilizadas son etiquetas HTML presente
 - **_Línea 23_:** Línea que contiene el script main.js (Este archivo inicializa tail select y purecounter).
 - **_Línea 24_:** Línea utilizada por la librería template para agregar etiquetas al body (scripts).
 
-::: note NOTA
+::: note
 Para obtener más información sobre la librería template, puede ir [aquí](../structure/libraries/template.md).
 :::
 

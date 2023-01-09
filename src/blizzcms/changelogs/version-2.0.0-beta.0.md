@@ -6,7 +6,7 @@ order: 2
 
 :package: Scheduled release date: **2022-12-02**
 
-::: danger WARNING
+::: danger
 V2.0.0 has been completely rewritten from 0, so it is **not compatible** with themes/modules and/or modifications made in the **V1/Plus** versions.
 :::
 

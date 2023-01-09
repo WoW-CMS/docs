@@ -127,7 +127,7 @@ sudo mysql_secure_installation
 
 El script le pedirá que configure la contraseña para el usuario root, elimine el usuario anónimo, restrinja el acceso del usuario root a la máquina local y elimine la base de datos de prueba. Al final, la secuencia de comandos volverá a cargar las tablas de privilegios para garantizar que todos los cambios surtan efecto de inmediato.
 
-::: tip CONSEJO
+::: tip
 Todos los pasos se explican en detalle y se recomienda responder "Y" (yes) a todas las preguntas.
 :::
 
@@ -145,7 +145,7 @@ Ahora debe ejecutar esta instrucción SQL para crear la base de datos.
 CREATE DATABASE mycms_db;
 ```
 
-::: warning AVISO
+::: warning
 Recuerde cambiar **mycms_db** por el nombre que desee.
 :::
 
@@ -159,7 +159,7 @@ Para eso, primero crearemos el usuario con la siguiente sentencia SQL:
 CREATE USER 'new-user'@'localhost' IDENTIFIED BY 'password';
 ```
 
-::: warning AVISO
+::: warning
 Recuerda cambiar **new-user** y **password** a lo que quieras.
 :::
 
@@ -169,7 +169,7 @@ A continuación, otorgaremos los permisos al usuario sobre la base de datos con 
 GRANT ALL PRIVILEGES ON mycms_db.* TO 'new-user'@'localhost';
 ```
 
-::: warning AVISO
+::: warning
 Recuerde cambiar **mycms_db**, **new-user** y **password** por los elegidos anteriormente.
 :::
 

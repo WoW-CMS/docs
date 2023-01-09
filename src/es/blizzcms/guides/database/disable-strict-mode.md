@@ -31,7 +31,7 @@ Para eliminar los valores en el modo estricto, busque el archivo `my.ini` o `my.
 sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
 ```
 
-::: note NOTA
+::: note
 Las ubicaciones más comunes para el archivo my.ini o my.cnf son:
 
 Windows:
@@ -54,6 +54,6 @@ sql_mode=ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
 
 Finalmente reinicie su MySQL/MariaDB y continúe con la instalación.
 
-::: warning AVISO
+::: warning
 Si la línea `sql_mode=` debajo de **[mysqld]** no existe, agréguela.
 :::

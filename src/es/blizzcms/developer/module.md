@@ -37,7 +37,7 @@ La siguiente guía explicará en detalle la estructura de un módulo y cómo hac
 - 📂 **models:** Carpeta contenedora de modelos.
 - 📂 **views:** Carpeta contenedora de archivos de vista.
 
-::: note NOTE
+::: note
 La estructura proporcionada aquí puede variar según el desarrollador y la cantidad de elementos utilizados.
 :::
 
@@ -60,7 +60,7 @@ Para comenzar esta guía, crearemos un módulo con el nombre `example`, el enfoq
      └── 🗒️ index.php
 ```
 
-::: note NOTA
+::: note
 El nombre **"example"** del módulo lo puedes cambiar por el que quieras pero ten en cuenta que tendrás que cambiar el nombre en diferentes partes del módulo para que coincida **_(recuerda poner en mayúscula la primera letra en el nombre del controlador)_**.
 :::
 
@@ -95,7 +95,7 @@ Este archivo contiene información importante sobre el módulo que luego se util
 | **author website** | Sitio web del autor |
 | **dashboard** | Ruta al panel de administración del módulo |
 
-::: warning AVISO
+::: warning
 Recuerda cambiar los datos proporcionados en el ejemplo por los tuyos.
 :::
 
@@ -208,6 +208,6 @@ Este archivo mostrará la información al usuario. En el ejemplo, usamos HTML co
 
 ## Cómo crear un módulo avanzado?
 
-::: warning AVISO
+::: warning
 Antes de empezar, si aún no has leído la guía sobre [¿cómo crear un módulo básico?](../developer/module.md#como-crear-un-modulo-basico), te recomendamos que la leas para continuar con esta guía avanzada.
 :::

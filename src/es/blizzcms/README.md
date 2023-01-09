@@ -26,7 +26,7 @@ Los lenguajes **soportados** en el CMS son los siguientes:
 - Inglés (en)
 - Español (es)
 
-::: note NOTA
+::: note
 Si necesita un idioma diferente de la lista anterior, puede contribuir a la traducción de ese idioma y enviar un pull request con los archivos. Para obtener más información, puede ver [Cómo traducir a otro idioma](../blizzcms/guides/contributions/translate.md)
 :::
 

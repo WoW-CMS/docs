@@ -127,7 +127,7 @@ sudo mysql_secure_installation
 
 The script will ask you to set the password for the root user, remove the anonymous user, restrict the root user's access to the local machine, and remove the test database. In the end, the script will reload the privilege tables ensuring that all changes take effect immediately.
 
-::: tip TIP
+::: tip
 All steps are explained in detail and it is recommended to answer "Y" (yes) to all questions.
 :::
 
@@ -145,7 +145,7 @@ Now you should run this SQL statement to create the database.
 CREATE DATABASE mycms_db;
 ```
 
-::: warning NOTICES
+::: warning
 Remember to change **mycms_db** to whatever name you want.
 :::
 
@@ -159,7 +159,7 @@ For that, we will first create the user with the following SQL statement:
 CREATE USER 'new-user'@'localhost' IDENTIFIED BY 'password';
 ```
 
-::: warning NOTICES
+::: warning
 Remember to change **new-user** and **password** to whatever you want.
 :::
 
@@ -169,7 +169,7 @@ Next, we will grant the permissions to the user on the database with the followi
 GRANT ALL PRIVILEGES ON mycms_db.* TO 'new-user'@'localhost';
 ```
 
-::: warning NOTICES
+::: warning
 Remember to change **mycms_db**, **new-user** and **password** for those chosen above.
 :::
 

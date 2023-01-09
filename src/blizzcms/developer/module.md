@@ -37,7 +37,7 @@ The following guide will explain in detail the structure of a module and how to 
 - 📂 **models:** Container folder of models.
 - 📂 **views:** Container folder of view files.
 
-::: note NOTE
+::: note
 The structure provided here may vary depending on the developer and the number of elements used.
 :::
 
@@ -60,7 +60,7 @@ To start this guide we will create a module with the name `example`, the main fo
      └── 🗒️ index.php
 ```
 
-::: note NOTE
+::: note
 The name **"example"** of the module you can change to whatever you want but keep in mind that you will have to change the name in different parts of the module to match it **_(remember to capitalize the first letter in the controller name)_**.
 :::
 
@@ -95,7 +95,7 @@ This file contains important information about the module which is then used in 
 | **author website** | Author website |
 | **dashboard** | Route to the admin panel of the module |
 
-::: warning NOTICES
+::: warning
 Remember to change the data provided in the example to your own.
 :::
 
@@ -208,6 +208,6 @@ This file will display the information to the user. In the example, we use HTML 
 
 ## How to create an advanced module?
 
-::: warning NOTICES
+::: warning
 Before starting, if you have not yet read the guide on [how to create a basic module?](../developer/module.md#how-to-create-a-basic-module), we recommend that you read it to proceed with this advanced guide.
 :::
