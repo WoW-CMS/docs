@@ -1,7 +1,7 @@
 ---
 title: Versión 2.0.0-beta.0
 icon: bx bxs-file
-order: 2
+order: 3
 ---
 
 :package: Fecha de publicación programada: **2022-12-02**
