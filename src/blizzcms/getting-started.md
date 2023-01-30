@@ -33,84 +33,82 @@ If you still do not have the prerequisites installed, you can see the following 
 - [How to Install LEMP Stack](../blizzcms/guides/linux/lemp-stack.md)
 - [How to Install Composer](../blizzcms/guides/linux/composer.md)
 
-## Installation
+## Manual Installation
 
-Choose one of the following forms in which you can install the CMS:
+1. Download the [latest version](https://github.com/WoW-CMS/BlizzCMS/releases), and extract it where the root of your site will be.
 
-::: tabs#installations
+2. Open a shell and execute the following commands to install the dependencies
 
-@tab:active Manual
+    ```bash
+    cd <site directory>
 
-First, download the [latest version](https://github.com/WoW-CMS/BlizzCMS/releases) and extract it to the folder where the root of your site will be.
+    composer install --no-plugins --no-scripts
+    ```
 
-Then, inside your site root directory, use the following command to install the dependencies:
+3. Lastly, set permission `755` for all folders and permission `644` for all files in your site root
 
-```bash
-composer install --no-plugins --no-scripts
-```
+:tada: Now open the browser with your **IP/Domain** to continue the installation process
 
-Lastly, set the `755` permission for all folders and the `644` permission for files.
+## Installation with Git
 
-Now you can open the browser with your **IP/Domain** to continue the installation process :tada:
+1. Open a shell and execute the following commands to clone the repository
 
-@tab Git
+    ```bash
+    cd <site directory>
 
-First, clone the CMS repository with the following command:
+    git clone https://github.com/WoW-CMS/BlizzCMS.git
+    ```
 
-```bash
-git clone https://github.com/WoW-CMS/BlizzCMS.git
-```
+2. Execute the following command to install the dependencies
 
-Then, inside the newly created directory we will use the following command to install dependencies:
+    ```bash
+    composer install --no-plugins --no-scripts
+    ```
 
-```bash
-composer install --no-plugins --no-scripts
-```
+3. Lastly, set permission `755` for all folders and permission `644` for all files in your site root
 
-Lastly, set the `755` permission for all folders and the `644` permission for files.
+:tada: Now open the browser with your **IP/Domain** to continue the installation process
 
-Now you can open the browser with your **IP/Domain** to continue the installation process :tada:
+## Installation with Docker
 
-@tab Docker
+1. Open a shell and execute the following commands to clone the repository
 
-First, clone the CMS repository with the following command:
+    ```bash
+    cd <site directory>
 
-```bash
-git clone https://github.com/WoW-CMS/BlizzCMS.git
-```
+    git clone https://github.com/WoW-CMS/BlizzCMS.git
+    ```
 
-Then, inside the newly created directory edit the `.env.example` file with your data and rename it to `.env`
+2. Edit the file `.env.example` with your data and rename it to `.env`
 
-```
-APP_NAME=blizzcms
-APP_PORT=<Webserver port>
-APP_DB_ADMIN_PORT=<PHPMyAdmin port>
-DB_PORT=<MariaDB port>
+    ```
+    APP_NAME=blizzcms
+    APP_PORT=<Webserver port>
+    APP_DB_ADMIN_PORT=<PHPMyAdmin port>
+    DB_PORT=<MariaDB port>
 
-MYSQL_ROOT_PASS=<Root password>
-MYSQL_USER=<New user>
-MYSQL_PASS=<User password>
-MYSQL_DB=<Database name>
-```
+    MYSQL_ROOT_PASS=<Root password>
+    MYSQL_USER=<New user>
+    MYSQL_PASS=<User password>
+    MYSQL_DB=<Database name>
+    ```
 
-Next, build the docker image with the command:
+3. Execute the following command to build the docker image
 
-```bash
-docker-compose build
-```
+    ```bash
+    docker-compose build
+    ```
 
-After you finish building the image, start the container with the following command:
+4. After finishing building the image, execute the following command to start the container
 
-```bash
-docker-compose up -d
-```
+    ```bash
+    docker-compose up -d
+    ```
 
-Lastly, to install the dependencies use the following command:
+5. Lastly, execute the following command to install the dependencies
 
-```bash
-docker exec -d blizzcms-webserver composer install --no-plugins --no-scripts --no-interaction --no-progress
-```
+    ```bash
+    docker exec -d blizzcms-webserver composer install --no-plugins --no-scripts --no-interaction --no-progress
+    ```
 
-Now you can open the browser with your **IP/Domain** to continue the installation process :tada:
-
-:::
+:tada: Now open the browser with your **IP/Domain** to continue the installation process
