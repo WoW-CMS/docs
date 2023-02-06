@@ -15,7 +15,7 @@ Before you get started, ensure you have the following:
 - **MySQL 5.7+** or **MariaDB 10.6+**
 - **PHP 7.4** or newer recommended
     - Enable extensions: bcmath - curl - gd - gmp - mbstring - mysqli - openssl - soap - zip
-- **Composer 2.4+**
+- **Composer 2.5+**
 
 ::: note
 The CMS requires that you have a World of Wacraft server pre-installed with its respective databases.
@@ -47,7 +47,7 @@ If you still do not have the prerequisites installed, you can see the following 
 
 3. Lastly, set permission `755` for all folders and permission `644` for all files in your site root
 
-:tada: Now open the browser with your **IP/Domain** to continue the installation process
+:tada: Now open a browser tab with your **IP/Domain** to continue the installation process
 
 ## Installation with Git
 
@@ -67,7 +67,7 @@ If you still do not have the prerequisites installed, you can see the following 
 
 3. Lastly, set permission `755` for all folders and permission `644` for all files in your site root
 
-:tada: Now open the browser with your **IP/Domain** to continue the installation process
+:tada: Now open a browser tab with your **IP/Domain** to continue the installation process
 
 ## Installation with Docker
 
@@ -111,4 +111,4 @@ If you still do not have the prerequisites installed, you can see the following 
     docker exec -d blizzcms-webserver composer install --no-plugins --no-scripts --no-interaction --no-progress
     ```
 
-:tada: Now open the browser with your **IP/Domain** to continue the installation process
+:tada: Now open a browser tab with your **IP/Domain** to continue the installation process

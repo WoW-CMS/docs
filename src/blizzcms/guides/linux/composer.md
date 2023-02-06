@@ -16,7 +16,7 @@ Before you get started, ensure you have the following:
 
 Now let's start :nerd_face:
 
-## Install PHP Composer
+## Installation
 
 First of all, download the latest version of the PHP Composer installation script by running the following command:
 

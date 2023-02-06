@@ -16,7 +16,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 
 Ahora comencemos :nerd_face:
 
-## Instalar PHP Composer
+## Instalación
 
 En primer lugar, descargue la última versión del script de instalación de PHP Composer ejecutando el siguiente comando:
 
