@@ -215,7 +215,7 @@ sudo apt update
 Lastly, we will install PHP with the necessary extensions:
 
 ```bash
-sudo apt install -y php8.0 php8.0-{fpm,bcmath,cli,curl,gd,gmp,json,mbstring,mysqlnd,openssl,soap,xml,zip}
+sudo apt install -y php8.1 php8.1-{fpm,bcmath,cli,curl,gd,gmp,json,mbstring,mysqlnd,openssl,soap,xml,zip}
 ```
 
 @tab Rocky
@@ -242,7 +242,7 @@ sudo dnf module reset php
 We enable PHP from the Remi repository:
 
 ```bash
-sudo dnf module enable php:remi-8.0
+sudo dnf module enable php:remi-8.1
 ```
 
 Lastly, we will install PHP with the necessary extensions:
@@ -252,3 +252,40 @@ sudo dnf install -y php php-{fpm,bcmath,cli,curl,gd,gmp,json,mbstring,mysqlnd,op
 ```
 
 :::
+
+## Configuration for server block
+
+Here you can find an example configuration using PHP 8.1 FPM (unix sockets).
+
+```bash
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name domain.tld;
+
+    root  /var/www/domain;
+    index index.php index.html;
+
+    location / {
+        try_files $uri $uri/ /index.php;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+
+        # fastcgi_pass 127.0.0.1:9000;
+        fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+    }
+
+    # deny access to hidden files such as .htaccess
+    location ~ /\. {
+        deny all;
+    }
+
+    # deny access to folders
+    location ~ ^/(application|system|vendor)/ {
+        return 403;
+    }
+}
+```

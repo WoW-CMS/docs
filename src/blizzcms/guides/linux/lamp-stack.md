@@ -215,7 +215,7 @@ sudo apt update
 Lastly, we will install PHP with the necessary extensions:
 
 ```bash
-sudo apt install -y php8.0 php8.0-{bcmath,cli,curl,gd,gmp,json,mbstring,mysqlnd,openssl,soap,xml,zip}
+sudo apt install -y php8.1 php8.1-{bcmath,cli,curl,gd,gmp,json,mbstring,mysqlnd,openssl,soap,xml,zip}
 ```
 
 @tab Rocky
@@ -242,7 +242,7 @@ sudo dnf module reset php
 We enable PHP from the Remi repository:
 
 ```bash
-sudo dnf module enable php:remi-8.0
+sudo dnf module enable php:remi-8.1
 ```
 
 Lastly, we will install PHP with the necessary extensions:
