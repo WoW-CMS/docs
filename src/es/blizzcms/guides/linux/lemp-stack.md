@@ -257,7 +257,7 @@ sudo dnf install -y php php-{fpm,bcmath,cli,curl,gd,gmp,json,mbstring,mysqlnd,op
 
 Aquí puede encontrar una configuración de ejemplo usando PHP 8.1 FPM (sockets unix).
 
-```bash
+```nginx
 server {
     listen 80;
     listen [::]:80;
