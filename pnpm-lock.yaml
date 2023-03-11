@@ -5,14 +5,14 @@ specifiers:
   '@vuepress/plugin-search': 2.0.0-beta.61
   vue: 3.2.47
   vuepress: 2.0.0-beta.61
-  vuepress-theme-hope: 2.0.0-beta.189
+  vuepress-theme-hope: 2.0.0-beta.192
 
 dependencies:
   '@vuepress/client': 2.0.0-beta.61
   '@vuepress/plugin-search': 2.0.0-beta.61
   vue: 3.2.47
   vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-  vuepress-theme-hope: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+  vuepress-theme-hope: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
 
 packages:
 
@@ -2323,8 +2323,8 @@ packages:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: false
 
-  /artalk/2.4.4:
-    resolution: {integrity: sha512-8O/FjQM+oFnfsfouuej2qjRNfV9/0JJR2jI9vS7neI8zTa4xqu0PChDIR0CtZG8ze0eOKI0taTlEFhmahJUJIQ==}
+  /artalk/2.5.0:
+    resolution: {integrity: sha512-4EFYM8LbVDapzoPdiTK5lJ3HT/FwEuT1i0jB3GEaoO4a40Ux6HJ+Tx33A+3OniMc/xiqf5TVwVWHfSk0NhZcAw==}
     dependencies:
       abortcontroller-polyfill: 1.7.5
       hanabi: 0.4.0
@@ -4401,8 +4401,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: false
 
-  /plyr/3.7.3:
-    resolution: {integrity: sha512-ORULENBvEvvzMYXRQBALDmEi8P+wZt1Hr/NvHqchu/t7E2xJKNkRYWx0qCA1HETIGZ6zobrOVgqeAUqWimS7fQ==}
+  /plyr/3.7.7:
+    resolution: {integrity: sha512-8B2b0HP+j/jKM7GrYdEuSi1hIF3BnNzjaBsBa3bx4/SO9omX3EfhCi78ZFh/0QuCKlwpTBusTMMZ3Hq6bJ5d/g==}
     dependencies:
       core-js: 3.29.0
       custom-event-polyfill: 1.0.7
@@ -5142,8 +5142,8 @@ packages:
       '@vue/shared': 3.2.47
     dev: false
 
-  /vuepress-plugin-auto-catalog/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-IvVuwOkGHaT90BQvpqREb21ek/HNMWCTYPcno2nUvuTupo/NOBWl4aSBoxAIDafmzEAH5B+Dyc9O71XlsqSxGw==}
+  /vuepress-plugin-auto-catalog/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-SEa2LBuZz/2SqCtzWGsS71cJywJAfpZukEnU2o1UFabv+LdmwkwTALLypBt+eVPZWJkMhkczqg7mvBAwNAp5rA==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5176,16 +5176,16 @@ packages:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-components: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-sass-palette: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-components: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-sass-palette: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-blog2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-oe1AgijiDahxIfJ4548Xuef6EgJL9LnDDx+STdbbw3jc/wntG/C/4NUsklxmN+fqoURTOr/ZDzCtx9TmhOfPbQ==}
+  /vuepress-plugin-blog2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-J4SvGEUi75z0T5KURnWq8ebDrLlXT1rWr/apAWUfaMJbu0ZkpKIqS5tCGBFtme+fB4e5EU4cACEufOyWU8Uu5g==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5212,14 +5212,14 @@ packages:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-comment2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-o5PCtZ3J60+DHEnR+1AT/OQi5xGt1gIaL43w/0DNDA8BPKh0Azac23n74H7G51b/YpeHI7slRage8rzfF7ct1g==}
+  /vuepress-plugin-comment2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-mEcG/9hWLy5FqPkBpbgplJdfrD33DPEG0leZyPYMizOwepIS8Ks62/e3MJ6XhW4Zx8E48lyfvGUtswf7kp8b3w==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5247,21 +5247,21 @@ packages:
       '@vuepress/shared': 2.0.0-beta.61
       '@vuepress/utils': 2.0.0-beta.61
       '@waline/client': 2.14.8
-      artalk: 2.4.4
+      artalk: 2.5.0
       giscus: 1.2.8
       twikoo: 1.6.10
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-sass-palette: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-sass-palette: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-components/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-RqAQMjnAz8D9E3GntL07BGpnzgTKyKeVF37Egk19YdHcn2QO8hAd/f48CKNwQ7IaczcX0P8U3iDeVpl3gKyHmA==}
+  /vuepress-plugin-components/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-hBKCSlzLjoYoTnUMl0rCl/620bvGjCI4S9Nv3rTRfMSa71Gp/g8sAVxdoRV+84IHewaU0JajBN4AvIdgxXdE2A==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5297,21 +5297,21 @@ packages:
       dashjs: 4.6.0
       hls.js: 1.3.4
       mpegts.js: 1.7.2
-      plyr: 3.7.3
+      plyr: 3.7.7
       qrcode: 1.5.1
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-reading-time2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-sass-palette: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-reading-time2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-sass-palette: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-copy-code2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-VNPig+bMvZXKRjAU3BhPYLi2BiRmnbPBovuBRe9RUTdaPKzG6Qewy46tcCNeq9igOVJY+86io6tb3l0nIJEJzw==}
+  /vuepress-plugin-copy-code2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-bgN4kDwsTbWZLUd6lzKvMFUsNPx96mvN+RS8Y8M5mg83nC0swRAGLVBEv0lIah7zm8fYpYR4X5Jv1rnUl8Crzg==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5343,15 +5343,15 @@ packages:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-sass-palette: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-sass-palette: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-copyright2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-aYCtRlGjR+1zzJglQMhsWRIaFI4y1otUFBByYfDTlXPhcIhg0dhiFOB5B2bDGGyKysmIf6uhKF/JAKe4KxZu0A==}
+  /vuepress-plugin-copyright2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-skOGvzP4lcVM3BKYtCduwkvWNkpPYUV9PA9MQOa45tTgplzkxut+zXaXOxgoi1WYV5bOa6sAmPxcULnX1096fw==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5377,14 +5377,14 @@ packages:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-feed2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-sdaEbeCOSErOT8pe96xGUBnYyujcVE4LVCuVwM0VRVOl18inAvZa4Ll1GRkXWsjj+WTjgh+LwKzRaNN21jGnbw==}
+  /vuepress-plugin-feed2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-tBJFGDuTEeaS0LNp8MVVAd/hZ5AYAuUkcK4YFftdn6Kng/mYYtsgAA0ga3FFHn4tNPXCnu83RdATPfkLRD/cUg==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       vuepress: 2.0.0-beta.61
@@ -5402,7 +5402,7 @@ packages:
       '@vuepress/utils': 2.0.0-beta.61
       cheerio: 1.0.0-rc.12
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
       xml-js: 1.6.11
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -5410,8 +5410,8 @@ packages:
       - supports-color
     dev: false
 
-  /vuepress-plugin-md-enhance/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-sAStYsXonACxv3m6UzSY5xg8YkY7NL2Of6Hstgfvg/oO4y+RA5bmO3lt5qJOIa2BMJynKZNRbqS0Y66l/HZLnw==}
+  /vuepress-plugin-md-enhance/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-iY/g9JCQunDauBu5fXp7la/m8G/9hlvmiabY/wNQHRBlQsrdR1UlhYwws7BJY11p8pMeI2Wmuub1mMRSWd05wQ==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5472,15 +5472,15 @@ packages:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-sass-palette: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-sass-palette: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-photo-swipe/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-VYVo3f0tRIFqoCBIdvJytvWAHpYpYWxEItjgbY3QgBpvMZwHMVy5ayptGXKBtnHsaL37qrHqiQz8a2AV6o14tA==}
+  /vuepress-plugin-photo-swipe/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-wZKHNfl65epSLI2r1OabmK1XBmGYnuBweVXscrrGXYl9dGqH3zsG5udS43lFkEiLn1e/Ghf0wpGkNgj//0VycA==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5512,15 +5512,15 @@ packages:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-sass-palette: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-sass-palette: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-pwa2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-ZB5XZ2hL6AqR7kZBXnvTJnPS2dQYwC/LLn+Kf020yXB3EK2AdXOv6C764ULNrdv+m3ROQ7CFfduyFEqz+kr6wQ==}
+  /vuepress-plugin-pwa2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-5aVod3+kP4wGpgcQw1ZtK7hDiiCthB8XHb3lS6rUtMvT+9BnFNWmpghQjtvLV1/9Z6F+wX8vVg7UAopwSi1pkA==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5553,8 +5553,8 @@ packages:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-sass-palette: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-sass-palette: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
       workbox-build: 6.5.4
     transitivePeerDependencies:
       - '@types/babel__core'
@@ -5562,8 +5562,8 @@ packages:
       - supports-color
     dev: false
 
-  /vuepress-plugin-reading-time2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-xdRLhQnyGXs/oxz/wSrkvAqrgFH9o/FWHZ8lo4He+dicEe+OoJXzPiajIVL4LwhQ2+FVboGzxLFyoCKjzoa00w==}
+  /vuepress-plugin-reading-time2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-w2ffl7d17p1g7wph1c4QH+m+RiQG+ZM24znAnEkBntYh9HZZCA+UaRwwM2KegTvBo+jH9jaxahUqiT1Z+bYn+Q==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       vuepress: 2.0.0-beta.61
@@ -5580,15 +5580,15 @@ packages:
         optional: true
     dependencies:
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - '@vuepress/client'
       - supports-color
     dev: false
 
-  /vuepress-plugin-rtl/2.0.0-beta.189_vuepress@2.0.0-beta.61:
-    resolution: {integrity: sha512-rfhz32kLIEk9U6eRRwbn3I4TwFUUhlx8xswt8lEhE+zMQzdDklDcnbcie0cizT6jnmxLv7silSgHxfpG9hSSFg==}
+  /vuepress-plugin-rtl/2.0.0-beta.192_vuepress@2.0.0-beta.61:
+    resolution: {integrity: sha512-W2YsTIjC82ev6QNb/VOSZARU0vzv0eV/GPgNhCiS36MwiB03v4/Sol+XPfILrz/+JxBI88elPHigtIx5/rMXQw==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       vuepress: 2.0.0-beta.61
@@ -5607,14 +5607,14 @@ packages:
       '@vuepress/utils': 2.0.0-beta.61
       vue: 3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
     dev: false
 
-  /vuepress-plugin-sass-palette/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-c1a/jp6DTox8lmiDj43s2TDX4OJUgPD2iEmD4yDbfNPTCuA6aIKOmTjzGNMrD+LG2N567OK1WA8ZdXran12kIw==}
+  /vuepress-plugin-sass-palette/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-tb0ALCkgkTEZoW7dst90ga82QDnb1s6AoJaCmA0vcv1nNLaMfAL+ZuvB+gZolZpVYZYiX20slJCJ5aZMemFaqQ==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       sass-loader: ^13.2.0
@@ -5638,15 +5638,15 @@ packages:
       chokidar: 3.5.3
       sass: 1.58.3
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - '@vuepress/client'
       - supports-color
     dev: false
 
-  /vuepress-plugin-seo2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-9K3AJqOyb5ZjQflmdpPTpd51W+b+mUqkG3qTtWFb1MbXV4gfMQFWH3mRlrCE509ix4zdH2e8XZnhbEXyAJNRdg==}
+  /vuepress-plugin-seo2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-o8x84KDbWPe6+WeElz/4p43BXAZ2PyCj4j7OLieEHDJuoQgazf/c7TkywrvWh2+F1unMNEFrbfB3qqi1xMX8ug==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       vuepress: 2.0.0-beta.61
@@ -5663,15 +5663,15 @@ packages:
       '@vuepress/shared': 2.0.0-beta.61
       '@vuepress/utils': 2.0.0-beta.61
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - '@vuepress/client'
       - supports-color
     dev: false
 
-  /vuepress-plugin-sitemap2/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-133jO9TifFyR3m0oEW57nVuh2OrzfEIOfi0oM1EdxlCQ8LfwL+G6KggHvDVbu39zXCFFFIFVXziNiRlpVCAX5g==}
+  /vuepress-plugin-sitemap2/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-iuFUDEOreWGVd79Z+ebHCMw906v9JClG+CAvU1/R5bR4yRpgCs0oUmHSsItkQV+ILEMiZrG7kwEWEo1CtpYqbA==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       vuepress: 2.0.0-beta.61
@@ -5691,15 +5691,15 @@ packages:
       '@vuepress/utils': 2.0.0-beta.61
       sitemap: 7.1.1
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@vue/composition-api'
       - '@vuepress/client'
       - supports-color
     dev: false
 
-  /vuepress-shared/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-X8TeX0/PpctaMzhFLAnEGM6GwYzlWVrRiiO4BitTdUzKnjtjIWuYdBrlQBSVTIhm2w6/ai92AQCEDPRfUFozYA==}
+  /vuepress-shared/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-6owQpxMJeRL+WFypa1CweshDo3t7OOPJX6/xX5RmOzlmAfHTqYeCPgiRz/xKAbHnQXvu6yOekNi12fy9g69GFg==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5735,8 +5735,8 @@ packages:
       - supports-color
     dev: false
 
-  /vuepress-theme-hope/2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-xHYIlmua9jEJ0DUY6Ts9UceC6GixLYuVyX8H3aavJhskRhk50qr95CAPnR81ZgBt92TMb6bSXqPvwoNs48yH7Q==}
+  /vuepress-theme-hope/2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe:
+    resolution: {integrity: sha512-mWd+k6UGP17qP41C2D/OqBaHPJ4clC/Yf9DVsU0pxMWA9Lo7CvfBRQi/ZtP8+v9Pticu9ASjl6KTyjiiRAh/iQ==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
     peerDependencies:
       '@vuepress/client': 2.0.0-beta.61
@@ -5826,22 +5826,22 @@ packages:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-auto-catalog: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-blog2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-comment2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-components: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-copy-code2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-copyright2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-feed2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-md-enhance: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-photo-swipe: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-pwa2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-reading-time2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-rtl: 2.0.0-beta.189_vuepress@2.0.0-beta.61
-      vuepress-plugin-sass-palette: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-seo2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-plugin-sitemap2: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.189_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-auto-catalog: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-blog2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-comment2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-components: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-copy-code2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-copyright2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-feed2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-md-enhance: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-photo-swipe: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-pwa2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-reading-time2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-rtl: 2.0.0-beta.192_vuepress@2.0.0-beta.61
+      vuepress-plugin-sass-palette: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-seo2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-plugin-sitemap2: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
+      vuepress-shared: 2.0.0-beta.192_44bug2q4gvgfsg4b36ccgweufe
     transitivePeerDependencies:
       - '@types/babel__core'
       - '@vue/composition-api'
