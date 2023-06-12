@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { navbarEn, navbarEs } from "./navbar/index.js";
-import { sidebarEn, sidebarEs } from "./sidebar/index.js";
+import { enNavbarConfig, esNavbarConfig } from "./navbar/index.js";
+import { enSidebarConfig, esSidebarConfig } from "./sidebar/index.js";
 
 const hostname = process.env.HOSTNAME || "https://wow-cms.github.io";
 
@@ -13,12 +13,12 @@ export default hopeTheme({
 
     locales: {
       "/": {
-        navbar: navbarEn,
-        sidebar: sidebarEn,
+        navbar: enNavbarConfig,
+        sidebar: enSidebarConfig,
       },
       "/es/": {
-        navbar: navbarEs,
-        sidebar: sidebarEs,
+        navbar: esNavbarConfig,
+        sidebar: esSidebarConfig,
       },
     },
 
@@ -26,6 +26,9 @@ export default hopeTheme({
       mdEnhance: {
         attrs: true,
         codetabs: true,
+        figure: true,
+        imgLazyload: true,
+        imgSize: true,
         tabs: true,
       },
     },
