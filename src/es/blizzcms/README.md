@@ -6,8 +6,8 @@ order: 1
 
 BlizzCMS es un CMS gratuito, fácil de usar y de código abierto desarrollado para comunidades privadas de World of Warcraft. La base está compuesta por el framework **CodeIgniter 3** y por la UI con **UIKit 3**.
 
-![Versión](https://img.shields.io/github/v/release/WoW-CMS/BlizzCMS?color=green&include_prereleases&logo=github&sort=semver&style=for-the-badge)
-![Licencia](https://img.shields.io/github/license/WoW-CMS/BlizzCMS?color=blue&style=for-the-badge)
+![Versión](https://img.shields.io/github/v/release/WoW-CMS/BlizzCMS?filter=v2.*&style=flat-square&logo=github&color=green)
+![Licencia](https://img.shields.io/github/license/WoW-CMS/BlizzCMS?style=flat-square&color=blue)
 
 ### ¿Qué emuladores soporta?
 
