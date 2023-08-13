@@ -1,7 +1,7 @@
 ---
 title: Versión 2.0.0-beta.1
 icon: bx bxs-file
-order: 2
+order: 3
 ---
 
 :package: Fecha de publicación programada: **2023-01-05**
@@ -28,4 +28,4 @@ order: 2
 
 ## :gear: Dependency updates
 
-- chore: update assets [3d3bb96](https://github.com/WoW-CMS/BlizzCMS/commit/3d3bb9614e77ea56804831c6fa9d0a72a97aca8b) [d9bc96e](https://github.com/WoW-CMS/BlizzCMS/commit/d9bc96e04409c8a5167c09f54b8732b836602a0b) [5c90b84](https://github.com/WoW-CMS/BlizzCMS/commit/5c90b849c896da512dbc856fb6098be519944144)
+- chore: update assets [5c90b84](https://github.com/WoW-CMS/BlizzCMS/commit/5c90b849c896da512dbc856fb6098be519944144) [d9bc96e](https://github.com/WoW-CMS/BlizzCMS/commit/d9bc96e04409c8a5167c09f54b8732b836602a0b) [3d3bb96](https://github.com/WoW-CMS/BlizzCMS/commit/3d3bb9614e77ea56804831c6fa9d0a72a97aca8b)
