@@ -19,3 +19,5 @@ dir:
 - [Models](../structure/models)
   - [Server Auth Model](../structure/models/server-auth.md)
   - [Server Characters Model](../structure/models/server-characters.md)
+- [Core](../structure/core)
+  - [BS_Model](../structure/core/model.md)
