@@ -1,9 +1,9 @@
 ---
-title: Core
+title: Núcleo
 icon: bx bxs-cog
 index: false
 ---
 
-## Content List
+## Lista de Contenido
 
 - [Extends BS_Model](../core/bs-model.md)

@@ -65,6 +65,13 @@ export const enSidebarConfig = sidebar({
         "constants",
         "database",
         {
+          text: "Core",
+          icon: "bx bxs-cog",
+          prefix: "core/",
+          collapsible: true,
+          children: "structure",
+        },
+        {
           text: "Functions",
           icon: "bx bx-code",
           prefix: "functions/",

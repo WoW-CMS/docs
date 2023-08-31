@@ -65,6 +65,13 @@ export const esSidebarConfig = sidebar({
         "constants",
         "database",
         {
+          text: "Núcleo",
+          icon: "bx bxs-cog",
+          prefix: "core/",
+          collapsible: true,
+          children: "structure",
+        },
+        {
           text: "Funciones",
           icon: "bx bx-code",
           prefix: "functions/",

@@ -10,6 +10,8 @@ dir:
 
 - [Constants](../structure/constants.md)
 - [Database](../structure/database.md)
+- [Core](../structure/core)
+  - [Extends BS_Model](../structure/core/bs-model.md)
 - [Functions](../structure/functions)
   - [Common Functions](../structure/functions/common.md)
   - [Extra Functions](../structure/functions/extra.md)
@@ -19,5 +21,3 @@ dir:
 - [Models](../structure/models)
   - [Server Auth Model](../structure/models/server-auth.md)
   - [Server Characters Model](../structure/models/server-characters.md)
-- [Core](../structure/core)
-  - [BS_Model](../structure/core/model.md)

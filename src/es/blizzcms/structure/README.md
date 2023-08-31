@@ -10,6 +10,8 @@ dir:
 
 - [Constantes](../structure/constants.md)
 - [Base de datos](../structure/database.md)
+- [Núcleo](../structure/core)
+  - [Extends BS_Model](../structure/core/bs-model.md)
 - [Funciones](../structure/functions)
   - [Funciones Comunes](../structure/functions/common.md)
   - [Funciones Adicionales](../structure/functions/extra.md)
