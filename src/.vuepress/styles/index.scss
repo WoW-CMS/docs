@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Reem Kufi';
-  src: url('/fonts/reemkufi-variablefont_wght-webfont.woff2') format('woff2'),
-    url('/fonts/reemkufi-variablefont_wght-webfont.woff') format('woff');
+  src: url('/assets/fonts/reemkufi-variablefont_wght-webfont.woff2') format('woff2'),
+    url('/assets/fonts/reemkufi-variablefont_wght-webfont.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -49,16 +49,16 @@ html[data-theme="dark"] {
   // Tab markdown
   --tab-nav-bg-color: var(--border-color);
   --tab-nav-hover-color: #262626;
-}
 
-html[data-theme="dark"] #app {
-  // Change code highlight
-  --code-border-color: #242424;
-  --code-highlight-line-color: #242424;
-}
+  & #app {
+    // Change code highlight
+    --code-border-color: #242424;
+    --code-highlight-line-color: #242424;
+  }
 
-html[data-theme="dark"] .badge {
-  color: var(--fixed-white);
+  & .badge {
+    color: var(--fixed-white);
+  }
 }
 
 table {
@@ -71,35 +71,15 @@ td {
   border-color: var(--border-color);
 }
 
-.navbar .site-name {
+.vp-site-name {
   font-family: 'Reem Kufi', sans-serif;
 }
 
-.hero-info-wrapper h1 {
-  font-size: 2.625rem;
-}
-
-.hero-info-wrapper h1,
-.hero-info-wrapper .description,
-.hero-info-wrapper .actions {
-  margin: 1rem 0;
-}
-
-.feature-wrapper:first-child {
-  border-top: 0;
-  padding: 2rem 0;
-}
-
-.feature-item {
-  flex-basis: calc(33% - 4rem);
+.vp-feature-item {
   border: 2px solid var(--border-color);
 }
 
 // Search
-.search-box .suggestion .page-title {
-  padding: 0 !important;
-}
-
 .search-box .suggestion .page-header {
   margin-left: .5rem !important;
 }
