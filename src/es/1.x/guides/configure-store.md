@@ -22,13 +22,15 @@ Antes de comenzar con los pasos, ve al **Panel de Administración** y en el men�
 
 Como primer paso procederemos a crear una categoría, por lo que en la ruta de categorías seleccionamos el botón con el icono de un bolígrafo que te redireccionará a este formulario:
 
-![Crear categoria](/assets/images/create-category-v1.png)
+![Crear categoría](/assets/images/create-category-v1.png)
 
-- **Name:** Nombre de la categoría (e.g., monturas)
-- **Realm:** Seleccione uno de los reinos disponibles creados previamente
-- **Type:** Seleccione una de las opciones relacionadas con un tipo de elemento en el menú.
-- **Child Menu:** Si se trata de una subcategoría, escriba el ID de la categoría relacionada
-- **Route:** Nombre utilizado en la URL de la categoría (e.g., monturas)
+| Campo | Descripción |
+| ------- | ------- |
+| **name** | Nombre de la categoría (p.ej, monturas) |
+| **realm** | Reino relacionado con la categoría/subcategoría |
+| **type** | Tipo de elemento en el menú de la tienda |
+| **child menu** | ID de una categoría relacionada si es una subcategoría |
+| **route** | Nombre utilizado en la URL (p.ej, monturas) |
 
 ### Crear un item
 
@@ -36,15 +38,17 @@ Como último paso procederemos a crear un item, por lo que en la ruta de items s
 
 ![Crear item](/assets/images/create-item-v1.png)
 
-- **Name:** Nombre del item
-- **Description:** Información sobre el item
-- **Category:** Seleccione la categoría a la que pertenecerá el item.
-- **Type:** Seleccione el tipo de item (objeto, dinero, nivel, renombrar, personalizar, cambiar de facción, cambiar de raza)
-- **Icon Name:** Nombre del ícono usado en el item, puedes conseguirlo en Wowhead
-- **Price Type:** Seleccione el tipo de precio del item (puntos de donación, puntos de votación o ambos)
-- **DP Price:** Cantidad de puntos de donación
-- **VP Price:** Cantidad de puntos de voto
-- **Command:** No debes escribir un comando, solo es necesario si el tipo de item lo requiere
+| Campo | Descripción |
+| ------- | ------- |
+| **name** | Nombre del item |
+| **description** | Información sobre el item |
+| **category** | Categoría a la que pertenecerá el item |
+| **type** | Tipo de item (objeto, dinero, nivel, renombrar, personalizar, cambiar de facción, cambiar de raza) |
+| **icon name** | Nombre del icono utilizado en el item |
+| **price type** | Tipo de precio (puntos de donación, puntos de votación o ambos) |
+| **dp price** | Cantidad de puntos de donación requeridos |
+| **vp price** | Cantidad de puntos de votación requeridos |
+| **command** | Información requerida según el tipo de item |
 
 ::: tabs#commands
 
@@ -53,10 +57,10 @@ Como último paso procederemos a crear un item, por lo que en la ruta de items s
 Si está creando un item con **type: objeto**, debe indicar `id:cantidad` en el campo de comando.
 
 ```bash
-// Si solo quieres enviar un objeto.
+// Si solo quieres enviar un objeto
 12345:1
 
-// Si quieres enviar varios objetos, deberá dejar un espacio entre ellos.
+// Si quieres enviar varios objetos, deberá dejar un espacio entre ellos
 12345:1 54321:2
 ```
 
@@ -65,7 +69,7 @@ Si está creando un item con **type: objeto**, debe indicar `id:cantidad` en el 
 Si estás creando un item con **type: dinero**, debes indicar `cantidad` de dinero en cobre en el campo de comando.
 
 ```bash
-// Si quieres enviar 1 oro.
+// Si quieres enviar 1 oro
 1000
 ```
 
@@ -74,7 +78,7 @@ Si estás creando un item con **type: dinero**, debes indicar `cantidad` de dine
 Si está creando un item con **type: nivel**, debe indicar `nivel` en el campo de comando.
 
 ```bash
-// Si desea establecer el nivel 80.
+// Si quieres establecer el nivel 80
 80
 ```
 

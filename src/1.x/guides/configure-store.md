@@ -24,11 +24,13 @@ As a first step, we will proceed to create a category, so in the category path w
 
 ![Create Category](/assets/images/create-category-v1.png)
 
-- **Name:** Name of the category (e.g., mounts)
-- **Realm:** Select one of the previously created available realms
-- **Type:** Select one of the options related to a type of element in the menu.
-- **Child Menu:** If this is a subcategory, write the ID of the category related
-- **Route:** Name used in the URL for the category (e.g., mounts)
+| Field | Description |
+| ------- | ------- |
+| **name** | Name of the category (e.g., mounts) |
+| **realm** | Realm related to the category/subcategory |
+| **type** | Type of element in the store menu |
+| **child menu** | ID of a related category if it is a subcategory |
+| **route** | Name used in the URL (e.g., mounts) |
 
 ### Create an item
 
@@ -36,15 +38,17 @@ As a last step, we will proceed to create an item, so in the items path we selec
 
 ![Create Item](/assets/images/create-item-v1.png)
 
-- **Name:** Name of the item
-- **Description:** Information about the item
-- **Category:** Select the category where the item will belong
-- **Type:** Select the type of item (item, money, level, rename, customize, change faction, change race)
-- **Icon Name:** Name of the icon used in the article, you can get it in Wowhead
-- **Price Type:** Select the type of item price (donation points, vote points or both)
-- **DP Price:** Amount of donation points
-- **VP Price:** Amount of vote points
-- **Command:** You must not type a command, it is only necessary if the type of item requires it
+| Field | Description |
+| ------- | ------- |
+| **name** | Name of the item |
+| **description** | Information about the item |
+| **category** | Category where the item will belong |
+| **type** | Type of item (item, money, level, rename, customize, change faction, change race) |
+| **icon name** | Name of the icon used in the item |
+| **price type** | Type of price (donation points, vote points or both) |
+| **dp price** | Amount of donation points required |
+| **vp price** | Amount of vote points required |
+| **command** | Information required depending on the type of item |
 
 ::: tabs#commands
 
@@ -53,11 +57,11 @@ As a last step, we will proceed to create an item, so in the items path we selec
 If you are creating an item with **type: item**, you should indicate `id:quantity` in the command field.
 
 ```bash
-// If you only want to send an item.
-12345:2
+// If you only want to send an item
+12345:1
 
-// If you want to send multiple items, you will need to leave a space between them.
-12345:2 54321:4
+// If you want to send multiple items, you will need to leave a space between them
+12345:1 54321:2
 ```
 
 @tab Money
@@ -65,7 +69,7 @@ If you are creating an item with **type: item**, you should indicate `id:quantit
 If you are creating an item with **type: money**, you should indicate `amount` of money in copper in the command field.
 
 ```bash
-// If you want to send 1 gold.
+// If you want to send 1 gold
 1000
 ```
 
@@ -74,7 +78,7 @@ If you are creating an item with **type: money**, you should indicate `amount` o
 If you are creating an item with **type: level**, you should indicate `level` in the command field.
 
 ```bash
-// If you want to set level 80.
+// If you want to set level 80
 80
 ```
 

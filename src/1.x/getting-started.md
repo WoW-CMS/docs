@@ -4,7 +4,7 @@ icon: bx bxs-book-open
 order: 2
 ---
 
-Welcome, we are glad that you are interested in installing BlizzCMS. For this, you will be guided on how to install the CMS with different methods depending on the familiarity you have with them.
+Welcome, we are glad that you are interested in installing BlizzCMS Plus. For this, you will be guided on how to install the CMS with different methods depending on the familiarity you have with them.
 
 ## Prerequisites
 

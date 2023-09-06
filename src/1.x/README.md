@@ -9,6 +9,15 @@ BlizzCMS plus is an improved version of BlizzCMS v1 (abandoned project) which ma
 ![Version](https://img.shields.io/github/v/release/WoW-CMS/BlizzCMS?filter=v1.*&style=flat-square&logo=github&color=green)
 ![License](https://img.shields.io/github/license/WoW-CMS/BlizzCMS?style=flat-square&color=blue)
 
+### What languages does it support?
+
+The **supported** languages in CMS are the following:
+
+- English (en)
+- French (fr)
+- German (de)
+- Spanish (es)
+
 ### What modules can I find in it?
 
 In the **latest** released versions, you can find the following modules:
