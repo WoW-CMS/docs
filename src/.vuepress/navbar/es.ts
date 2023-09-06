@@ -18,6 +18,11 @@ export const esNavbarConfig = navbar([
             icon: "bx bx-radio-circle-marked",
             link: "/es/blizzcms/",
           },
+          {
+            text: "BlizzCMS Plus",
+            icon: "bx bx-radio-circle-marked",
+            link: "/es/1.x/",
+          },
         ],
       },
     ],

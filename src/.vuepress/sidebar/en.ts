@@ -15,6 +15,15 @@ export const enSidebarConfig = sidebar({
         "changelogs/",
       ],
     },
+    {
+      text: "BlizzCMS Plus",
+      icon: "",
+      prefix: "1.x/",
+      children: [
+        "getting-started",
+        "guides/",
+      ],
+    },
   ],
 
   "/blizzcms/": [
@@ -105,6 +114,18 @@ export const enSidebarConfig = sidebar({
       text: "Changelogs",
       icon: "bx bxs-box",
       prefix: "changelogs/",
+      collapsible: true,
+      children: "structure",
+    },
+  ],
+
+  "/1.x/": [
+    "",
+    "getting-started",
+    {
+      text: "Guides",
+      icon: "bx bxs-book-reader",
+      prefix: "guides/",
       collapsible: true,
       children: "structure",
     },

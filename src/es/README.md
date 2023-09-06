@@ -7,12 +7,13 @@ tagline: Documentación Oficial de Proyectos.
 features:
   - title: BlizzCMS
     icon: bx bxs-package
-    details: Un CMS creado para comunidades privadas de World of Warcraft
+    details: Documentación de BlizzCMS v2
     link: /es/blizzcms/
 
-  - title: Unknown
+  - title: BlizzCMS Plus
     icon: bx bx-package
-    details: .....................................
+    details: Documentación de BlizzCMS v1.x
+    link: /es/1.x/
 
   - title: Unknown
     icon: bx bx-package
