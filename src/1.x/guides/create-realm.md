@@ -21,16 +21,18 @@ To start go to the **Admin Panel** and in the menu select the realms option, ins
 
 ![Create Realm](/assets/images/create-realm-v1.png)
 
-- **ID:** ID of realm in your emulator's auth database
-- **Soap Hostname:** IP or domain to connect to the emulator. For example: `127.0.0.1` or `yourdomain.com`
-- **Soap Port:** Port used by SOAP. For example: `7878`
-- **Soap User:** In-game account which will execute the commands
-- **Soap Password:** Password related to in-game account
-- **Character Database Hostname:** IP or domain to connect to the database.
-- **Character Database Name:** Name of the characters database. For example: `characters`
-- **Character Database User:** Database user who has permissions on the characters database
-- **Character Database Password:** Password related to database user
-- **Emulator:** Select the emulator used
+| Field | Description |
+| ------- | ------- |
+| **id** | ID of realm in auth database |
+| **soap hostname** | IP or domain to connect to SOAP. For example: `127.0.0.1` or `yourdomain.com` |
+| **soap port** | Port used by SOAP. For example: `7878` |
+| **soap user** | In-game account which will execute the commands |
+| **soap password** | Password related to in-game account |
+| **character database hostname** | IP or domain to connect to the database |
+| **character database name** | Name of the characters database. For example: `characters` |
+| **character database user** | User who has permission on the database |
+| **character database password** | Password related to database user |
+| **emulator** | Type of emulator used |
 
 ## Configure/Check SOAP
 
@@ -60,4 +62,6 @@ SOAP.IP = "127.0.0.1"
 SOAP.Port = 7878
 ```
 
+::: tip
 To check that the SOAP configuration is working with the CMS, open a browser tab to the following URL `yourdomain.com/en/admin/checksoap` (replace the yourdomain.com with your domain or IP).
+:::
