@@ -33,7 +33,7 @@ The CMS requires that you have a World of Wacraft server pre-installed with its 
 1. Open a shell and execute the following commands to clone the repository
 
     ```bash
-    cd <site directory>
+    cd site-directory
 
     git clone -b 1.x https://github.com/WoW-CMS/BlizzCMS.git
     ```

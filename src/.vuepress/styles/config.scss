@@ -1,2 +1,9 @@
-$code-light-theme: "coldark-cold";
-$code-dark-theme: "tomorrow";
+$code-color: (
+  light: #414141,
+  dark: #d0d0c7,
+);
+
+$code-bg-color: (
+  light: #f8f8f8,
+  dark: #212120,
+);

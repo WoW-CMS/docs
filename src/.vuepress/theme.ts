@@ -31,5 +31,6 @@ export default hopeTheme({
         imgSize: true,
         tabs: true,
       },
+      prismjs: false,
     },
 });

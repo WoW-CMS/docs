@@ -70,7 +70,7 @@ Si estás creando un item con **type: dinero**, debes indicar `cantidad` de dine
 
 ```bash
 // Si quieres enviar 1 oro
-1000
+10000
 ```
 
 @tab Nivel

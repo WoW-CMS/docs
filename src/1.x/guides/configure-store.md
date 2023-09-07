@@ -70,7 +70,7 @@ If you are creating an item with **type: money**, you should indicate `amount` o
 
 ```bash
 // If you want to send 1 gold
-1000
+10000
 ```
 
 @tab Level

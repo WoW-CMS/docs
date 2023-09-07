@@ -40,7 +40,7 @@ If you still do not have the prerequisites installed, you can see the following 
 2. Open a shell and execute the following commands to install the dependencies
 
     ```bash
-    cd <site directory>
+    cd site-directory
 
     composer install --no-plugins --no-scripts
     ```
@@ -54,7 +54,7 @@ If you still do not have the prerequisites installed, you can see the following 
 1. Open a shell and execute the following commands to clone the repository
 
     ```bash
-    cd <site directory>
+    cd site-directory
 
     git clone https://github.com/WoW-CMS/BlizzCMS.git
     ```
@@ -74,7 +74,7 @@ If you still do not have the prerequisites installed, you can see the following 
 1. Open a shell and execute the following commands to clone the repository
 
     ```bash
-    cd <site directory>
+    cd site-directory
 
     git clone https://github.com/WoW-CMS/BlizzCMS.git
     ```

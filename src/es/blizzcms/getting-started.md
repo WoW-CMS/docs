@@ -40,7 +40,7 @@ Si aún no tienes instalados los requisitos previos, puedes consultar las siguie
 2. Abra un shell y ejecute los siguientes comandos para instalar las dependencias
 
     ```bash
-    cd <directorio del sitio>
+    cd directorio-del-sitio
 
     composer install --no-plugins --no-scripts
     ```
@@ -54,7 +54,7 @@ Si aún no tienes instalados los requisitos previos, puedes consultar las siguie
 1. Abra un shell y ejecute los siguientes comandos para clonar el repositorio
 
     ```bash
-    cd <directorio del sitio>
+    cd directorio-del-sitio
 
     git clone https://github.com/WoW-CMS/BlizzCMS.git
     ```
@@ -74,7 +74,7 @@ Si aún no tienes instalados los requisitos previos, puedes consultar las siguie
 1. Abra un shell y ejecute los siguientes comandos para clonar el repositorio
 
     ```bash
-    cd <directorio del sitio>
+    cd directorio-del-sitio
 
     git clone https://github.com/WoW-CMS/BlizzCMS.git
     ```

@@ -10,7 +10,7 @@ De forma predeterminada, el CMS tiene su entorno configurado en **"production"**
 
 Si instaló el CMS en **Apache**, busque en su carpeta principal el archivo `.htaccess` y edítelo agregando la siguiente línea al final del archivo:
 
-```apacheconf
+```apache
 SetEnv CI_ENV development
 ```
 
