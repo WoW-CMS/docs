@@ -6,6 +6,8 @@ order: 1
 
 La siguiente guía explicará cómo **crear un reino** en BlizzCMS Plus.
 
+> Esta guía está basada en la [antigua wiki](https://github.com/WoW-CMS/wiki) escrita por [@pangolp](https://github.com/pangolp)
+
 ## Requisitos Previos
 
 Antes de comenzar, asegúrese de tener lo siguiente:

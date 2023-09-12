@@ -32,24 +32,19 @@ export const enNavbarConfig = navbar([
     icon: "bx bx-list-plus",
     children: [
       {
-        text: "News",
-        children: [
-          {
-            text: "WoW-CMS News",
-            icon: "bx bxs-news",
-            link: "https://wow-cms.com/news",
-          },
-        ],
+        text: "Website",
+        icon: "bx bxs-zap",
+        link: "https://wow-cms.com",
       },
       {
-        text: "Social",
-        children: [
-          {
-            text: "WoW-CMS Discord",
-            icon: "bx bxl-discord-alt",
-            link: "https://discord.wow-cms.com",
-          },
-        ],
+        text: "Discord",
+        icon: "bx bxl-discord-alt",
+        link: "https://discord.wow-cms.com",
+      },
+      {
+        text: "Ko-fi",
+        icon: "bx bxs-donate-heart",
+        link: "https://ko-fi.com/wowcms",
       },
     ],
   },

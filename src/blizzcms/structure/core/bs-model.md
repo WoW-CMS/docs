@@ -320,6 +320,6 @@ Returns the result of the **number** of rows.
 
 ```php
 $result = $this->count_all([
-    'age' => 30,
+    'age' => 30
 ]);
 ```

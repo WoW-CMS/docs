@@ -320,6 +320,6 @@ Devuelve el resultado del **número** de filas.
 
 ```php
 $result = $this->count_all([
-    'age' => 30,
+    'age' => 30
 ]);
 ```

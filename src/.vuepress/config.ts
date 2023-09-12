@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
-import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { searchPlugin } from "@vuepress/plugin-search";
+import { shikiPlugin } from "@vuepress/plugin-shiki";
 import theme from "./theme.js";
 
 const base = process.env.BASE || "/";
@@ -41,9 +41,6 @@ export default defineUserConfig({
   theme,
 
   plugins: [
-    shikiPlugin({
-      theme: "material-theme-darker",
-    }),
     searchPlugin({
       locales: {
         "/": {
@@ -53,6 +50,9 @@ export default defineUserConfig({
           placeholder: "Buscar",
         },
       },
+    }),
+    shikiPlugin({
+      theme: "material-theme-darker",
     }),
   ],
 });

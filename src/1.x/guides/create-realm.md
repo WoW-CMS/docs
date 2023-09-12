@@ -6,6 +6,8 @@ order: 1
 
 The following guide will explain how to **create a realm** in BlizzCMS Plus.
 
+> This guide is based on the [old wiki](https://github.com/WoW-CMS/wiki) written by [@pangolp](https://github.com/pangolp)
+
 ## Prerequisites
 
 Before you get started, ensure you have the following:

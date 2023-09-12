@@ -6,6 +6,8 @@ order: 2
 
 The following guide will explain how to **configure the store** to sell items in BlizzCMS Plus.
 
+> This guide is based on the [old wiki](https://github.com/WoW-CMS/wiki) written by [@pangolp](https://github.com/pangolp)
+
 ## Prerequisites
 
 Before you get started, ensure you have the following:

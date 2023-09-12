@@ -15,7 +15,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 - **MySQL 5.7+** o **MariaDB 10.6+**
 - **PHP 7.4** o más reciente recomendado
     - Habilitar extensiones: bcmath - curl - gd - gmp - mbstring - mysqli - openssl - soap - zip
-- **Composer 2.5+**
+- **Composer 2.6+**
 
 ::: note
 El CMS requiere que tengas preinstalado un servidor de World of Wacraft con sus respectivas bases de datos.
