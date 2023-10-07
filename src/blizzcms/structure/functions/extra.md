@@ -37,12 +37,12 @@ Returns a current formatted date.
 echo current_date();
 ```
 
-## format_date
+## locate_date
 
-`format_date` — _Change a date string to another specific format_
+`locate_date` — _Change a specific datetime in a localized pattern_
 
 ```php
-format_date($date, $format = null): string
+locate_date($date, $pattern = null, $timezone = null): string
 ```
 
 #### Parameters
@@ -50,10 +50,13 @@ format_date($date, $format = null): string
 | Parameter | Type | Description |
 | ------- | ------- | ------- |
 | **$date** | string | Date string |
-| **$format** | string\|null | Date format |
+| **$pattern** | string\|null | Date pattern |
+| **$timezone** | string\|null | Date timezone |
 
 ::: note
-If **$format** is not set, the following will be used: `Y-m-d H:i:s`
+If **$pattern** is not set, the following will be used: `MMMM d, y`
+
+If **$timezone** is not set, the following will be used: `UTC`
 :::
 
 #### Return Values
@@ -63,8 +66,8 @@ Returns the changed format of the date string.
 #### Examples
 
 ```php
-// Returns '2022-05-17 21:11:44'
-echo format_date('Tue, 17 May 2022 21:11:44 +0000');
+// Returns 'May 5, 2023'
+echo locate_date('2022-05-23 21:11:44');
 ```
 
 ## add_timespan

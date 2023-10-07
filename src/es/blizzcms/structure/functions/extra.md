@@ -37,12 +37,12 @@ Devuelve una fecha actual con formato.
 echo current_date();
 ```
 
-## format_date
+## locate_date
 
-`format_date` — _Cambiar un string de fecha a otro formato específico_
+`locate_date` — _Cambiar una fecha y hora específica en un patrón localizado_
 
 ```php
-format_date($date, $format = null): string
+locate_date($date, $pattern = null, $timezone = null): string
 ```
 
 #### Parámetros
@@ -50,10 +50,13 @@ format_date($date, $format = null): string
 | Parámetro | Tipo | Descripción |
 | ------- | ------- | ------- |
 | **$date** | string | String de fecha |
-| **$format** | string\|null | Formato de la fecha |
+| **$pattern** | string\|null | Patrón de fecha |
+| **$timezone** | string\|null | Zona horaria de la fecha |
 
 ::: note
-Si no se establece **$format**, se utilizará lo siguiente: `Y-m-d H:i:s`
+Si no se establece **$pattern**, se utilizará lo siguiente: `MMMM d, y`
+
+Si no se establece **$timezone**, se utilizará lo siguiente: `UTC`
 :::
 
 #### Valores Devueltos
@@ -63,8 +66,8 @@ Devuelve el cambio de formato del string de fecha.
 #### Ejemplos
 
 ```php
-// Devuelve '2022-05-17 21:11:44'
-echo format_date('Tue, 17 May 2022 21:11:44 +0000');
+// Devuelve 'May 5, 2023'
+echo locate_date('2022-05-23 21:11:44');
 ```
 
 ## add_timespan
