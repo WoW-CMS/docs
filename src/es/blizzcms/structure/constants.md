@@ -8,9 +8,6 @@ En la base del CMS se han definido un pequeño número de constantes para su uso
 
 | Constante | Valor |
 | ----------- | ---------- |
-| CURRENCY_BOTH | both |
-| CURRENCY_DP | dp |
-| CURRENCY_VP | vp |
 | ITEM_LINK | link |
 | ITEM_DROPDOWN | dropdown |
 | SLIDE_IMAGE | image |
