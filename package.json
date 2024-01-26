@@ -10,7 +10,7 @@
   "author": "WoW-CMS",
   "license": "MIT",
   "dependencies": {
-    "@vuepress/client": "2.0.0-rc.0",
+    "@vuepress/client": "2.0.0-rc.2",
     "@vuepress/plugin-search": "2.0.0-rc.0",
     "@vuepress/plugin-shiki": "2.0.0-rc.0",
     "vue": "3.3.8",
