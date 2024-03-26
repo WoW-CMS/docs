@@ -6,7 +6,7 @@ Documentation repository for _WoW-CMS_ projects
 
 | Requirements | Description |
 | :----------- | :---------- |
-| **Node.js** | 18.11+ |
+| **Node.js** | 20.11+ |
 
 ## Contributors
 

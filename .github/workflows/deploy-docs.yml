@@ -7,13 +7,16 @@ on:
     branches: [main]
     types: [opened, synchronize]
 
+permissions:
+  contents: write
+
 jobs:
   deploy-gh-pages:
     name: Deploy docs to gh pages
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.0
+        uses: styfle/cancel-workflow-action@0.12.1
         with:
           access_token: ${{ github.token }}
 
@@ -23,14 +26,15 @@ jobs:
           fetch-depth: 0
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
+          version: 8
           run_install: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: pnpm
 
       - name: Install Deps

@@ -32,5 +32,15 @@ export default hopeTheme({
         tabs: true,
       },
       prismjs: false,
+      search: {
+        locales: {
+          "/": {
+            placeholder: "Search",
+          },
+          "/es/": {
+            placeholder: "Buscar",
+          },
+        },
+      },
     },
 });

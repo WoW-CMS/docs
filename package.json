@@ -2,25 +2,24 @@
   "name": "docs",
   "version": "1.0.0",
   "description": "Documentation for WoW-CMS projects",
-  "scripts": {
-    "src:build": "vuepress build src",
-    "src:clean-dev": "vuepress dev src --clean-cache",
-    "src:dev": "vuepress dev src"
-  },
   "author": "WoW-CMS",
   "license": "MIT",
-  "dependencies": {
-    "@vuepress/client": "2.0.0-rc.0",
-    "@vuepress/plugin-search": "2.0.0-rc.0",
-    "@vuepress/plugin-shiki": "2.0.0-rc.0",
-    "vue": "3.3.8",
-    "vuepress": "2.0.0-rc.0",
-    "vuepress-theme-hope": "2.0.0-rc.0"
+  "type": "module",
+  "scripts": {
+    "src:build": "vuepress-vite build src",
+    "src:clean-dev": "vuepress-vite dev src --clean-cache",
+    "src:dev": "vuepress-vite dev src"
   },
-  "packageManager": "pnpm@8.10.5",
+  "dependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.9",
+    "@vuepress/plugin-search": "2.0.0-rc.21",
+    "@vuepress/plugin-shiki": "2.0.0-rc.21",
+    "vue": "3.4.21",
+    "vuepress": "2.0.0-rc.9",
+    "vuepress-theme-hope": "2.0.0-rc.32"
+  },
+  "packageManager": "pnpm@8.15.5",
   "engines": {
-    "node": ">=18",
-    "npm": ">=8",
-    "pnpm": ">=8"
+    "node": ">=20"
   }
 }
