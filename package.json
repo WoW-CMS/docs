@@ -11,7 +11,7 @@
     "src:dev": "vuepress-vite dev src"
   },
   "dependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.9",
+    "@vuepress/bundler-vite": "2.0.0-rc.18",
     "@vuepress/plugin-search": "2.0.0-rc.21",
     "@vuepress/plugin-shiki": "2.0.0-rc.21",
     "vue": "3.4.21",
